@@ -1,0 +1,3553 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Dropdown.spec.js >> TC_04 AutoSuggestion dropdown
+- Location: tests\Dropdown.spec.js:48:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f4e2]:
+  - navigation "Shortcuts menu" [ref=f4e3]:
+    - heading "Skip to" [level=2] [ref=f4e4]
+    - list "Skip to" [ref=f4e5]:
+      - listitem [ref=f4e6]:
+        - link "main content" [ref=f4e7] [cursor=pointer]:
+          - /url: "#skippedLink"
+          - text: Main content
+    - separator [ref=f4e8]
+  - banner [ref=f4e9]:
+    - navigation "Primary" [ref=f4e10]:
+      - generic [ref=f4e11]:
+        - generic [ref=f4e12]:
+          - link "Amazon.in" [ref=f4e14] [cursor=pointer]:
+            - /url: /ref=nav_logo
+            - generic: .in
+          - button "Delivering to Pune 411014 Update location" [ref=f4e17] [cursor=pointer]:
+            - generic [ref=f4e19]:
+              - generic [ref=f4e20]: Delivering to Pune 411014
+              - generic [ref=f4e21]: Update location
+        - search [ref=f4e24]:
+          - generic [ref=f4e27]:
+            - generic [ref=f4e28]: All
+            - combobox "Select the department you want to search in" [ref=f4e31] [cursor=pointer]:
+              - option "All Categories" [selected]
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Fresh Meat"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - searchbox "Search Amazon.in" [ref=f4e34]: helmets for men bike
+          - generic "Go" [ref=f4e37] [cursor=pointer]:
+            - button "Go" [ref=f4e38]
+        - generic [ref=f4e40]:
+          - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=f4e42] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+            - generic [ref=f4e45]:
+              - img "India" [ref=f4e46]
+              - generic [ref=f4e47]: EN
+          - link "Hello, sign in Account & Lists" [ref=f4e49] [cursor=pointer]:
+            - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%2F%3F_encoding%3DUTF8%26crid%3D19Z8HO7J9JH7F%26i%3Daps%26k%3Dhelmets%2520for%2520men%2520bike%26ref%3Dnb_sb_ss_mvt-t11-ranker_8_6%26sprefix%3DHelmet%252Caps%252C291%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+            - generic [ref=f4e50]: Hello, sign in
+            - generic [ref=f4e52]: Account & Lists
+          - link "Returns & Orders" [ref=f4e53] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=nav_orders_first
+            - generic [ref=f4e54]: Returns
+            - generic [ref=f4e55]: "& Orders"
+          - link "0 items in cart" [ref=f4e56] [cursor=pointer]:
+            - /url: /gp/cart/view.html?ref_=nav_cart
+            - generic [ref=f4e57]: "0"
+            - generic [ref=f4e60]: Cart
+      - generic [ref=f4e62]:
+        - button "Open All Categories Menu" [ref=f4e64] [cursor=pointer]:
+          - generic [ref=f4e66]: All
+        - list [ref=f4e70]:
+          - listitem [ref=f4e71]:
+            - link "Fresh" [ref=f4e73] [cursor=pointer]:
+              - /url: /fresh?ref_=nav_cs_grocery
+          - listitem [ref=f4e74]:
+            - link "Prime Video" [ref=f4e76] [cursor=pointer]:
+              - /url: https://www.primevideo.com/offers/nonprimehomepage/ref_=nav_dvm_crs_in_s_gw_bt_dk_p_hamburgr?ref_=avod_desktop_topnav
+          - listitem [ref=f4e77]:
+            - link "Sell" [ref=f4e79] [cursor=pointer]:
+              - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+          - listitem [ref=f4e80]:
+            - link "Bestsellers" [ref=f4e82] [cursor=pointer]:
+              - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+          - listitem [ref=f4e83]:
+            - link "Today's Deals" [ref=f4e85] [cursor=pointer]:
+              - /url: /deals?ref_=nav_cs_gb
+          - listitem [ref=f4e86]:
+            - link "Mobiles" [ref=f4e88] [cursor=pointer]:
+              - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+          - listitem [ref=f4e89]:
+            - link "New Releases" [ref=f4e91] [cursor=pointer]:
+              - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+          - listitem [ref=f4e92]:
+            - link "Electronics" [ref=f4e94] [cursor=pointer]:
+              - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+          - listitem [ref=f4e95]:
+            - link "Customer Service" [ref=f4e97] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+          - listitem [ref=f4e98]:
+            - link "Prime" [ref=f4e100] [cursor=pointer]:
+              - /url: /prime?ref_=nav_cs_primelink_nonmember
+          - listitem [ref=f4e101]:
+            - link "Amazon Pay" [ref=f4e103] [cursor=pointer]:
+              - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+          - listitem [ref=f4e104]:
+            - link "Home & Kitchen" [ref=f4e106] [cursor=pointer]:
+              - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+          - listitem [ref=f4e107]:
+            - link "Fashion" [ref=f4e109] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+          - listitem [ref=f4e110]:
+            - link "Computers" [ref=f4e112] [cursor=pointer]:
+              - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+          - listitem [ref=f4e113]:
+            - link "Car & Motorbike" [ref=f4e115] [cursor=pointer]:
+              - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+          - listitem [ref=f4e116]:
+            - link "Grocery & Gourmet Foods" [ref=f4e118] [cursor=pointer]:
+              - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+          - listitem [ref=f4e119]:
+            - link "Pet Supplies" [ref=f4e121] [cursor=pointer]:
+              - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+          - listitem [ref=f4e122]:
+            - link "Beauty & Personal Care" [ref=f4e124] [cursor=pointer]:
+              - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+          - listitem [ref=f4e125]:
+            - link "Gift Cards" [ref=f4e127] [cursor=pointer]:
+              - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+          - listitem [ref=f4e128]:
+            - link "Video Games" [ref=f4e130] [cursor=pointer]:
+              - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+          - listitem [ref=f4e131]:
+            - link "Toys & Games" [ref=f4e133] [cursor=pointer]:
+              - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+          - listitem [ref=f4e134]:
+            - link "Baby" [ref=f4e136] [cursor=pointer]:
+              - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+          - listitem [ref=f4e137]:
+            - link "Sports, Fitness & Outdoors" [ref=f4e139] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+          - listitem [ref=f4e140]:
+            - link "Home Improvement" [ref=f4e142] [cursor=pointer]:
+              - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+          - listitem [ref=f4e143]:
+            - link "Custom Products" [ref=f4e145] [cursor=pointer]:
+              - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+          - listitem [ref=f4e146]:
+            - link "Health, Household & Personal Care" [ref=f4e148] [cursor=pointer]:
+              - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+          - listitem [ref=f4e149]:
+            - link "Audible" [ref=f4e151] [cursor=pointer]:
+              - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+          - listitem [ref=f4e152]:
+            - link "AmazonBasics" [ref=f4e154] [cursor=pointer]:
+              - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+          - listitem [ref=f4e155]:
+            - link "Subscribe & Save" [ref=f4e157] [cursor=pointer]:
+              - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+          - listitem [ref=f4e158]:
+            - link "Kindle eBooks" [ref=f4e160] [cursor=pointer]:
+              - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+          - listitem [ref=f4e161]:
+            - link "Amazon Pharmacy" [ref=f4e163] [cursor=pointer]:
+              - /url: /medical/browse/home?ref_=nav_navx-desco-pharma
+          - listitem [ref=f4e164]:
+            - link "Flights" [ref=f4e166] [cursor=pointer]:
+              - /url: /flights?ref_=nav_cs_apay_desktop_topnav_flights
+        - link "Jan26_Event" [ref=f4e170] [cursor=pointer]:
+          - /url: /events/greatindianfestival/?_encoding=UTF8&ref_=nav_swm_event&pf_rd_p=913c2c21-782e-4de5-909f-10ab3b6494e9&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=ZZQD4252EJXE1K2BT76N
+          - img "Jan26_Event" [ref=f4e171]
+  - generic [ref=f4e174]:
+    - heading [level=1] [ref=f4e177]:
+      - generic [ref=f4e178]:
+        - heading "1-48 of over 20,000 results for \"helmets for men bike\"" [level=2] [ref=f4e183]
+        - generic [ref=f4e188]:
+          - generic [ref=f4e189]: "Sort by:"
+          - combobox "Sort by:" [ref=f4e190]:
+            - option "Featured" [selected]
+            - 'option "Price: Low to High"'
+            - 'option "Price: High to Low"'
+            - option "Avg. Customer Review"
+            - option "Newest Arrivals"
+            - option "Best Sellers"
+          - generic [ref=f4e191] [cursor=pointer]: Sort by:Featured
+    - generic [ref=f4e199]:
+      - generic [ref=f4e203]:
+        - link "Sponsored ad from Harita Accessories LLP - TVS. \"Breathe Easy. Ride Safe.\" Shop Harita Accessories LLP - TVS." [ref=f4e204] [cursor=pointer]:
+          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAF1kM1u00AURtVWQAkgqixalB2RmkXFJGN7cNIiq5qxnTRN4ySOk5ZsrIk9jk0c2_VM6c8iexZIPAASLwAS4mF4DxYs2KG0CIkF3-pI97u6uqfgbf768e37_eITLEvOsT0aWajTGpfXpL3tgCXRlSvTYMAm8fxNco2Ubsc42GanwKp3z0ZOchRXW8dYygk8xfYjGalVpFYVqQon60My3cSmc2Ta7WFxp_DAZ3wu0qz4eGTZpt5rWe2JaZTerxU2VxOXiqD4kC7oTZpUo6T0jE_BRRIFEfMBZzT3QpDRGQNS-R5L3La1J_MpECFbMB94aRwzT0RpAv4cAR7NfQ4yGiWC5cBLE8ESIT8nNrYMV--dnJi60-5ZQ3fYx3bnxHQNc9hxev3yYWENbn398PPLu89GaYdeiBTwjObzmIGQUyCYyCNefqpACJWGIqlQURqKKm-0LftgQ-_re73iK4NgPWu2QR0vyfldZnhJBrl7s1Dxv1mS2ZIMlgTfwqy0pc_Mq9bxWw9HusoJ0uRP64WP66EQGT-o1S4vL6t_JdW4SHPGaysxNbOOm0iSEFCQaQCkEAgwURFoQLRfR3UDmYp6eLvg5izQhsTFcF9GSkOqy91mQ34t90mrDzCUGhChl9KAnOpQ6fQnHQdWMt_NfTeLQz_XRCXk1PVyN_I1WIkzl_Io4RqBTalrOUeG8uIOydjev8Ou0x-PV83zC5ZfayGLF0zwXRkGab4rwwVLdmU4jeZs1eFxKrT_eK9EGs14ha4esJvDUATITBe_Aec-3Vw&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%2520for%2520men%2520bike%26lp_slot%3Dauto-sparkle-hsa-tetris%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_bkgd&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+        - generic [ref=f4e205]:
+          - generic [ref=f4e207]:
+            - link "Harita Accessories LLP - TVS" [ref=f4e209] [cursor=pointer]:
+              - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAF1kM1u00AURtVWQAkgqixalB2RmkXFJGN7cNIiq5qxnTRN4ySOk5ZsrIk9jk0c2_VM6c8iexZIPAASLwAS4mF4DxYs2KG0CIkF3-pI97u6uqfgbf768e37_eITLEvOsT0aWajTGpfXpL3tgCXRlSvTYMAm8fxNco2Ubsc42GanwKp3z0ZOchRXW8dYygk8xfYjGalVpFYVqQon60My3cSmc2Ta7WFxp_DAZ3wu0qz4eGTZpt5rWe2JaZTerxU2VxOXiqD4kC7oTZpUo6T0jE_BRRIFEfMBZzT3QpDRGQNS-R5L3La1J_MpECFbMB94aRwzT0RpAv4cAR7NfQ4yGiWC5cBLE8ESIT8nNrYMV--dnJi60-5ZQ3fYx3bnxHQNc9hxev3yYWENbn398PPLu89GaYdeiBTwjObzmIGQUyCYyCNefqpACJWGIqlQURqKKm-0LftgQ-_re73iK4NgPWu2QR0vyfldZnhJBrl7s1Dxv1mS2ZIMlgTfwqy0pc_Mq9bxWw9HusoJ0uRP64WP66EQGT-o1S4vL6t_JdW4SHPGaysxNbOOm0iSEFCQaQCkEAgwURFoQLRfR3UDmYp6eLvg5izQhsTFcF9GSkOqy91mQ34t90mrDzCUGhChl9KAnOpQ6fQnHQdWMt_NfTeLQz_XRCXk1PVyN_I1WIkzl_Io4RqBTalrOUeG8uIOydjev8Ou0x-PV83zC5ZfayGLF0zwXRkGab4rwwVLdmU4jeZs1eFxKrT_eK9EGs14ha4esJvDUATITBe_Aec-3Vw&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%2520for%2520men%2520bike%26lp_slot%3Dauto-sparkle-hsa-tetris%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_logo&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+              - img "Harita Accessories LLP - TVS" [ref=f4e211]
+            - generic [ref=f4e213]:
+              - link "Breathe Easy. Ride Safe" [ref=f4e214] [cursor=pointer]:
+                - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAF1kM1u00AURtVWQAkgqixalB2RmkXFJGN7cNIiq5qxnTRN4ySOk5ZsrIk9jk0c2_VM6c8iexZIPAASLwAS4mF4DxYs2KG0CIkF3-pI97u6uqfgbf768e37_eITLEvOsT0aWajTGpfXpL3tgCXRlSvTYMAm8fxNco2Ubsc42GanwKp3z0ZOchRXW8dYygk8xfYjGalVpFYVqQon60My3cSmc2Ta7WFxp_DAZ3wu0qz4eGTZpt5rWe2JaZTerxU2VxOXiqD4kC7oTZpUo6T0jE_BRRIFEfMBZzT3QpDRGQNS-R5L3La1J_MpECFbMB94aRwzT0RpAv4cAR7NfQ4yGiWC5cBLE8ESIT8nNrYMV--dnJi60-5ZQ3fYx3bnxHQNc9hxev3yYWENbn398PPLu89GaYdeiBTwjObzmIGQUyCYyCNefqpACJWGIqlQURqKKm-0LftgQ-_re73iK4NgPWu2QR0vyfldZnhJBrl7s1Dxv1mS2ZIMlgTfwqy0pc_Mq9bxWw9HusoJ0uRP64WP66EQGT-o1S4vL6t_JdW4SHPGaysxNbOOm0iSEFCQaQCkEAgwURFoQLRfR3UDmYp6eLvg5izQhsTFcF9GSkOqy91mQ34t90mrDzCUGhChl9KAnOpQ6fQnHQdWMt_NfTeLQz_XRCXk1PVyN_I1WIkzl_Io4RqBTalrOUeG8uIOydjev8Ou0x-PV83zC5ZfayGLF0zwXRkGab4rwwVLdmU4jeZs1eFxKrT_eK9EGs14ha4esJvDUATITBe_Aec-3Vw&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%2520for%2520men%2520bike%26lp_slot%3Dauto-sparkle-hsa-tetris%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_hl&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+              - generic [ref=f4e217]:
+                - button "Leave feedback on Sponsored ad" [ref=f4e221] [cursor=pointer]: Sponsored
+                - generic [ref=f4e223]: "|"
+                - generic [ref=f4e224]: Top 10 best-selling brand in helmets
+                - generic [ref=f4e225]: "|"
+                - link "Shop now" [ref=f4e227] [cursor=pointer]:
+                  - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAF1kM1u00AURtVWQAkgqixalB2RmkXFJGN7cNIiq5qxnTRN4ySOk5ZsrIk9jk0c2_VM6c8iexZIPAASLwAS4mF4DxYs2KG0CIkF3-pI97u6uqfgbf768e37_eITLEvOsT0aWajTGpfXpL3tgCXRlSvTYMAm8fxNco2Ubsc42GanwKp3z0ZOchRXW8dYygk8xfYjGalVpFYVqQon60My3cSmc2Ta7WFxp_DAZ3wu0qz4eGTZpt5rWe2JaZTerxU2VxOXiqD4kC7oTZpUo6T0jE_BRRIFEfMBZzT3QpDRGQNS-R5L3La1J_MpECFbMB94aRwzT0RpAv4cAR7NfQ4yGiWC5cBLE8ESIT8nNrYMV--dnJi60-5ZQ3fYx3bnxHQNc9hxev3yYWENbn398PPLu89GaYdeiBTwjObzmIGQUyCYyCNefqpACJWGIqlQURqKKm-0LftgQ-_re73iK4NgPWu2QR0vyfldZnhJBrl7s1Dxv1mS2ZIMlgTfwqy0pc_Mq9bxWw9HusoJ0uRP64WP66EQGT-o1S4vL6t_JdW4SHPGaysxNbOOm0iSEFCQaQCkEAgwURFoQLRfR3UDmYp6eLvg5izQhsTFcF9GSkOqy91mQ34t90mrDzCUGhChl9KAnOpQ6fQnHQdWMt_NfTeLQz_XRCXk1PVyN_I1WIkzl_Io4RqBTalrOUeG8uIOydjev8Ou0x-PV83zC5ZfayGLF0zwXRkGab4rwwVLdmU4jeZs1eFxKrT_eK9EGs14ha4esJvDUATITBe_Aec-3Vw&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%2520for%2520men%2520bike%26lp_slot%3Dauto-sparkle-hsa-tetris%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_cta&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                  - generic [ref=f4e228]: Shop Harita Accessories LLP - TVS
+          - group [ref=f4e231]:
+            - group [ref=f4e235]:
+              - list [ref=f4e236]:
+                - listitem [ref=f4e237]:
+                  - generic [ref=f4e239]:
+                    - link [ref=f4e240] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDOlbFoYsZ6c4uuiicJCdJ04uEIbe26SVtk9QZugknyUkTmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH75qcPzj25ev92qPFR66Y3u1ssTJ8EWjAlunEc6SG49H0RKv0-3L7LUozCZ6_xRfAKszu1y52ShlhmMFlip3odgPeVFiRIkRIMOt7ziqf6wY7siwTad2Vr0fYrKleVF7tLJsQ5sPLXNt6PW3lerxL-MhGtUeoB26zTMmyepPiQ-usyRKcAgIRmUQgwJtMICNuzjzTKvFEx_QGO9wCII8TXFAkzwDf09AgMqQgAIlGcUlCPKM4ozyz1RbsXRPm0-nhuaac8vxnIViT6aGpxvOxJ0vGufVCnfy-d33T28-6vUzdE1zQApUblMMYoIAxbRMSOOJwHGc0BWgxAlCV5D4I9Oy-0faQmvNa891VdGKgQk6ykG9-sNGOajL0rvdScr_HNTNQV0eVOX32NRPtI1xMxy_CpREk4gqyvyHSvV9Jaa0IH2W3e_3zL9I7KZg0Z4NWZUbwJnljnThvAi9MvSKNA5LmTZjgryg9JJQ5ppXSSjDTg92OdjuCU1SyhBA0BMh9nG7B0K-7QOxF3LA56EIIB8EbV-Sgh4XNRMZFaSJShzJ9sCJaSQa-e4n_qGw6A&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_0_bkgd&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                    - link [ref=f4e242] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDOlbFoYsZ6c4uuiicJCdJ04uEIbe26SVtk9QZugknyUkTmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH75qcPzj25ev92qPFR66Y3u1ssTJ8EWjAlunEc6SG49H0RKv0-3L7LUozCZ6_xRfAKszu1y52ShlhmMFlip3odgPeVFiRIkRIMOt7ziqf6wY7siwTad2Vr0fYrKleVF7tLJsQ5sPLXNt6PW3lerxL-MhGtUeoB26zTMmyepPiQ-usyRKcAgIRmUQgwJtMICNuzjzTKvFEx_QGO9wCII8TXFAkzwDf09AgMqQgAIlGcUlCPKM4ozyz1RbsXRPm0-nhuaac8vxnIViT6aGpxvOxJ0vGufVCnfy-d33T28-6vUzdE1zQApUblMMYoIAxbRMSOOJwHGc0BWgxAlCV5D4I9Oy-0faQmvNa891VdGKgQk6ykG9-sNGOajL0rvdScr_HNTNQV0eVOX32NRPtI1xMxy_CpREk4gqyvyHSvV9Jaa0IH2W3e_3zL9I7KZg0Z4NWZUbwJnljnThvAi9MvSKNA5LmTZjgryg9JJQ5ppXSSjDTg92OdjuCU1SyhBA0BMh9nG7B0K-7QOxF3LA56EIIB8EbV-Sgh4XNRMZFaSJShzJ9sCJaSQa-e4n_qGw6A&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_0_img&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                      - img "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e245]
+                    - generic [ref=f4e247]:
+                      - link [ref=f4e248] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDOlbFoYsZ6c4uuiicJCdJ04uEIbe26SVtk9QZugknyUkTmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH75qcPzj25ev92qPFR66Y3u1ssTJ8EWjAlunEc6SG49H0RKv0-3L7LUozCZ6_xRfAKszu1y52ShlhmMFlip3odgPeVFiRIkRIMOt7ziqf6wY7siwTad2Vr0fYrKleVF7tLJsQ5sPLXNt6PW3lerxL-MhGtUeoB26zTMmyepPiQ-usyRKcAgIRmUQgwJtMICNuzjzTKvFEx_QGO9wCII8TXFAkzwDf09AgMqQgAIlGcUlCPKM4ozyz1RbsXRPm0-nhuaac8vxnIViT6aGpxvOxJ0vGufVCnfy-d33T28-6vUzdE1zQApUblMMYoIAxbRMSOOJwHGc0BWgxAlCV5D4I9Oy-0faQmvNa891VdGKgQk6ykG9-sNGOajL0rvdScr_HNTNQV0eVOX32NRPtI1xMxy_CpREk4gqyvyHSvV9Jaa0IH2W3e_3zL9I7KZg0Z4NWZUbwJnljnThvAi9MvSKNA5LmTZjgryg9JJQ5ppXSSjDTg92OdjuCU1SyhBA0BMh9nG7B0K-7QOxF3LA56EIIB8EbV-Sgh4XNRMZFaSJShzJ9sCJaSQa-e4n_qGw6A&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_0_bkgd&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                      - link "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e250] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDOlbFoYsZ6c4uuiicJCdJ04uEIbe26SVtk9QZugknyUkTmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH75qcPzj25ev92qPFR66Y3u1ssTJ8EWjAlunEc6SG49H0RKv0-3L7LUozCZ6_xRfAKszu1y52ShlhmMFlip3odgPeVFiRIkRIMOt7ziqf6wY7siwTad2Vr0fYrKleVF7tLJsQ5sPLXNt6PW3lerxL-MhGtUeoB26zTMmyepPiQ-usyRKcAgIRmUQgwJtMICNuzjzTKvFEx_QGO9wCII8TXFAkzwDf09AgMqQgAIlGcUlCPKM4ozyz1RbsXRPm0-nhuaac8vxnIViT6aGpxvOxJ0vGufVCnfy-d33T28-6vUzdE1zQApUblMMYoIAxbRMSOOJwHGc0BWgxAlCV5D4I9Oy-0faQmvNa891VdGKgQk6ykG9-sNGOajL0rvdScr_HNTNQV0eVOX32NRPtI1xMxy_CpREk4gqyvyHSvV9Jaa0IH2W3e_3zL9I7KZg0Z4NWZUbwJnljnThvAi9MvSKNA5LmTZjgryg9JJQ5ppXSSjDTg92OdjuCU1SyhBA0BMh9nG7B0K-7QOxF3LA56EIIB8EbV-Sgh4XNRMZFaSJShzJ9sCJaSQa-e4n_qGw6A&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_0_title&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                      - link "Rated 4.2 out of 5 stars by 681 reviews. Go to review section." [ref=f4e253] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDOlbFoYsZ6c4uuiicJCdJ04uEIbe26SVtk9QZugknyUkTmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH75qcPzj25ev92qPFR66Y3u1ssTJ8EWjAlunEc6SG49H0RKv0-3L7LUozCZ6_xRfAKszu1y52ShlhmMFlip3odgPeVFiRIkRIMOt7ziqf6wY7siwTad2Vr0fYrKleVF7tLJsQ5sPLXNt6PW3lerxL-MhGtUeoB26zTMmyepPiQ-usyRKcAgIRmUQgwJtMICNuzjzTKvFEx_QGO9wCII8TXFAkzwDf09AgMqQgAIlGcUlCPKM4ozyz1RbsXRPm0-nhuaac8vxnIViT6aGpxvOxJ0vGufVCnfy-d33T28-6vUzdE1zQApUblMMYoIAxbRMSOOJwHGc0BWgxAlCV5D4I9Oy-0faQmvNa891VdGKgQk6ykG9-sNGOajL0rvdScr_HNTNQV0eVOX32NRPtI1xMxy_CpREk4gqyvyHSvV9Jaa0IH2W3e_3zL9I7KZg0Z4NWZUbwJnljnThvAi9MvSKNA5LmTZjgryg9JJQ5ppXSSjDTg92OdjuCU1SyhBA0BMh9nG7B0K-7QOxF3LA56EIIB8EbV-Sgh4XNRMZFaSJShzJ9sCJaSQa-e4n_qGw6A&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_0_rating&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279#customerReviews
+                        - generic [ref=f4e254]:
+                          - generic [ref=f4e255]: "4.2"
+                          - generic [ref=f4e256]: 4.2 out of 5 stars.
+                          - generic [ref=f4e258]: (681)
+                      - link "₹1,528.00" [ref=f4e260] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDOlbFoYsZ6c4uuiicJCdJ04uEIbe26SVtk9QZugknyUkTmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH75qcPzj25ev92qPFR66Y3u1ssTJ8EWjAlunEc6SG49H0RKv0-3L7LUozCZ6_xRfAKszu1y52ShlhmMFlip3odgPeVFiRIkRIMOt7ziqf6wY7siwTad2Vr0fYrKleVF7tLJsQ5sPLXNt6PW3lerxL-MhGtUeoB26zTMmyepPiQ-usyRKcAgIRmUQgwJtMICNuzjzTKvFEx_QGO9wCII8TXFAkzwDf09AgMqQgAIlGcUlCPKM4ozyz1RbsXRPm0-nhuaac8vxnIViT6aGpxvOxJ0vGufVCnfy-d33T28-6vUzdE1zQApUblMMYoIAxbRMSOOJwHGc0BWgxAlCV5D4I9Oy-0faQmvNa891VdGKgQk6ykG9-sNGOajL0rvdScr_HNTNQV0eVOX32NRPtI1xMxy_CpREk4gqyvyHSvV9Jaa0IH2W3e_3zL9I7KZg0Z4NWZUbwJnljnThvAi9MvSKNA5LmTZjgryg9JJQ5ppXSSjDTg92OdjuCU1SyhBA0BMh9nG7B0K-7QOxF3LA56EIIB8EbV-Sgh4XNRMZFaSJShzJ9sCJaSQa-e4n_qGw6A&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_0_price&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                        - generic [ref=f4e262]:
+                          - generic [ref=f4e263]: ₹1,528.00
+                          - generic [ref=f4e264]:
+                            - text: ₹
+                            - generic [ref=f4e265]:
+                              - text: 1,528
+                              - generic [ref=f4e266]: .
+                            - text: "00"
+                      - generic [ref=f4e267]: "M.R.P: ₹1,899.00"
+                - listitem [ref=f4e270]:
+                  - generic [ref=f4e272]:
+                    - link [ref=f4e273] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE5t7cKRz4rALQO3SOOgVGgrJsj1SzcJFK51lQQK7Mqwx8GOLLRIqUDAA1mE2MMdGQR8xwOiHHDA46EIIO_7HU-SfJkLW4mCCtJCJQ4VZ7CMaSia-e4nBaCw-Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_1_bkgd&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                    - link [ref=f4e275] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE5t7cKRz4rALQO3SOOgVGgrJsj1SzcJFK51lQQK7Mqwx8GOLLRIqUDAA1mE2MMdGQR8xwOiHHDA46EIIO_7HU-SfJkLW4mCCtJCJQ4VZ7CMaSia-e4nBaCw-Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_1_img&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                      - img "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e278]
+                    - generic [ref=f4e280]:
+                      - link [ref=f4e281] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE5t7cKRz4rALQO3SOOgVGgrJsj1SzcJFK51lQQK7Mqwx8GOLLRIqUDAA1mE2MMdGQR8xwOiHHDA46EIIO_7HU-SfJkLW4mCCtJCJQ4VZ7CMaSia-e4nBaCw-Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_1_bkgd&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                      - link "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e283] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE5t7cKRz4rALQO3SOOgVGgrJsj1SzcJFK51lQQK7Mqwx8GOLLRIqUDAA1mE2MMdGQR8xwOiHHDA46EIIO_7HU-SfJkLW4mCCtJCJQ4VZ7CMaSia-e4nBaCw-Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_1_title&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                      - link "Rated 4.2 out of 5 stars by 681 reviews. Go to review section." [ref=f4e286] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE5t7cKRz4rALQO3SOOgVGgrJsj1SzcJFK51lQQK7Mqwx8GOLLRIqUDAA1mE2MMdGQR8xwOiHHDA46EIIO_7HU-SfJkLW4mCCtJCJQ4VZ7CMaSia-e4nBaCw-Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_1_rating&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279#customerReviews
+                        - generic [ref=f4e287]:
+                          - generic [ref=f4e288]: "4.2"
+                          - generic [ref=f4e289]: 4.2 out of 5 stars.
+                          - generic [ref=f4e291]: (681)
+                      - link "₹1,528.00" [ref=f4e293] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE5t7cKRz4rALQO3SOOgVGgrJsj1SzcJFK51lQQK7Mqwx8GOLLRIqUDAA1mE2MMdGQR8xwOiHHDA46EIIO_7HU-SfJkLW4mCCtJCJQ4VZ7CMaSia-e4nBaCw-Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_1_price&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                        - generic [ref=f4e295]:
+                          - generic [ref=f4e296]: ₹1,528.00
+                          - generic [ref=f4e297]:
+                            - text: ₹
+                            - generic [ref=f4e298]:
+                              - text: 1,528
+                              - generic [ref=f4e299]: .
+                            - text: "00"
+                      - generic [ref=f4e300]: "M.R.P: ₹1,899.00"
+                - listitem [ref=f4e303]:
+                  - generic [ref=f4e305]:
+                    - link [ref=f4e306] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE6nq_nFxVkRuGXgFmkclAptxQS5fukmgcK1rpJAgV0Z9jjYkYUWKRUIBCCLEHu4I4OA73hAlAMOeDwUAeR9v-NJki9zYStRUEFaqMSh4gyWMQ1FM9_9BBiWsSY&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_2_bkgd&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                    - link [ref=f4e308] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE6nq_nFxVkRuGXgFmkclAptxQS5fukmgcK1rpJAgV0Z9jjYkYUWKRUIBCCLEHu4I4OA73hAlAMOeDwUAeR9v-NJki9zYStRUEFaqMSh4gyWMQ1FM9_9BBiWsSY&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_2_img&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                      - img "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e311]
+                    - generic [ref=f4e313]:
+                      - link [ref=f4e314] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE6nq_nFxVkRuGXgFmkclAptxQS5fukmgcK1rpJAgV0Z9jjYkYUWKRUIBCCLEHu4I4OA73hAlAMOeDwUAeR9v-NJki9zYStRUEFaqMSh4gyWMQ1FM9_9BBiWsSY&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_2_bkgd&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                      - link "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e316] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE6nq_nFxVkRuGXgFmkclAptxQS5fukmgcK1rpJAgV0Z9jjYkYUWKRUIBCCLEHu4I4OA73hAlAMOeDwUAeR9v-NJki9zYStRUEFaqMSh4gyWMQ1FM9_9BBiWsSY&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_2_title&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                      - link "Rated 4.2 out of 5 stars by 681 reviews. Go to review section." [ref=f4e319] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE6nq_nFxVkRuGXgFmkclAptxQS5fukmgcK1rpJAgV0Z9jjYkYUWKRUIBCCLEHu4I4OA73hAlAMOeDwUAeR9v-NJki9zYStRUEFaqMSh4gyWMQ1FM9_9BBiWsSY&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_2_rating&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279#customerReviews
+                        - generic [ref=f4e320]:
+                          - generic [ref=f4e321]: "4.2"
+                          - generic [ref=f4e322]: 4.2 out of 5 stars.
+                          - generic [ref=f4e324]: (681)
+                      - link "₹1,528.00" [ref=f4e326] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVkMuK01AAhqmDWqvi0MWMdGcXXRROkpOkaVMJQ27tpJe0TdsZ6SacJCcXmyaZnDN2nEX3LgRB8CkUxIfxPVy4cCdeEPxWP3yLH76aX_3x7cvXe_XHKg9XI2e9tsXx8KJZge2TEGfJjcujcIE36fZl9loUpmOjf4Ivgd2dvlivsvOUGY5UWGrcpeo85EWJESVGgAy3ubPUvKpqrs5Nx1rWT2v3A0y2NC_qj9a2Y-qzoW1tTKPxtlKr_jIuomH9Adqh2zxjkqzxlHjgOkvCBAeAYFT6MShQhAFs3sWZa9ltnniAxniHA-DnaYp9muQZ-HsCfFQGBBQoySgugZ9nFGeUf6Y5qm24-mwyMfWVNbOX7nKuOuOJ6RrmcryazZtntQp3_Pnd909vPhqNU3RNc0AKVG5TDGKCAMW0TEjzicBxnNAToMQJQk-Q-CPLdvpH-lxvz-rPDU3Vi4EFuupBu_pDpB60Rene7iT1fw5adNAWB039PaLGsR6ZN8PRK19NdIloosJ_qNTeV2JKC9Jn2f1-z_yLxEYFi_ZswGrcAE6nq_nFxVkRuGXgFmkclAptxQS5fukmgcK1rpJAgV0Z9jjYkYUWKRUIBCCLEHu4I4OA73hAlAMOeDwUAeR9v-NJki9zYStRUEFaqMSh4gyWMQ1FM9_9BBiWsSY&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-941ebe59-d25b-49d0-b214-12cc5b66c90f%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_s_sparkle_sbtcd_asin_2_price&pd_rd_w=yxIyx&content-id=amzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1%3Aamzn1.sym.7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_p=7b6188a8-103f-4f88-b43a-19aba06e30c1&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=HWsUA&pd_rd_r=f45da564-5a56-47e9-81c8-318fce43a279
+                        - generic [ref=f4e328]:
+                          - generic [ref=f4e329]: ₹1,528.00
+                          - generic [ref=f4e330]:
+                            - text: ₹
+                            - generic [ref=f4e331]:
+                              - text: 1,528
+                              - generic [ref=f4e332]: .
+                            - text: "00"
+                      - generic [ref=f4e333]: "M.R.P: ₹1,899.00"
+      - generic [ref=f4e340]:
+        - img [ref=f4e343]:
+          - img "Filter results by your vehicle:" [ref=f4e345]
+        - generic [ref=f4e347]:
+          - 'link "Filter results by your vehicle: Enter a new vehicle to add it to Your Garage and filter the results below" [ref=f4e348] [cursor=pointer]':
+            - /url: "#"
+            - generic [ref=f4e349]: "Filter results by your vehicle:"
+            - generic [ref=f4e350]: Enter a new vehicle to add it to Your Garage and filter the results below
+          - list [ref=f4e351]:
+            - generic [ref=f4e355] [cursor=pointer]:
+              - button "Submit" [ref=f4e356]
+              - generic [ref=f4e357]: Enter a new vehicle
+      - generic [ref=f4e359]:
+        - generic [ref=f4e362]:
+          - heading "Results" [level=2] [ref=f4e363]
+          - generic [ref=f4e364]: Check each product page for other buying options. Price and other details may vary based on product size and colour.
+        - generic:
+          - list
+      - listitem [ref=f4e365]:
+        - generic [ref=f4e372]:
+          - group "Best sellerin Flip-Up Helmets" [ref=f4e377]:
+            - generic "Best seller" [ref=f4e379]
+          - link [ref=f4e382] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMDE4MTgzNDI0ODMzMjo6MDo6&url=%2FVega-Motorcycle-Lightweight-Absorbing-Ventilated%2Fdp%2FB0D2NBCP81%2Fref%3Dsr_1_1_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-1-spons%26aref%3DyWOT1DQXJE%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=yWOT1DQXJE&sp_cr=ZAZ
+          - generic [ref=f4e385]:
+            - generic [ref=f4e386]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e389] [cursor=pointer]:
+                - generic [ref=f4e390]: Sponsored
+              - link [ref=f4e392] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMDE4MTgzNDI0ODMzMjo6MDo6&url=%2FVega-Motorcycle-Lightweight-Absorbing-Ventilated%2Fdp%2FB0D2NBCP81%2Fref%3Dsr_1_1_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-1-spons%26aref%3DyWOT1DQXJE%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=yWOT1DQXJE&sp_cr=ZAZ
+                - heading "Sponsored Ad - Vega Crux Dual Visor Flip Up Motorcycle Helmet with Lightweight Shell, Flip-Up Chin Guard, Dual Visor System, Shock Absorbing Interior, Ventilated Fit, and Trendy Black Finish Black -L" [level=2] [ref=f4e393]: Vega Crux Dual Visor Flip Up Motorcycle Helmet with Lightweight Shell, Flip-Up Chin Guard, Dual Visor System, Shock Absorbing Interior, Ventilated Fit, and Trendy Black Finish Black -L
+            - generic [ref=f4e394]:
+              - generic [ref=f4e395]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e397] [cursor=pointer]:
+                  - generic [ref=f4e398]: 4.2 out of 5 stars
+                - link "76,959 ratings" [ref=f4e401] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMDE4MTgzNDI0ODMzMjo6MDo6&url=%2FVega-Motorcycle-Lightweight-Absorbing-Ventilated%2Fdp%2FB0D2NBCP81%2Fref%3Dsr_1_1_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-1-spons%26aref%3DyWOT1DQXJE%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=yWOT1DQXJE&sp_cr=ZAZ#customerReviews
+                  - text: (76.9K)
+              - generic [ref=f4e402]: 2K+ bought in past month
+            - generic [ref=f4e403]:
+              - link "Mega Festival Deal" [ref=f4e405] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e411]:
+                - generic [ref=f4e412]: Price, product page
+                - 'link "₹1,121 ( ₹1,12,100 /100 g) M.R.P: ₹1,740 M.R.P: ₹1,740" [ref=f4e413] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMDE4MTgzNDI0ODMzMjo6MDo6&url=%2FVega-Motorcycle-Lightweight-Absorbing-Ventilated%2Fdp%2FB0D2NBCP81%2Fref%3Dsr_1_1_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-1-spons%26aref%3DyWOT1DQXJE%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=yWOT1DQXJE&sp_cr=ZAZ
+                  - generic [ref=f4e414]:
+                    - generic [ref=f4e415]: ₹1,121
+                    - generic [ref=f4e416]: ₹1,121
+                  - generic [ref=f4e417]:
+                    - text: (
+                    - generic [ref=f4e418]:
+                      - generic [ref=f4e419]: ₹1,12,100
+                      - text: ₹1,12,100
+                    - text: /100 g)
+                  - generic [ref=f4e420]: "M.R.P: ₹1,740"
+                  - generic [ref=f4e421]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e422]:
+                      - generic [ref=f4e423]: ₹1,740
+                      - text: ₹1,740
+                - text: (36% off)
+              - generic [ref=f4e424]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e429]:
+              - generic [ref=f4e430]: FREE delivery 14 Oct - 4 Nov
+              - generic "Only 1 left in stock." [ref=f4e435]
+            - generic [ref=f4e449] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e450]
+              - generic [ref=f4e451]: Add to cart
+      - listitem [ref=f4e452]:
+        - generic [ref=f4e459]:
+          - group "Best sellerin Open Face Helmets" [ref=f4e464]:
+            - generic "Best seller" [ref=f4e466]
+          - link [ref=f4e469] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTM5MTk5NTE5MDEzMjo6MDo6&url=%2FSTUDDS-CERTIFIED-OPEN-HELMET-WOMEN%2Fdp%2FB09TB5JFLM%2Fref%3Dsr_1_2_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-2-spons%26aref%3DByyppnwQDc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ByyppnwQDc&sp_cr=ZAZ
+          - generic [ref=f4e472]:
+            - generic [ref=f4e473]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e476] [cursor=pointer]:
+                - generic [ref=f4e477]: Sponsored
+              - link [ref=f4e479] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTM5MTk5NTE5MDEzMjo6MDo6&url=%2FSTUDDS-CERTIFIED-OPEN-HELMET-WOMEN%2Fdp%2FB09TB5JFLM%2Fref%3Dsr_1_2_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-2-spons%26aref%3DByyppnwQDc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ByyppnwQDc&sp_cr=ZAZ
+                - heading "Sponsored Ad - STUDDS RAY ISI Certified Open FACE Helmet for Men and Women with D - Ring Lock (Black-L)" [level=2] [ref=f4e480]: STUDDS RAY ISI Certified Open FACE Helmet for Men and Women with D - Ring Lock (Black-L)
+            - generic [ref=f4e481]:
+              - generic [ref=f4e482]:
+                - text: "4.3"
+                - button "4.3 out of 5 stars, rating details" [ref=f4e484] [cursor=pointer]:
+                  - generic [ref=f4e485]: 4.3 out of 5 stars
+                - link "5,336 ratings" [ref=f4e488] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTM5MTk5NTE5MDEzMjo6MDo6&url=%2FSTUDDS-CERTIFIED-OPEN-HELMET-WOMEN%2Fdp%2FB09TB5JFLM%2Fref%3Dsr_1_2_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-2-spons%26aref%3DByyppnwQDc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ByyppnwQDc&sp_cr=ZAZ#customerReviews
+                  - text: (5.3K)
+              - generic [ref=f4e489]: 1K+ bought in past month
+            - generic [ref=f4e490]:
+              - generic [ref=f4e492]:
+                - generic [ref=f4e493]: Price, product page
+                - 'link "₹849 M.R.P: ₹1,020 M.R.P: ₹1,020" [ref=f4e494] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTM5MTk5NTE5MDEzMjo6MDo6&url=%2FSTUDDS-CERTIFIED-OPEN-HELMET-WOMEN%2Fdp%2FB09TB5JFLM%2Fref%3Dsr_1_2_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-2-spons%26aref%3DByyppnwQDc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ByyppnwQDc&sp_cr=ZAZ
+                  - generic [ref=f4e495]:
+                    - generic [ref=f4e496]: ₹849
+                    - generic [ref=f4e497]: ₹849
+                  - generic [ref=f4e498]: "M.R.P: ₹1,020"
+                  - generic [ref=f4e499]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e500]:
+                      - generic [ref=f4e501]: ₹1,020
+                      - text: ₹1,020
+                - text: (17% off)
+              - generic [ref=f4e502]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e507]: FREE delivery Mon, 19 Oct
+            - generic [ref=f4e525] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e526]
+              - generic [ref=f4e527]: Add to cart
+      - listitem [ref=f4e528]:
+        - generic [ref=f4e535]:
+          - link [ref=f4e538] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTE4MTE2Mzc5OTEzMjo6MDo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8F52JM%2Fref%3Dsr_1_3_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-3-spons%26aref%3DWrTk4RkTxz%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=WrTk4RkTxz&sp_cr=ZAZ
+          - generic [ref=f4e541]:
+            - generic [ref=f4e542]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e545] [cursor=pointer]:
+                - generic [ref=f4e546]: Sponsored
+              - link [ref=f4e548] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTE4MTE2Mzc5OTEzMjo6MDo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8F52JM%2Fref%3Dsr_1_3_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-3-spons%26aref%3DWrTk4RkTxz%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=WrTk4RkTxz&sp_cr=ZAZ
+                - heading "Sponsored Ad - STUDDS Trooper ISI and DOT Certified Matt Finish Flip-up Full Face Helmet for Men and Women with Inner Sun Visor (Matt Gun Grey M)" [level=2] [ref=f4e549]: STUDDS Trooper ISI and DOT Certified Matt Finish Flip-up Full Face Helmet for Men and Women with Inner Sun Visor (Matt Gun Grey M)
+            - generic [ref=f4e550]:
+              - generic [ref=f4e551]:
+                - text: "4.3"
+                - button "4.3 out of 5 stars, rating details" [ref=f4e553] [cursor=pointer]:
+                  - generic [ref=f4e554]: 4.3 out of 5 stars
+                - link "743 ratings" [ref=f4e557] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTE4MTE2Mzc5OTEzMjo6MDo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8F52JM%2Fref%3Dsr_1_3_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-3-spons%26aref%3DWrTk4RkTxz%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=WrTk4RkTxz&sp_cr=ZAZ#customerReviews
+                  - text: (743)
+              - generic [ref=f4e558]: 100+ bought in past month
+            - generic [ref=f4e559]:
+              - generic [ref=f4e561]:
+                - generic [ref=f4e562]: Price, product page
+                - 'link "₹1,629 M.R.P: ₹2,175 M.R.P: ₹2,175" [ref=f4e563] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTE4MTE2Mzc5OTEzMjo6MDo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8F52JM%2Fref%3Dsr_1_3_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-3-spons%26aref%3DWrTk4RkTxz%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=WrTk4RkTxz&sp_cr=ZAZ
+                  - generic [ref=f4e564]:
+                    - generic [ref=f4e565]: ₹1,629
+                    - generic [ref=f4e566]: ₹1,629
+                  - generic [ref=f4e567]: "M.R.P: ₹2,175"
+                  - generic [ref=f4e568]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e569]:
+                      - generic [ref=f4e570]: ₹2,175
+                      - text: ₹2,175
+                - text: (25% off)
+              - generic [ref=f4e571]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e576]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e594] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e595]
+              - generic [ref=f4e596]: Add to cart
+      - listitem [ref=f4e597]:
+        - generic [ref=f4e604]:
+          - link [ref=f4e607] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMDcxMzQ5NDExMzAzMjo6MDo6&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0F1MPPGCD%2Fref%3Dsr_1_4_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-4-spons%26aref%3DwIJoRZmvam%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=wIJoRZmvam&sp_cr=ZAZ
+          - generic [ref=f4e610]:
+            - generic [ref=f4e611]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e614] [cursor=pointer]:
+                - generic [ref=f4e615]: Sponsored
+              - link [ref=f4e617] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMDcxMzQ5NDExMzAzMjo6MDo6&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0F1MPPGCD%2Fref%3Dsr_1_4_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-4-spons%26aref%3DwIJoRZmvam%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=wIJoRZmvam&sp_cr=ZAZ
+                - heading "Sponsored Ad - TVS Racing Anti Matter Full Face Helmet for Bike & Motorcycle Riders-DOT & ISI Certified-Lightweight ABS Shell, UV Resistant-Ventilated Comfort Liner, Quick-Release Visor & Chin Strap" [level=2] [ref=f4e618]: TVS Racing Anti Matter Full Face Helmet for Bike & Motorcycle Riders-DOT & ISI Certified-Lightweight ABS Shell, UV Resistant-Ventilated Comfort Liner, Quick-Release Visor & Chin Strap
+            - generic [ref=f4e619]:
+              - generic [ref=f4e620]:
+                - text: "4.0"
+                - button "4.0 out of 5 stars, rating details" [ref=f4e622] [cursor=pointer]:
+                  - generic [ref=f4e623]: 4.0 out of 5 stars
+                - link "732 ratings" [ref=f4e626] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMDcxMzQ5NDExMzAzMjo6MDo6&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0F1MPPGCD%2Fref%3Dsr_1_4_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-4-spons%26aref%3DwIJoRZmvam%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=wIJoRZmvam&sp_cr=ZAZ#customerReviews
+                  - text: (732)
+              - generic [ref=f4e627]: 100+ bought in past month
+            - generic [ref=f4e628]:
+              - generic [ref=f4e630]:
+                - generic [ref=f4e631]: Price, product page
+                - 'link "₹1,687 M.R.P: ₹2,399 M.R.P: ₹2,399" [ref=f4e632] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMDcxMzQ5NDExMzAzMjo6MDo6&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0F1MPPGCD%2Fref%3Dsr_1_4_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-4-spons%26aref%3DwIJoRZmvam%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=wIJoRZmvam&sp_cr=ZAZ
+                  - generic [ref=f4e633]:
+                    - generic [ref=f4e634]: ₹1,687
+                    - generic [ref=f4e635]: ₹1,687
+                  - generic [ref=f4e636]: "M.R.P: ₹2,399"
+                  - generic [ref=f4e637]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e638]:
+                      - generic [ref=f4e639]: ₹2,399
+                      - text: ₹2,399
+                - text: (30% off)
+              - generic [ref=f4e640]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e645]:
+              - generic [ref=f4e646]: FREE delivery 14 Oct - 3 Nov
+              - generic "Only 2 left in stock." [ref=f4e651]
+            - generic [ref=f4e665] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e666]
+              - generic [ref=f4e667]: Add to cart
+      - listitem [ref=f4e668]:
+        - generic [ref=f4e675]:
+          - link [ref=f4e678] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTE4MTE2Mzc5OTQzMjo6MDo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8D265P%2Fref%3Dsr_1_5_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-5-spons%26aref%3DRAC3G2GDPM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=RAC3G2GDPM&sp_cr=ZAZ
+          - generic [ref=f4e681]:
+            - generic [ref=f4e682]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e685] [cursor=pointer]:
+                - generic [ref=f4e686]: Sponsored
+              - link [ref=f4e688] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTE4MTE2Mzc5OTQzMjo6MDo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8D265P%2Fref%3Dsr_1_5_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-5-spons%26aref%3DRAC3G2GDPM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=RAC3G2GDPM&sp_cr=ZAZ
+                - heading "Sponsored Ad - Studds Trooper Dv D1 Isi and Dot Certified Matt Finish Flip-Up Full Face Motorcycling Helmet for Men and Women with Inner Sun Visor(Matt Grey N1 M)" [level=2] [ref=f4e689]: Studds Trooper Dv D1 Isi and Dot Certified Matt Finish Flip-Up Full Face Motorcycling Helmet for Men and Women with Inner Sun Visor(Matt Grey N1 M)
+            - generic [ref=f4e691]:
+              - text: "4.3"
+              - button "4.3 out of 5 stars, rating details" [ref=f4e693] [cursor=pointer]:
+                - generic [ref=f4e694]: 4.3 out of 5 stars
+              - link "742 ratings" [ref=f4e697] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTE4MTE2Mzc5OTQzMjo6MDo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8D265P%2Fref%3Dsr_1_5_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-5-spons%26aref%3DRAC3G2GDPM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=RAC3G2GDPM&sp_cr=ZAZ#customerReviews
+                - text: (742)
+            - generic [ref=f4e698]:
+              - link "Limited time deal" [ref=f4e700] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e706]:
+                - generic [ref=f4e707]: Price, product page
+                - 'link "₹1,856 M.R.P: ₹2,475 M.R.P: ₹2,475" [ref=f4e708] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfYXRmOjMwMTE4MTE2Mzc5OTQzMjo6MDo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8D265P%2Fref%3Dsr_1_5_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-5-spons%26aref%3DRAC3G2GDPM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=RAC3G2GDPM&sp_cr=ZAZ
+                  - generic [ref=f4e709]:
+                    - generic [ref=f4e710]: ₹1,856
+                    - generic [ref=f4e711]: ₹1,856
+                  - generic [ref=f4e712]: "M.R.P: ₹2,475"
+                  - generic [ref=f4e713]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e714]:
+                      - generic [ref=f4e715]: ₹2,475
+                      - text: ₹2,475
+                - text: (25% off)
+              - generic [ref=f4e716]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e721]: FREE delivery 16 - 23 Oct
+            - generic [ref=f4e739] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e740]
+              - generic [ref=f4e741]: Add to cart
+      - listitem [ref=f4e742]:
+        - generic [ref=f4e747]:
+          - generic "Amazon's Choice" [ref=f4e749]:
+            - group "Amazon's Choice for \"helmets for men bike\"" [ref=f4e752]:
+              - generic [ref=f4e753]: Amazon's Choice
+          - link [ref=f4e757] [cursor=pointer]:
+            - /url: /Vega-Edge-Full-Helmet-Black/dp/B07FCKZ4KM/ref=sr_1_6?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-6
+          - generic [ref=f4e760]:
+            - link [ref=f4e762] [cursor=pointer]:
+              - /url: /Vega-Edge-Full-Helmet-Black/dp/B07FCKZ4KM/ref=sr_1_6?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-6
+              - heading "Vega Edge ISI Certified Full Face Gloss Finish Helmet for Men and Women with Clear Visor(Black, Size:L)" [level=2] [ref=f4e763]
+            - generic [ref=f4e764]:
+              - generic [ref=f4e765]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e767] [cursor=pointer]:
+                  - generic [ref=f4e768]: 4.2 out of 5 stars
+                - link "11,292 ratings" [ref=f4e771] [cursor=pointer]:
+                  - /url: /Vega-Edge-Full-Helmet-Black/dp/B07FCKZ4KM/ref=sr_1_6?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-6#customerReviews
+                  - text: (11.2K)
+              - generic [ref=f4e772]: 3K+ bought in past month
+            - generic [ref=f4e773]:
+              - link "Great Indian Festival" [ref=f4e775] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e781]:
+                - generic [ref=f4e782]: Price, product page
+                - 'link "₹678 M.R.P: ₹998 M.R.P: ₹998" [ref=f4e783] [cursor=pointer]':
+                  - /url: /Vega-Edge-Full-Helmet-Black/dp/B07FCKZ4KM/ref=sr_1_6?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-6
+                  - generic [ref=f4e784]:
+                    - generic [ref=f4e785]: ₹678
+                    - generic [ref=f4e786]: ₹678
+                  - generic [ref=f4e787]: "M.R.P: ₹998"
+                  - generic [ref=f4e788]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e789]:
+                      - generic [ref=f4e790]: ₹998
+                      - text: ₹998
+                - text: (32% off)
+              - generic [ref=f4e791]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e796]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e814] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e815]
+              - generic [ref=f4e816]: Add to cart
+      - listitem [ref=f4e817]:
+        - generic [ref=f4e822]:
+          - group "Best sellerin Flip-Up Helmets" [ref=f4e827]:
+            - generic "Best seller" [ref=f4e829]
+          - link [ref=f4e832] [cursor=pointer]:
+            - /url: /Vega-Motorcycle-Lightweight-Absorbing-Ventilated/dp/B0D2NBCP81/ref=sr_1_7?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-7
+          - generic [ref=f4e835]:
+            - link [ref=f4e837] [cursor=pointer]:
+              - /url: /Vega-Motorcycle-Lightweight-Absorbing-Ventilated/dp/B0D2NBCP81/ref=sr_1_7?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-7
+              - heading "Vega Crux Dual Visor Flip Up Motorcycle Helmet with Lightweight Shell, Flip-Up Chin Guard, Dual Visor System, Shock Absorbing Interior, Ventilated Fit, and Trendy Black Finish Black -L" [level=2] [ref=f4e838]
+            - generic [ref=f4e839]:
+              - generic [ref=f4e840]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e842] [cursor=pointer]:
+                  - generic [ref=f4e843]: 4.2 out of 5 stars
+                - link "76,959 ratings" [ref=f4e846] [cursor=pointer]:
+                  - /url: /Vega-Motorcycle-Lightweight-Absorbing-Ventilated/dp/B0D2NBCP81/ref=sr_1_7?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-7#customerReviews
+                  - text: (76.9K)
+              - generic [ref=f4e847]: 2K+ bought in past month
+            - generic [ref=f4e848]:
+              - link "Mega Festival Deal" [ref=f4e850] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e856]:
+                - generic [ref=f4e857]: Price, product page
+                - 'link "₹1,121 ( ₹1,12,100 /100 g) M.R.P: ₹1,740 M.R.P: ₹1,740" [ref=f4e858] [cursor=pointer]':
+                  - /url: /Vega-Motorcycle-Lightweight-Absorbing-Ventilated/dp/B0D2NBCP81/ref=sr_1_7?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-7
+                  - generic [ref=f4e859]:
+                    - generic [ref=f4e860]: ₹1,121
+                    - generic [ref=f4e861]: ₹1,121
+                  - generic [ref=f4e862]:
+                    - text: (
+                    - generic [ref=f4e863]:
+                      - generic [ref=f4e864]: ₹1,12,100
+                      - text: ₹1,12,100
+                    - text: /100 g)
+                  - generic [ref=f4e865]: "M.R.P: ₹1,740"
+                  - generic [ref=f4e866]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e867]:
+                      - generic [ref=f4e868]: ₹1,740
+                      - text: ₹1,740
+                - text: (36% off)
+              - generic [ref=f4e869]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e874]: FREE delivery 14 Oct - 3 Nov
+            - generic [ref=f4e892] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e893]
+              - generic [ref=f4e894]: Add to cart
+      - listitem [ref=f4e895]:
+        - generic [ref=f4e900]:
+          - group "Best sellerin Open Face Helmets" [ref=f4e905]:
+            - generic "Best seller" [ref=f4e907]
+          - link [ref=f4e910] [cursor=pointer]:
+            - /url: /STUDDS-CERTIFIED-OPEN-HELMET-WOMEN/dp/B09TB5JFLM/ref=sr_1_8?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-8
+          - generic [ref=f4e913]:
+            - link [ref=f4e915] [cursor=pointer]:
+              - /url: /STUDDS-CERTIFIED-OPEN-HELMET-WOMEN/dp/B09TB5JFLM/ref=sr_1_8?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-8
+              - heading "STUDDS RAY ISI Certified Open FACE Helmet for Men and Women with D - Ring Lock (Black-L)" [level=2] [ref=f4e916]
+            - generic [ref=f4e917]:
+              - generic [ref=f4e918]:
+                - text: "4.3"
+                - button "4.3 out of 5 stars, rating details" [ref=f4e920] [cursor=pointer]:
+                  - generic [ref=f4e921]: 4.3 out of 5 stars
+                - link "5,336 ratings" [ref=f4e924] [cursor=pointer]:
+                  - /url: /STUDDS-CERTIFIED-OPEN-HELMET-WOMEN/dp/B09TB5JFLM/ref=sr_1_8?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-8#customerReviews
+                  - text: (5.3K)
+              - generic [ref=f4e925]: 1K+ bought in past month
+            - generic [ref=f4e926]:
+              - generic [ref=f4e928]:
+                - generic [ref=f4e929]: Price, product page
+                - 'link "₹849 M.R.P: ₹1,020 M.R.P: ₹1,020" [ref=f4e930] [cursor=pointer]':
+                  - /url: /STUDDS-CERTIFIED-OPEN-HELMET-WOMEN/dp/B09TB5JFLM/ref=sr_1_8?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-8
+                  - generic [ref=f4e931]:
+                    - generic [ref=f4e932]: ₹849
+                    - generic [ref=f4e933]: ₹849
+                  - generic [ref=f4e934]: "M.R.P: ₹1,020"
+                  - generic [ref=f4e935]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e936]:
+                      - generic [ref=f4e937]: ₹1,020
+                      - text: ₹1,020
+                - text: (17% off)
+              - generic [ref=f4e938]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e943]: FREE delivery Mon, 19 Oct
+            - generic [ref=f4e961] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e962]
+              - generic [ref=f4e963]: Add to cart
+      - generic [ref=f4e967]:
+        - generic [ref=f4e972]:
+          - heading "Today's deals" [level=2] [ref=f4e974]
+          - button "View Sponsored information or leave ad feedback" [ref=f4e977] [cursor=pointer]: Sponsored
+        - region "Today's deals" [ref=f4e979]:
+          - list [ref=f4e985]:
+            - listitem "1 of 5" [ref=f4e986]:
+              - generic [ref=f4e992]:
+                - link [ref=f4e995] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA3MjUyODM2OTM2MzI6OjA6Og&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0D8BSNFJ2%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0D8BSNFJ2%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-1-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3D4KYsvmE0tQ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=4KYsvmE0tQ&sp_cr=ZAZ
+                - generic [ref=f4e998]:
+                  - link [ref=f4e1000] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA3MjUyODM2OTM2MzI6OjA6Og&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0D8BSNFJ2%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0D8BSNFJ2%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-1-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3D4KYsvmE0tQ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=4KYsvmE0tQ&sp_cr=ZAZ
+                    - heading "Sponsored Ad - Steelbird SBH-57 Fighter ISI and DOT Certified Full Face Helmet for Men and Women with Inner Chrome Sun Shield with Arm Sleeve" [level=2] [ref=f4e1001]: Steelbird SBH-57 Fighter ISI and DOT Certified Full Face Helmet for Men and Women with Inner Chrome Sun Shield with Arm Sleeve
+                  - generic [ref=f4e1003]:
+                    - text: "4.3"
+                    - button "4.3 out of 5 stars, rating details" [ref=f4e1005] [cursor=pointer]:
+                      - generic [ref=f4e1006]: 4.3 out of 5 stars
+                    - link "550 ratings" [ref=f4e1009] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA3MjUyODM2OTM2MzI6OjA6Og&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0D8BSNFJ2%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0D8BSNFJ2%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-1-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3D4KYsvmE0tQ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=4KYsvmE0tQ&sp_cr=ZAZ#customerReviews
+                      - text: (550)
+                  - generic [ref=f4e1010]:
+                    - link "Great Indian Festival" [ref=f4e1012] [cursor=pointer]:
+                      - /url: /deals
+                    - generic [ref=f4e1018]:
+                      - generic [ref=f4e1019]: Price, product page
+                      - 'link "₹2,807 M.R.P: ₹3,999 M.R.P: ₹3,999" [ref=f4e1020] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA3MjUyODM2OTM2MzI6OjA6Og&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0D8BSNFJ2%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0D8BSNFJ2%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-1-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3D4KYsvmE0tQ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=4KYsvmE0tQ&sp_cr=ZAZ
+                        - generic [ref=f4e1021]:
+                          - generic [ref=f4e1022]: ₹2,807
+                          - generic [ref=f4e1023]: ₹2,807
+                        - generic [ref=f4e1024]: "M.R.P: ₹3,999"
+                        - generic [ref=f4e1025]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1026]:
+                            - generic [ref=f4e1027]: ₹3,999
+                            - text: ₹3,999
+                      - text: (30% off)
+                    - generic [ref=f4e1028]: Flat 5% Off on all cc dc cards
+                  - generic [ref=f4e1033]: FREE delivery Sat, 17 Oct
+                  - generic [ref=f4e1052] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1053]
+                    - generic [ref=f4e1054]: Add to cart
+            - listitem "2 of 5" [ref=f4e1055]:
+              - generic [ref=f4e1061]:
+                - link [ref=f4e1064] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA3NzYzMDI5Mjg0MzI6OjE6Og&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0FT1BPKMJ%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0FT1BPKMJ%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-2-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DVS3VSGAr01%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=VS3VSGAr01&sp_cr=ZAZ
+                - generic [ref=f4e1067]:
+                  - link [ref=f4e1069] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA3NzYzMDI5Mjg0MzI6OjE6Og&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0FT1BPKMJ%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0FT1BPKMJ%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-2-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DVS3VSGAr01%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=VS3VSGAr01&sp_cr=ZAZ
+                    - heading "Sponsored Ad - TVS Racing Anti Matter Full Face Helmet for Bike & Motorcycle Riders-DOT & ISI Certified-Lightweight ABS Shell, UV Resistant-Ventilated Comfort Liner, Quick-Release Visor & Chin Strap" [level=2] [ref=f4e1070]: TVS Racing Anti Matter Full Face Helmet for Bike & Motorcycle Riders-DOT & ISI Certified-Lightweight ABS Shell, UV Resistant-Ventilated Comfort Liner, Quick-Release Visor & Chin Strap
+                  - generic [ref=f4e1071]:
+                    - generic [ref=f4e1072]:
+                      - text: "4.0"
+                      - button "4.0 out of 5 stars, rating details" [ref=f4e1074] [cursor=pointer]:
+                        - generic [ref=f4e1075]: 4.0 out of 5 stars
+                      - link "732 ratings" [ref=f4e1078] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA3NzYzMDI5Mjg0MzI6OjE6Og&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0FT1BPKMJ%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0FT1BPKMJ%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-2-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DVS3VSGAr01%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=VS3VSGAr01&sp_cr=ZAZ#customerReviews
+                        - text: (732)
+                    - generic [ref=f4e1079]: 50+ bought in past month
+                  - generic [ref=f4e1080]:
+                    - link "Limited time deal" [ref=f4e1082] [cursor=pointer]:
+                      - /url: /deals
+                    - generic [ref=f4e1088]:
+                      - generic [ref=f4e1089]: Price, product page
+                      - 'link "₹1,793 M.R.P: ₹2,399 M.R.P: ₹2,399" [ref=f4e1090] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA3NzYzMDI5Mjg0MzI6OjE6Og&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0FT1BPKMJ%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0FT1BPKMJ%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-2-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DVS3VSGAr01%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=VS3VSGAr01&sp_cr=ZAZ
+                        - generic [ref=f4e1091]:
+                          - generic [ref=f4e1092]: ₹1,793
+                          - generic [ref=f4e1093]: ₹1,793
+                        - generic [ref=f4e1094]: "M.R.P: ₹2,399"
+                        - generic [ref=f4e1095]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1096]:
+                            - generic [ref=f4e1097]: ₹2,399
+                            - text: ₹2,399
+                      - text: (25% off)
+                    - generic [ref=f4e1098]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=f4e1106]:
+                    - generic [ref=f4e1107]: FREE delivery Wed, 14 Oct
+                    - generic [ref=f4e1109]: Or fastest delivery Tomorrow, 13 Oct
+                  - generic [ref=f4e1124] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1125]
+                    - generic [ref=f4e1126]: Add to cart
+            - listitem "3 of 5" [ref=f4e1127]:
+              - generic [ref=f4e1133]:
+                - link [ref=f4e1136] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA4Mzg3OTEwNjUwMzI6OjI6Og&url=%2FSteelbird-SBH-11-7Wings-Dashing-Helmet%2Fdp%2FB07M9Y5S97%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB07M9Y5S97%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-3-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3Dk2UwuCkHGf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=k2UwuCkHGf&sp_cr=ZAZ
+                - generic [ref=f4e1139]:
+                  - link [ref=f4e1141] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA4Mzg3OTEwNjUwMzI6OjI6Og&url=%2FSteelbird-SBH-11-7Wings-Dashing-Helmet%2Fdp%2FB07M9Y5S97%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB07M9Y5S97%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-3-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3Dk2UwuCkHGf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=k2UwuCkHGf&sp_cr=ZAZ
+                    - heading "Sponsored Ad - Steelbird SBH-11 7Wings ISI Certified Full Face Helmet for Men and Women with Skull Cap" [level=2] [ref=f4e1142]: Steelbird SBH-11 7Wings ISI Certified Full Face Helmet for Men and Women with Skull Cap
+                  - generic [ref=f4e1144]:
+                    - text: "4.2"
+                    - button "4.2 out of 5 stars, rating details" [ref=f4e1146] [cursor=pointer]:
+                      - generic [ref=f4e1147]: 4.2 out of 5 stars
+                    - link "1,845 ratings" [ref=f4e1150] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA4Mzg3OTEwNjUwMzI6OjI6Og&url=%2FSteelbird-SBH-11-7Wings-Dashing-Helmet%2Fdp%2FB07M9Y5S97%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB07M9Y5S97%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-3-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3Dk2UwuCkHGf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=k2UwuCkHGf&sp_cr=ZAZ#customerReviews
+                      - text: (1.8K)
+                  - generic [ref=f4e1151]:
+                    - link "Limited time deal" [ref=f4e1153] [cursor=pointer]:
+                      - /url: /deals
+                    - generic [ref=f4e1159]:
+                      - generic [ref=f4e1160]: Price, product page
+                      - 'link "₹1,311 M.R.P: ₹1,749 M.R.P: ₹1,749" [ref=f4e1161] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDA4Mzg3OTEwNjUwMzI6OjI6Og&url=%2FSteelbird-SBH-11-7Wings-Dashing-Helmet%2Fdp%2FB07M9Y5S97%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB07M9Y5S97%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-3-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3Dk2UwuCkHGf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=k2UwuCkHGf&sp_cr=ZAZ
+                        - generic [ref=f4e1162]:
+                          - generic [ref=f4e1163]: ₹1,311
+                          - generic [ref=f4e1164]: ₹1,311
+                        - generic [ref=f4e1165]: "M.R.P: ₹1,749"
+                        - generic [ref=f4e1166]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1167]:
+                            - generic [ref=f4e1168]: ₹1,749
+                            - text: ₹1,749
+                      - text: (25% off)
+                    - generic [ref=f4e1169]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=f4e1174]: FREE delivery Sat, 17 Oct
+                  - generic [ref=f4e1193] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1194]
+                    - generic [ref=f4e1195]: Add to cart
+            - listitem "4 of 5" [ref=f4e1196]:
+              - generic [ref=f4e1202]:
+                - link [ref=f4e1205] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDEzOTE5OTUxODkxMzI6OjM6Og&url=%2FSTUDDS-Helios-Certified-Antifog-Spoiler%2Fdp%2FB0FC697KGC%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0FC697KGC%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-4-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DD9BLUihmw4%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=D9BLUihmw4&sp_cr=ZAZ
+                - generic [ref=f4e1208]:
+                  - link [ref=f4e1210] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDEzOTE5OTUxODkxMzI6OjM6Og&url=%2FSTUDDS-Helios-Certified-Antifog-Spoiler%2Fdp%2FB0FC697KGC%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0FC697KGC%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-4-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DD9BLUihmw4%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=D9BLUihmw4&sp_cr=ZAZ
+                    - heading "Sponsored Ad - STUDDS Helios ISI and DOT Certified Full Face Helmet with Antifog 100 Lens, Sporty Spoiler (Black Grey N2 M)" [level=2] [ref=f4e1211]: STUDDS Helios ISI and DOT Certified Full Face Helmet with Antifog 100 Lens, Sporty Spoiler (Black Grey N2 M)
+                  - generic [ref=f4e1212]:
+                    - generic [ref=f4e1213]:
+                      - text: "4.2"
+                      - button "4.2 out of 5 stars, rating details" [ref=f4e1215] [cursor=pointer]:
+                        - generic [ref=f4e1216]: 4.2 out of 5 stars
+                      - link "117 ratings" [ref=f4e1219] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDEzOTE5OTUxODkxMzI6OjM6Og&url=%2FSTUDDS-Helios-Certified-Antifog-Spoiler%2Fdp%2FB0FC697KGC%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0FC697KGC%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-4-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DD9BLUihmw4%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=D9BLUihmw4&sp_cr=ZAZ#customerReviews
+                        - text: (117)
+                    - generic [ref=f4e1220]: 50+ bought in past month
+                  - generic [ref=f4e1221]:
+                    - link "Mega Festival Deal" [ref=f4e1223] [cursor=pointer]:
+                      - /url: /deals
+                    - generic [ref=f4e1229]:
+                      - generic [ref=f4e1230]: Price, product page
+                      - 'link "₹2,846 M.R.P: ₹3,795 M.R.P: ₹3,795" [ref=f4e1231] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDEzOTE5OTUxODkxMzI6OjM6Og&url=%2FSTUDDS-Helios-Certified-Antifog-Spoiler%2Fdp%2FB0FC697KGC%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0FC697KGC%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-4-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DD9BLUihmw4%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=D9BLUihmw4&sp_cr=ZAZ
+                        - generic [ref=f4e1232]:
+                          - generic [ref=f4e1233]: ₹2,846
+                          - generic [ref=f4e1234]: ₹2,846
+                        - generic [ref=f4e1235]: "M.R.P: ₹3,795"
+                        - generic [ref=f4e1236]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1237]:
+                            - generic [ref=f4e1238]: ₹3,795
+                            - text: ₹3,795
+                      - text: (25% off)
+                    - generic [ref=f4e1239]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=f4e1244]: FREE delivery
+                  - generic [ref=f4e1263] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1264]
+                    - generic [ref=f4e1265]: Add to cart
+            - listitem "5 of 5" [ref=f4e1266]:
+              - generic [ref=f4e1272]:
+                - link [ref=f4e1275] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDAzNTE1NDQyNzY4MzI6OjQ6Og&url=%2FVega-Crux-DX-Flip-Up-Helmet%2Fdp%2FB07MRF8SXG%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB07MRF8SXG%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-5-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DMCn5aMoeDM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=MCn5aMoeDM&sp_cr=ZAZ
+                - generic [ref=f4e1278]:
+                  - link [ref=f4e1280] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDAzNTE1NDQyNzY4MzI6OjQ6Og&url=%2FVega-Crux-DX-Flip-Up-Helmet%2Fdp%2FB07MRF8SXG%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB07MRF8SXG%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-5-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DMCn5aMoeDM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=MCn5aMoeDM&sp_cr=ZAZ
+                    - heading "Sponsored Ad - Vega Crux Dx Dull Battle Green Helmet-L" [level=2] [ref=f4e1281]: Vega Crux Dx Dull Battle Green Helmet-L
+                  - generic [ref=f4e1282]:
+                    - generic [ref=f4e1283]:
+                      - text: "4.2"
+                      - button "4.2 out of 5 stars, rating details" [ref=f4e1285] [cursor=pointer]:
+                        - generic [ref=f4e1286]: 4.2 out of 5 stars
+                      - link "76,959 ratings" [ref=f4e1289] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDAzNTE1NDQyNzY4MzI6OjQ6Og&url=%2FVega-Crux-DX-Flip-Up-Helmet%2Fdp%2FB07MRF8SXG%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB07MRF8SXG%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-5-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DMCn5aMoeDM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=MCn5aMoeDM&sp_cr=ZAZ#customerReviews
+                        - text: (76.9K)
+                    - generic [ref=f4e1290]: 200+ bought in past month
+                  - generic [ref=f4e1291]:
+                    - link "Great Indian Festival" [ref=f4e1293] [cursor=pointer]:
+                      - /url: /deals
+                    - generic [ref=f4e1299]:
+                      - generic [ref=f4e1300]: Price, product page
+                      - 'link "₹1,094 M.R.P: ₹1,493 M.R.P: ₹1,493" [ref=f4e1301] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo5MzM1Nzk1NDMzNTM3NToxNzkxODAxNTkzOnNwX3NlYXJjaF90aGVtYXRpYzozMDAzNTE1NDQyNzY4MzI6OjQ6Og&url=%2FVega-Crux-DX-Flip-Up-Helmet%2Fdp%2FB07MRF8SXG%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%253Aamzn1.sym.08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB07MRF8SXG%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DLSubE%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D08a0b5ee-c418-4ba9-9fad-aa49b5c1a91e%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-5-4e480fe6-dd02-46af-8da7-58088322ef64-spons%26aref%3DMCn5aMoeDM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=MCn5aMoeDM&sp_cr=ZAZ
+                        - generic [ref=f4e1302]:
+                          - generic [ref=f4e1303]: ₹1,094
+                          - generic [ref=f4e1304]: ₹1,094
+                        - generic [ref=f4e1305]: "M.R.P: ₹1,493"
+                        - generic [ref=f4e1306]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1307]:
+                            - generic [ref=f4e1308]: ₹1,493
+                            - text: ₹1,493
+                      - text: (27% off)
+                    - generic [ref=f4e1309]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=f4e1314]: FREE delivery Mon, 19 Oct
+                  - generic [ref=f4e1333] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1334]
+                    - generic [ref=f4e1335]: Add to cart
+      - generic [ref=f4e1339]:
+        - generic [ref=f4e1344]:
+          - heading "Trending now" [level=2] [ref=f4e1346]
+          - button "View Sponsored information or leave ad feedback" [ref=f4e1349] [cursor=pointer]: Sponsored
+        - region "Today's deals" [ref=f4e1351]:
+          - list [ref=f4e1357]:
+            - listitem "1 of 5" [ref=f4e1358]:
+              - generic [ref=f4e1364]:
+                - link [ref=f4e1367] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY5MzMzMjo6MDo6&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0DSLHQZFQ%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0DSLHQZFQ%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DTPQq54QmLR%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=TPQq54QmLR&sp_cr=ZAZ
+                - generic [ref=f4e1370]:
+                  - link [ref=f4e1372] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY5MzMzMjo6MDo6&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0DSLHQZFQ%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0DSLHQZFQ%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DTPQq54QmLR%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=TPQq54QmLR&sp_cr=ZAZ
+                    - heading "Sponsored Ad - Steelbird SBH-57 Fighter F5 ISI and DOT Certified Full Face Helmet for Men and Women with Inner Silver Sun Shield with Arm Sleeve" [level=2] [ref=f4e1373]: Steelbird SBH-57 Fighter F5 ISI and DOT Certified Full Face Helmet for Men and Women with Inner Silver Sun Shield with Arm Sleeve
+                  - generic [ref=f4e1375]:
+                    - text: "4.2"
+                    - button "4.2 out of 5 stars, rating details" [ref=f4e1377] [cursor=pointer]:
+                      - generic [ref=f4e1378]: 4.2 out of 5 stars
+                    - link "42 ratings" [ref=f4e1381] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY5MzMzMjo6MDo6&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0DSLHQZFQ%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0DSLHQZFQ%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DTPQq54QmLR%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=TPQq54QmLR&sp_cr=ZAZ#customerReviews
+                      - text: (42)
+                  - generic [ref=f4e1382]:
+                    - generic [ref=f4e1384]:
+                      - generic [ref=f4e1385]: Price, product page
+                      - 'link "₹3,079 M.R.P: ₹3,999 M.R.P: ₹3,999" [ref=f4e1386] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY5MzMzMjo6MDo6&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0DSLHQZFQ%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0DSLHQZFQ%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DTPQq54QmLR%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=TPQq54QmLR&sp_cr=ZAZ
+                        - generic [ref=f4e1387]:
+                          - generic [ref=f4e1388]: ₹3,079
+                          - generic [ref=f4e1389]: ₹3,079
+                        - generic [ref=f4e1390]: "M.R.P: ₹3,999"
+                        - generic [ref=f4e1391]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1392]:
+                            - generic [ref=f4e1393]: ₹3,999
+                            - text: ₹3,999
+                      - text: (23% off)
+                    - generic [ref=f4e1394]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=f4e1399]: FREE delivery Sat, 17 Oct
+                  - generic [ref=f4e1418] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1419]
+                    - generic [ref=f4e1420]: Add to cart
+            - listitem "2 of 5" [ref=f4e1421]:
+              - generic [ref=f4e1427]:
+                - link [ref=f4e1430] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY5MTkzMjo6MTo6&url=%2FSteelbird-SBH-57-Carbon-Fighter-Certified%2Fdp%2FB0DFT26J8G%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0DFT26J8G%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DHnkgiTjGrf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=HnkgiTjGrf&sp_cr=ZAZ
+                - generic [ref=f4e1433]:
+                  - link [ref=f4e1435] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY5MTkzMjo6MTo6&url=%2FSteelbird-SBH-57-Carbon-Fighter-Certified%2Fdp%2FB0DFT26J8G%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0DFT26J8G%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DHnkgiTjGrf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=HnkgiTjGrf&sp_cr=ZAZ
+                    - heading "Sponsored Ad - Steelbird SBH-57 Carbon Fighter ISI and DOT Certified Full Face Helmet for Men and Women with Inner Chrome Sun Shield with Arm Sleeve" [level=2] [ref=f4e1436]: Steelbird SBH-57 Carbon Fighter ISI and DOT Certified Full Face Helmet for Men and Women with Inner Chrome Sun Shield with Arm Sleeve
+                  - generic [ref=f4e1438]:
+                    - text: "4.4"
+                    - button "4.4 out of 5 stars, rating details" [ref=f4e1440] [cursor=pointer]:
+                      - generic [ref=f4e1441]: 4.4 out of 5 stars
+                    - link "512 ratings" [ref=f4e1444] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY5MTkzMjo6MTo6&url=%2FSteelbird-SBH-57-Carbon-Fighter-Certified%2Fdp%2FB0DFT26J8G%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0DFT26J8G%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DHnkgiTjGrf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=HnkgiTjGrf&sp_cr=ZAZ#customerReviews
+                      - text: (512)
+                  - generic [ref=f4e1445]:
+                    - generic [ref=f4e1447]:
+                      - generic [ref=f4e1448]: Price, product page
+                      - 'link "₹3,079 M.R.P: ₹3,999 M.R.P: ₹3,999" [ref=f4e1449] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY5MTkzMjo6MTo6&url=%2FSteelbird-SBH-57-Carbon-Fighter-Certified%2Fdp%2FB0DFT26J8G%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0DFT26J8G%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DHnkgiTjGrf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=HnkgiTjGrf&sp_cr=ZAZ
+                        - generic [ref=f4e1450]:
+                          - generic [ref=f4e1451]: ₹3,079
+                          - generic [ref=f4e1452]: ₹3,079
+                        - generic [ref=f4e1453]: "M.R.P: ₹3,999"
+                        - generic [ref=f4e1454]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1455]:
+                            - generic [ref=f4e1456]: ₹3,999
+                            - text: ₹3,999
+                      - text: (23% off)
+                    - generic [ref=f4e1457]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=f4e1462]: FREE delivery Sat, 17 Oct
+                  - generic [ref=f4e1481] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1482]
+                    - generic [ref=f4e1483]: Add to cart
+            - listitem "3 of 5" [ref=f4e1484]:
+              - generic [ref=f4e1490]:
+                - link [ref=f4e1493] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTM5MTk5NTE4OTMzMjo6Mjo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8F52JM%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0CB8F52JM%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DeKz1KAEPuu%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eKz1KAEPuu&sp_cr=ZAZ
+                - generic [ref=f4e1496]:
+                  - link [ref=f4e1498] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTM5MTk5NTE4OTMzMjo6Mjo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8F52JM%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0CB8F52JM%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DeKz1KAEPuu%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eKz1KAEPuu&sp_cr=ZAZ
+                    - heading "Sponsored Ad - STUDDS Trooper ISI and DOT Certified Matt Finish Flip-up Full Face Helmet for Men and Women with Inner Sun Visor (Matt Gun Grey M)" [level=2] [ref=f4e1499]: STUDDS Trooper ISI and DOT Certified Matt Finish Flip-up Full Face Helmet for Men and Women with Inner Sun Visor (Matt Gun Grey M)
+                  - generic [ref=f4e1500]:
+                    - generic [ref=f4e1501]:
+                      - text: "4.3"
+                      - button "4.3 out of 5 stars, rating details" [ref=f4e1503] [cursor=pointer]:
+                        - generic [ref=f4e1504]: 4.3 out of 5 stars
+                      - link "743 ratings" [ref=f4e1507] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTM5MTk5NTE4OTMzMjo6Mjo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8F52JM%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0CB8F52JM%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DeKz1KAEPuu%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eKz1KAEPuu&sp_cr=ZAZ#customerReviews
+                        - text: (743)
+                    - generic [ref=f4e1508]: 100+ bought in past month
+                  - generic [ref=f4e1509]:
+                    - generic [ref=f4e1511]:
+                      - generic [ref=f4e1512]: Price, product page
+                      - 'link "₹1,629 M.R.P: ₹2,175 M.R.P: ₹2,175" [ref=f4e1513] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTM5MTk5NTE4OTMzMjo6Mjo6&url=%2FSTUDDS-Trooper-Certified-Finish-Flip-up%2Fdp%2FB0CB8F52JM%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0CB8F52JM%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DeKz1KAEPuu%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eKz1KAEPuu&sp_cr=ZAZ
+                        - generic [ref=f4e1514]:
+                          - generic [ref=f4e1515]: ₹1,629
+                          - generic [ref=f4e1516]: ₹1,629
+                        - generic [ref=f4e1517]: "M.R.P: ₹2,175"
+                        - generic [ref=f4e1518]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1519]:
+                            - generic [ref=f4e1520]: ₹2,175
+                            - text: ₹2,175
+                      - text: (25% off)
+                    - generic [ref=f4e1521]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=f4e1526]: FREE delivery Sun, 18 Oct
+                  - generic [ref=f4e1545] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1546]
+                    - generic [ref=f4e1547]: Add to cart
+            - listitem "4 of 5" [ref=f4e1548]:
+              - generic [ref=f4e1554]:
+                - link [ref=f4e1557] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxMzQ5NDExMzAzMjo6Mzo6&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0F1MPPGCD%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0F1MPPGCD%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DwIJoRZmvam%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wIJoRZmvam&sp_cr=ZAZ
+                - generic [ref=f4e1560]:
+                  - link [ref=f4e1562] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxMzQ5NDExMzAzMjo6Mzo6&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0F1MPPGCD%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0F1MPPGCD%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DwIJoRZmvam%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wIJoRZmvam&sp_cr=ZAZ
+                    - heading "Sponsored Ad - TVS Racing Anti Matter Full Face Helmet for Bike & Motorcycle Riders-DOT & ISI Certified-Lightweight ABS Shell, UV Resistant-Ventilated Comfort Liner, Quick-Release Visor & Chin Strap" [level=2] [ref=f4e1563]: TVS Racing Anti Matter Full Face Helmet for Bike & Motorcycle Riders-DOT & ISI Certified-Lightweight ABS Shell, UV Resistant-Ventilated Comfort Liner, Quick-Release Visor & Chin Strap
+                  - generic [ref=f4e1564]:
+                    - generic [ref=f4e1565]:
+                      - text: "4.0"
+                      - button "4.0 out of 5 stars, rating details" [ref=f4e1567] [cursor=pointer]:
+                        - generic [ref=f4e1568]: 4.0 out of 5 stars
+                      - link "732 ratings" [ref=f4e1571] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxMzQ5NDExMzAzMjo6Mzo6&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0F1MPPGCD%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0F1MPPGCD%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DwIJoRZmvam%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wIJoRZmvam&sp_cr=ZAZ#customerReviews
+                        - text: (732)
+                    - generic [ref=f4e1572]: 100+ bought in past month
+                  - generic [ref=f4e1573]:
+                    - generic [ref=f4e1575]:
+                      - generic [ref=f4e1576]: Price, product page
+                      - 'link "₹1,687 M.R.P: ₹2,399 M.R.P: ₹2,399" [ref=f4e1577] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxMzQ5NDExMzAzMjo6Mzo6&url=%2FTVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release%2Fdp%2FB0F1MPPGCD%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB0F1MPPGCD%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DwIJoRZmvam%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wIJoRZmvam&sp_cr=ZAZ
+                        - generic [ref=f4e1578]:
+                          - generic [ref=f4e1579]: ₹1,687
+                          - generic [ref=f4e1580]: ₹1,687
+                        - generic [ref=f4e1581]: "M.R.P: ₹2,399"
+                        - generic [ref=f4e1582]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1583]:
+                            - generic [ref=f4e1584]: ₹2,399
+                            - text: ₹2,399
+                      - text: (30% off)
+                    - generic [ref=f4e1585]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=f4e1590]: FREE delivery 14 Oct - 3 Nov
+                  - generic [ref=f4e1609] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1610]
+                    - generic [ref=f4e1611]: Add to cart
+            - listitem "5 of 5" [ref=f4e1612]:
+              - generic [ref=f4e1618]:
+                - link [ref=f4e1621] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY4NjIzMjo6NDo6&url=%2FSteelbird-Huracan-Certified-Flip-Up-Helmet%2Fdp%2FB09RFH6PW9%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB09RFH6PW9%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DakOkJtrNjK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=akOkJtrNjK&sp_cr=ZAZ
+                - generic [ref=f4e1624]:
+                  - link [ref=f4e1626] [cursor=pointer]:
+                    - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY4NjIzMjo6NDo6&url=%2FSteelbird-Huracan-Certified-Flip-Up-Helmet%2Fdp%2FB09RFH6PW9%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB09RFH6PW9%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DakOkJtrNjK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=akOkJtrNjK&sp_cr=ZAZ
+                    - heading "Sponsored Ad - Steelbird SBA-7 Huracan ISI Certified Flip-Up Helmet for Men and Women with Inner Sun Shield with Skull Cap" [level=2] [ref=f4e1627]: Steelbird SBA-7 Huracan ISI Certified Flip-Up Helmet for Men and Women with Inner Sun Shield with Skull Cap
+                  - generic [ref=f4e1629]:
+                    - text: "4.1"
+                    - button "4.1 out of 5 stars, rating details" [ref=f4e1631] [cursor=pointer]:
+                      - generic [ref=f4e1632]: 4.1 out of 5 stars
+                    - link "2,058 ratings" [ref=f4e1635] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY4NjIzMjo6NDo6&url=%2FSteelbird-Huracan-Certified-Flip-Up-Helmet%2Fdp%2FB09RFH6PW9%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB09RFH6PW9%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DakOkJtrNjK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=akOkJtrNjK&sp_cr=ZAZ#customerReviews
+                      - text: (2K)
+                  - generic [ref=f4e1636]:
+                    - generic [ref=f4e1638]:
+                      - generic [ref=f4e1639]: Price, product page
+                      - 'link "₹2,078 M.R.P: ₹2,309 M.R.P: ₹2,309" [ref=f4e1640] [cursor=pointer]':
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3ODgyMzUxNjc5MzM3NDQ0OjE3OTE4MDE1OTM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcyNTI4MzY4NjIzMjo6NDo6&url=%2FSteelbird-Huracan-Certified-Flip-Up-Helmet%2Fdp%2FB09RFH6PW9%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26crid%3D19Z8HO7J9JH7F%26cv_ct_cx%3Dhelmets%2Bfor%2Bmen%2Bbike%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26pd_rd_i%3DB09RFH6PW9%26pd_rd_r%3D606dcba1-1891-4b7d-9ae5-8c2fb29f46d4%26pd_rd_w%3DWRWDu%26pd_rd_wg%3D4Hu8m%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DZZQD4252EJXE1K2BT76N%26qid%3D1791801593%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHelmet%252Caps%252C291%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DakOkJtrNjK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=akOkJtrNjK&sp_cr=ZAZ
+                        - generic [ref=f4e1641]:
+                          - generic [ref=f4e1642]: ₹2,078
+                          - generic [ref=f4e1643]: ₹2,078
+                        - generic [ref=f4e1644]: "M.R.P: ₹2,309"
+                        - generic [ref=f4e1645]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e1646]:
+                            - generic [ref=f4e1647]: ₹2,309
+                            - text: ₹2,309
+                      - text: (10% off)
+                    - generic [ref=f4e1648]: Up to 5% back with Amazon Pay ICICI card
+                  - generic [ref=f4e1653]: FREE delivery Sat, 17 Oct
+                  - generic [ref=f4e1672] [cursor=pointer]:
+                    - button "Add to cart" [ref=f4e1673]
+                    - generic [ref=f4e1674]: Add to cart
+      - generic [ref=f4e1677]:
+        - link "Sponsored ad from Harita Accessories LLP - TVS. \"Breathe Easy. Ride Safe.\" Shop Harita Accessories LLP - TVS." [ref=f4e1678] [cursor=pointer]:
+          - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUElP20AYFaC2NN1QDlRKLyhVc0CdZOwZnITKqmZsJxiCkzghLJeRl0li8IbHrIfce-vvqIpU8WP6P3roobcKQivxTk96733LK3jLf37d_nxafEVkabht7-1ZeKc9Ki9I66tjHgeX7IocNLZcEfU6nWZ70NneXB1fu2P3sHWwf9zvH0vVKJD3E9K3X8hYqWKliqQqPFocUHeZGMMtwzYHxbeFZz4XJ3mSFl_uWbahdduWeWTopduFwvsHhQnuZN6UpTzzktDJOQviMIg5c_Nx8bkTOddJXA3i0jvhAi90hAg8MI-AuRGkUvkJj5lprW8IF-RTHnEfeEkYci8Pkhicy-BhF_CczBcgdYI45xnwkjjncS5_oDaxdKZ1Ox1DG5pda8BMq2NaBuuYI4PpxmBn2O2VlcICXPnx9ffNl-966fW_kfMjym8QhBA1kKRAhBpIkZdMy95c0nraerf4SadES1smqJMZPZ1jQma0n7HrSCGPMaOTGe3PKLknk9KKNjEu29vnHgk0RVCsyjeLhW-L0zxPxWatdnFxUf3fUk3kScZFLXUmvGbUSQtLEgYIGzrAiEJAqIJBA-JmHdd1bCDl832AZXysDigjsClj1JDq8m6rIR_KPdruAQKlBsR4Q-rTfQ2ind7RzhBWUp9lPkvDqZ-peWUqHOZlLPBVWAlT5oggFiqFLWnXGm7p6OOc0pHdnNPdYW80unOenvHsSp3yMOK5WBsn2VrE4zU3OOF3qgiTXH1cdEX4KXN8NsmSs1RFEEoQy6gOm3AD4UqgOqmoOHfv2K3BNB9jI4n-AmPl7UE&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-inline%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_bkgd&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+        - generic [ref=f4e1679]:
+          - generic [ref=f4e1681]:
+            - link "Harita Accessories LLP - TVS" [ref=f4e1683] [cursor=pointer]:
+              - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUElP20AYFaC2NN1QDlRKLyhVc0CdZOwZnITKqmZsJxiCkzghLJeRl0li8IbHrIfce-vvqIpU8WP6P3roobcKQivxTk96733LK3jLf37d_nxafEVkabht7-1ZeKc9Ki9I66tjHgeX7IocNLZcEfU6nWZ70NneXB1fu2P3sHWwf9zvH0vVKJD3E9K3X8hYqWKliqQqPFocUHeZGMMtwzYHxbeFZz4XJ3mSFl_uWbahdduWeWTopduFwvsHhQnuZN6UpTzzktDJOQviMIg5c_Nx8bkTOddJXA3i0jvhAi90hAg8MI-AuRGkUvkJj5lprW8IF-RTHnEfeEkYci8Pkhicy-BhF_CczBcgdYI45xnwkjjncS5_oDaxdKZ1Ox1DG5pda8BMq2NaBuuYI4PpxmBn2O2VlcICXPnx9ffNl-966fW_kfMjym8QhBA1kKRAhBpIkZdMy95c0nraerf4SadES1smqJMZPZ1jQma0n7HrSCGPMaOTGe3PKLknk9KKNjEu29vnHgk0RVCsyjeLhW-L0zxPxWatdnFxUf3fUk3kScZFLXUmvGbUSQtLEgYIGzrAiEJAqIJBA-JmHdd1bCDl832AZXysDigjsClj1JDq8m6rIR_KPdruAQKlBsR4Q-rTfQ2ind7RzhBWUp9lPkvDqZ-peWUqHOZlLPBVWAlT5oggFiqFLWnXGm7p6OOc0pHdnNPdYW80unOenvHsSp3yMOK5WBsn2VrE4zU3OOF3qgiTXH1cdEX4KXN8NsmSs1RFEEoQy6gOm3AD4UqgOqmoOHfv2K3BNB9jI4n-AmPl7UE&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-inline%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_logo&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+              - img "Harita Accessories LLP - TVS" [ref=f4e1685]
+            - generic [ref=f4e1687]:
+              - link "Breathe Easy. Ride Safe" [ref=f4e1688] [cursor=pointer]:
+                - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUElP20AYFaC2NN1QDlRKLyhVc0CdZOwZnITKqmZsJxiCkzghLJeRl0li8IbHrIfce-vvqIpU8WP6P3roobcKQivxTk96733LK3jLf37d_nxafEVkabht7-1ZeKc9Ki9I66tjHgeX7IocNLZcEfU6nWZ70NneXB1fu2P3sHWwf9zvH0vVKJD3E9K3X8hYqWKliqQqPFocUHeZGMMtwzYHxbeFZz4XJ3mSFl_uWbahdduWeWTopduFwvsHhQnuZN6UpTzzktDJOQviMIg5c_Nx8bkTOddJXA3i0jvhAi90hAg8MI-AuRGkUvkJj5lprW8IF-RTHnEfeEkYci8Pkhicy-BhF_CczBcgdYI45xnwkjjncS5_oDaxdKZ1Ox1DG5pda8BMq2NaBuuYI4PpxmBn2O2VlcICXPnx9ffNl-966fW_kfMjym8QhBA1kKRAhBpIkZdMy95c0nraerf4SadES1smqJMZPZ1jQma0n7HrSCGPMaOTGe3PKLknk9KKNjEu29vnHgk0RVCsyjeLhW-L0zxPxWatdnFxUf3fUk3kScZFLXUmvGbUSQtLEgYIGzrAiEJAqIJBA-JmHdd1bCDl832AZXysDigjsClj1JDq8m6rIR_KPdruAQKlBsR4Q-rTfQ2ind7RzhBWUp9lPkvDqZ-peWUqHOZlLPBVWAlT5oggFiqFLWnXGm7p6OOc0pHdnNPdYW80unOenvHsSp3yMOK5WBsn2VrE4zU3OOF3qgiTXH1cdEX4KXN8NsmSs1RFEEoQy6gOm3AD4UqgOqmoOHfv2K3BNB9jI4n-AmPl7UE&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-inline%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_hl&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+              - generic [ref=f4e1691]:
+                - button "Leave feedback on Sponsored ad" [ref=f4e1695] [cursor=pointer]: Sponsored
+                - generic [ref=f4e1697]: "|"
+                - generic [ref=f4e1698]: Top 10 best-selling brand in helmets
+                - generic [ref=f4e1699]: "|"
+                - link "Shop now" [ref=f4e1701] [cursor=pointer]:
+                  - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUElP20AYFaC2NN1QDlRKLyhVc0CdZOwZnITKqmZsJxiCkzghLJeRl0li8IbHrIfce-vvqIpU8WP6P3roobcKQivxTk96733LK3jLf37d_nxafEVkabht7-1ZeKc9Ki9I66tjHgeX7IocNLZcEfU6nWZ70NneXB1fu2P3sHWwf9zvH0vVKJD3E9K3X8hYqWKliqQqPFocUHeZGMMtwzYHxbeFZz4XJ3mSFl_uWbahdduWeWTopduFwvsHhQnuZN6UpTzzktDJOQviMIg5c_Nx8bkTOddJXA3i0jvhAi90hAg8MI-AuRGkUvkJj5lprW8IF-RTHnEfeEkYci8Pkhicy-BhF_CczBcgdYI45xnwkjjncS5_oDaxdKZ1Ox1DG5pda8BMq2NaBuuYI4PpxmBn2O2VlcICXPnx9ffNl-966fW_kfMjym8QhBA1kKRAhBpIkZdMy95c0nraerf4SadES1smqJMZPZ1jQma0n7HrSCGPMaOTGe3PKLknk9KKNjEu29vnHgk0RVCsyjeLhW-L0zxPxWatdnFxUf3fUk3kScZFLXUmvGbUSQtLEgYIGzrAiEJAqIJBA-JmHdd1bCDl832AZXysDigjsClj1JDq8m6rIR_KPdruAQKlBsR4Q-rTfQ2ind7RzhBWUp9lPkvDqZ-peWUqHOZlLPBVWAlT5oggFiqFLWnXGm7p6OOc0pHdnNPdYW80unOenvHsSp3yMOK5WBsn2VrE4zU3OOF3qgiTXH1cdEX4KXN8NsmSs1RFEEoQy6gOm3AD4UqgOqmoOHfv2K3BNB9jI4n-AmPl7UE&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-inline%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_cta&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                  - generic [ref=f4e1702]: Shop Harita Accessories LLP - TVS
+          - group [ref=f4e1706]:
+            - group [ref=f4e1710]:
+              - list [ref=f4e1711]:
+                - listitem [ref=f4e1712]:
+                  - generic [ref=f4e1714]:
+                    - link [ref=f4e1715] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSOx3adB7KQX0mcGidxkrZ0MxrPjBOX-FGP1ZQssmeHhMRXgIT6MfwHCxbskEhB4qyOdB736pTJ_q8fN9_vVR7rEpwN_fncU477J7USbByGLImu0Xv9rD0IeDx23U5_6g67h-EmCIO3vbPTi8nkAgpxJJ2m-sR_KCmqoKiCDAXx_M7UCPZ1ezawfWdaeVa-Txl_V6RZ5dHc821z1Pecc9uq3pTKL24VxBnOyRJlLCfpChcMRckqShgKirDyAMd4kyZClFSf8wCQFeY8ImAXATsjyGDtLkuQ4zWOeACKJYsZBSRdrRgpojQBVxK4vQUIzikHGY6SguWApEnBkkJ6afi6ZyFz5Lq2OXNG3hQ5nut4NnKdExtZ9vR4NhrX1HJJPPj28efXD1-s6pO_lbsnak9lURTltgxVUZbbsirtOZ7f3TPHZmNUeWUZupn1HNDSt8blDgt9a0xytIlV_X9sjcXWmGwN_Q9ZVA_MhX3dH14RPTJVbiia9LlU_lRaFkXGu83mer0W_q3UXGRNvG7SpiH24BtvNrDk1xlFOUXZaklzragvOUYkRxHVxPplRDXY6sC2CI86cp3nGgQQdEKqMJWoQAxlCSgQBqCDAwJoSDstSkWCKa1HGs54Hecs1PzedFmEip3GvwELZb4Y&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_0_bkgd&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                    - link [ref=f4e1717] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSOx3adB7KQX0mcGidxkrZ0MxrPjBOX-FGP1ZQssmeHhMRXgIT6MfwHCxbskEhB4qyOdB736pTJ_q8fN9_vVR7rEpwN_fncU477J7USbByGLImu0Xv9rD0IeDx23U5_6g67h-EmCIO3vbPTi8nkAgpxJJ2m-sR_KCmqoKiCDAXx_M7UCPZ1ezawfWdaeVa-Txl_V6RZ5dHc821z1Pecc9uq3pTKL24VxBnOyRJlLCfpChcMRckqShgKirDyAMd4kyZClFSf8wCQFeY8ImAXATsjyGDtLkuQ4zWOeACKJYsZBSRdrRgpojQBVxK4vQUIzikHGY6SguWApEnBkkJ6afi6ZyFz5Lq2OXNG3hQ5nut4NnKdExtZ9vR4NhrX1HJJPPj28efXD1-s6pO_lbsnak9lURTltgxVUZbbsirtOZ7f3TPHZmNUeWUZupn1HNDSt8blDgt9a0xytIlV_X9sjcXWmGwN_Q9ZVA_MhX3dH14RPTJVbiia9LlU_lRaFkXGu83mer0W_q3UXGRNvG7SpiH24BtvNrDk1xlFOUXZaklzragvOUYkRxHVxPplRDXY6sC2CI86cp3nGgQQdEKqMJWoQAxlCSgQBqCDAwJoSDstSkWCKa1HGs54Hecs1PzedFmEip3GvwELZb4Y&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_0_img&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                      - img "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e1720]
+                    - generic [ref=f4e1721]:
+                      - link [ref=f4e1722] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSOx3adB7KQX0mcGidxkrZ0MxrPjBOX-FGP1ZQssmeHhMRXgIT6MfwHCxbskEhB4qyOdB736pTJ_q8fN9_vVR7rEpwN_fncU477J7USbByGLImu0Xv9rD0IeDx23U5_6g67h-EmCIO3vbPTi8nkAgpxJJ2m-sR_KCmqoKiCDAXx_M7UCPZ1ezawfWdaeVa-Txl_V6RZ5dHc821z1Pecc9uq3pTKL24VxBnOyRJlLCfpChcMRckqShgKirDyAMd4kyZClFSf8wCQFeY8ImAXATsjyGDtLkuQ4zWOeACKJYsZBSRdrRgpojQBVxK4vQUIzikHGY6SguWApEnBkkJ6afi6ZyFz5Lq2OXNG3hQ5nut4NnKdExtZ9vR4NhrX1HJJPPj28efXD1-s6pO_lbsnak9lURTltgxVUZbbsirtOZ7f3TPHZmNUeWUZupn1HNDSt8blDgt9a0xytIlV_X9sjcXWmGwN_Q9ZVA_MhX3dH14RPTJVbiia9LlU_lRaFkXGu83mer0W_q3UXGRNvG7SpiH24BtvNrDk1xlFOUXZaklzragvOUYkRxHVxPplRDXY6sC2CI86cp3nGgQQdEKqMJWoQAxlCSgQBqCDAwJoSDstSkWCKa1HGs54Hecs1PzedFmEip3GvwELZb4Y&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_0_bkgd&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                      - link "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e1724] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSOx3adB7KQX0mcGidxkrZ0MxrPjBOX-FGP1ZQssmeHhMRXgIT6MfwHCxbskEhB4qyOdB736pTJ_q8fN9_vVR7rEpwN_fncU477J7USbByGLImu0Xv9rD0IeDx23U5_6g67h-EmCIO3vbPTi8nkAgpxJJ2m-sR_KCmqoKiCDAXx_M7UCPZ1ezawfWdaeVa-Txl_V6RZ5dHc821z1Pecc9uq3pTKL24VxBnOyRJlLCfpChcMRckqShgKirDyAMd4kyZClFSf8wCQFeY8ImAXATsjyGDtLkuQ4zWOeACKJYsZBSRdrRgpojQBVxK4vQUIzikHGY6SguWApEnBkkJ6afi6ZyFz5Lq2OXNG3hQ5nut4NnKdExtZ9vR4NhrX1HJJPPj28efXD1-s6pO_lbsnak9lURTltgxVUZbbsirtOZ7f3TPHZmNUeWUZupn1HNDSt8blDgt9a0xytIlV_X9sjcXWmGwN_Q9ZVA_MhX3dH14RPTJVbiia9LlU_lRaFkXGu83mer0W_q3UXGRNvG7SpiH24BtvNrDk1xlFOUXZaklzragvOUYkRxHVxPplRDXY6sC2CI86cp3nGgQQdEKqMJWoQAxlCSgQBqCDAwJoSDstSkWCKa1HGs54Hecs1PzedFmEip3GvwELZb4Y&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_0_title&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                      - link "Rated 4.2 out of 5 stars by 681 reviews. Go to review section." [ref=f4e1727] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSOx3adB7KQX0mcGidxkrZ0MxrPjBOX-FGP1ZQssmeHhMRXgIT6MfwHCxbskEhB4qyOdB736pTJ_q8fN9_vVR7rEpwN_fncU477J7USbByGLImu0Xv9rD0IeDx23U5_6g67h-EmCIO3vbPTi8nkAgpxJJ2m-sR_KCmqoKiCDAXx_M7UCPZ1ezawfWdaeVa-Txl_V6RZ5dHc821z1Pecc9uq3pTKL24VxBnOyRJlLCfpChcMRckqShgKirDyAMd4kyZClFSf8wCQFeY8ImAXATsjyGDtLkuQ4zWOeACKJYsZBSRdrRgpojQBVxK4vQUIzikHGY6SguWApEnBkkJ6afi6ZyFz5Lq2OXNG3hQ5nut4NnKdExtZ9vR4NhrX1HJJPPj28efXD1-s6pO_lbsnak9lURTltgxVUZbbsirtOZ7f3TPHZmNUeWUZupn1HNDSt8blDgt9a0xytIlV_X9sjcXWmGwN_Q9ZVA_MhX3dH14RPTJVbiia9LlU_lRaFkXGu83mer0W_q3UXGRNvG7SpiH24BtvNrDk1xlFOUXZaklzragvOUYkRxHVxPplRDXY6sC2CI86cp3nGgQQdEKqMJWoQAxlCSgQBqCDAwJoSDstSkWCKa1HGs54Hecs1PzedFmEip3GvwELZb4Y&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_0_rating&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4#customerReviews
+                        - generic [ref=f4e1728]:
+                          - generic [ref=f4e1729]: "4.2"
+                          - generic [ref=f4e1730]: 4.2 out of 5 stars.
+                          - generic [ref=f4e1732]: "681"
+                      - link "₹1,528.00" [ref=f4e1734] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSOx3adB7KQX0mcGidxkrZ0MxrPjBOX-FGP1ZQssmeHhMRXgIT6MfwHCxbskEhB4qyOdB736pTJ_q8fN9_vVR7rEpwN_fncU477J7USbByGLImu0Xv9rD0IeDx23U5_6g67h-EmCIO3vbPTi8nkAgpxJJ2m-sR_KCmqoKiCDAXx_M7UCPZ1ezawfWdaeVa-Txl_V6RZ5dHc821z1Pecc9uq3pTKL24VxBnOyRJlLCfpChcMRckqShgKirDyAMd4kyZClFSf8wCQFeY8ImAXATsjyGDtLkuQ4zWOeACKJYsZBSRdrRgpojQBVxK4vQUIzikHGY6SguWApEnBkkJ6afi6ZyFz5Lq2OXNG3hQ5nut4NnKdExtZ9vR4NhrX1HJJPPj28efXD1-s6pO_lbsnak9lURTltgxVUZbbsirtOZ7f3TPHZmNUeWUZupn1HNDSt8blDgt9a0xytIlV_X9sjcXWmGwN_Q9ZVA_MhX3dH14RPTJVbiia9LlU_lRaFkXGu83mer0W_q3UXGRNvG7SpiH24BtvNrDk1xlFOUXZaklzragvOUYkRxHVxPplRDXY6sC2CI86cp3nGgQQdEKqMJWoQAxlCSgQBqCDAwJoSDstSkWCKa1HGs54Hecs1PzedFmEip3GvwELZb4Y&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNTHD3%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-1-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_0_price&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                        - generic [ref=f4e1736]:
+                          - generic [ref=f4e1737]: ₹1,528.00
+                          - generic [ref=f4e1738]:
+                            - text: ₹
+                            - generic [ref=f4e1739]:
+                              - text: 1,528
+                              - generic [ref=f4e1740]: .
+                            - text: "00"
+                      - generic [ref=f4e1741]: "M.R.P: ₹1,899.00"
+                - listitem [ref=f4e1744]:
+                  - generic [ref=f4e1746]:
+                    - link [ref=f4e1747] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0kAYDm7UFb82HNYEbxg5kAzttN1CMY1pS2HL1gItsOteJtOZKXSFtttplpUDd28mJv4KTcz-GP-HBw_eTGQ18Tk9yfPxvnnKZP_Xj5vv9yqPDQlOBv506ikn_VmtBBuHEUvia_TeOGsfh3w1cl2tH7iDzmG0CaPwbe_s9GI8voDNVSydpsbYfygpalNRmzJsiud3AjPcN-zJse07QeVZ-T5l_F2RZpVHU8-3rWHfc87tbvWmVH5xqyDOcE4WKGM5SZe4YChOlnHCUFhElQd4hTdp0oyT6nMeArLEnMcE7CJgZwQZrN1lCXK8xhEPQbFgK0YBSZdLRoo4TcCVBG5vAYJzykGG46RgOSBpUrCkkF6avuF1kTV0XduaOEMvQI7nOp6NXGdmo64dnEyGo5paLokH3z7-_PrhS7f65G_l7onaU1kURbktQ1WU5basSnuO53f2rJHVGFZedU3DynoOaBlb83KHubE1xznarFTjf2zN-dYcb03jD5lXD6y5fd0fXBEjtlRuKrr0uVT-VFoURcY7grBer5v_VhLmmYDXAhVMsQffeObM115nFOUUZcsFzfWivuAYkRzFVBfrlzHVYUuDbREeaXKd5zoEEtAiqjCVqECMZAkoEIZAwyEBNKJai1KRYErrsY4zXsc5i3S_FyyKSLHT1W8SVb4p&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_1_bkgd&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                    - link [ref=f4e1749] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0kAYDm7UFb82HNYEbxg5kAzttN1CMY1pS2HL1gItsOteJtOZKXSFtttplpUDd28mJv4KTcz-GP-HBw_eTGQ18Tk9yfPxvnnKZP_Xj5vv9yqPDQlOBv506ikn_VmtBBuHEUvia_TeOGsfh3w1cl2tH7iDzmG0CaPwbe_s9GI8voDNVSydpsbYfygpalNRmzJsiud3AjPcN-zJse07QeVZ-T5l_F2RZpVHU8-3rWHfc87tbvWmVH5xqyDOcE4WKGM5SZe4YChOlnHCUFhElQd4hTdp0oyT6nMeArLEnMcE7CJgZwQZrN1lCXK8xhEPQbFgK0YBSZdLRoo4TcCVBG5vAYJzykGG46RgOSBpUrCkkF6avuF1kTV0XduaOEMvQI7nOp6NXGdmo64dnEyGo5paLokH3z7-_PrhS7f65G_l7onaU1kURbktQ1WU5basSnuO53f2rJHVGFZedU3DynoOaBlb83KHubE1xznarFTjf2zN-dYcb03jD5lXD6y5fd0fXBEjtlRuKrr0uVT-VFoURcY7grBer5v_VhLmmYDXAhVMsQffeObM115nFOUUZcsFzfWivuAYkRzFVBfrlzHVYUuDbREeaXKd5zoEEtAiqjCVqECMZAkoEIZAwyEBNKJai1KRYErrsY4zXsc5i3S_FyyKSLHT1W8SVb4p&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_1_img&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                      - img "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e1752]
+                    - generic [ref=f4e1753]:
+                      - link [ref=f4e1754] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0kAYDm7UFb82HNYEbxg5kAzttN1CMY1pS2HL1gItsOteJtOZKXSFtttplpUDd28mJv4KTcz-GP-HBw_eTGQ18Tk9yfPxvnnKZP_Xj5vv9yqPDQlOBv506ikn_VmtBBuHEUvia_TeOGsfh3w1cl2tH7iDzmG0CaPwbe_s9GI8voDNVSydpsbYfygpalNRmzJsiud3AjPcN-zJse07QeVZ-T5l_F2RZpVHU8-3rWHfc87tbvWmVH5xqyDOcE4WKGM5SZe4YChOlnHCUFhElQd4hTdp0oyT6nMeArLEnMcE7CJgZwQZrN1lCXK8xhEPQbFgK0YBSZdLRoo4TcCVBG5vAYJzykGG46RgOSBpUrCkkF6avuF1kTV0XduaOEMvQI7nOp6NXGdmo64dnEyGo5paLokH3z7-_PrhS7f65G_l7onaU1kURbktQ1WU5basSnuO53f2rJHVGFZedU3DynoOaBlb83KHubE1xznarFTjf2zN-dYcb03jD5lXD6y5fd0fXBEjtlRuKrr0uVT-VFoURcY7grBer5v_VhLmmYDXAhVMsQffeObM115nFOUUZcsFzfWivuAYkRzFVBfrlzHVYUuDbREeaXKd5zoEEtAiqjCVqECMZAkoEIZAwyEBNKJai1KRYErrsY4zXsc5i3S_FyyKSLHT1W8SVb4p&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_1_bkgd&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                      - link "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e1756] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0kAYDm7UFb82HNYEbxg5kAzttN1CMY1pS2HL1gItsOteJtOZKXSFtttplpUDd28mJv4KTcz-GP-HBw_eTGQ18Tk9yfPxvnnKZP_Xj5vv9yqPDQlOBv506ikn_VmtBBuHEUvia_TeOGsfh3w1cl2tH7iDzmG0CaPwbe_s9GI8voDNVSydpsbYfygpalNRmzJsiud3AjPcN-zJse07QeVZ-T5l_F2RZpVHU8-3rWHfc87tbvWmVH5xqyDOcE4WKGM5SZe4YChOlnHCUFhElQd4hTdp0oyT6nMeArLEnMcE7CJgZwQZrN1lCXK8xhEPQbFgK0YBSZdLRoo4TcCVBG5vAYJzykGG46RgOSBpUrCkkF6avuF1kTV0XduaOEMvQI7nOp6NXGdmo64dnEyGo5paLokH3z7-_PrhS7f65G_l7onaU1kURbktQ1WU5basSnuO53f2rJHVGFZedU3DynoOaBlb83KHubE1xznarFTjf2zN-dYcb03jD5lXD6y5fd0fXBEjtlRuKrr0uVT-VFoURcY7grBer5v_VhLmmYDXAhVMsQffeObM115nFOUUZcsFzfWivuAYkRzFVBfrlzHVYUuDbREeaXKd5zoEEtAiqjCVqECMZAkoEIZAwyEBNKJai1KRYErrsY4zXsc5i3S_FyyKSLHT1W8SVb4p&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_1_title&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                      - link "Rated 4.2 out of 5 stars by 681 reviews. Go to review section." [ref=f4e1759] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0kAYDm7UFb82HNYEbxg5kAzttN1CMY1pS2HL1gItsOteJtOZKXSFtttplpUDd28mJv4KTcz-GP-HBw_eTGQ18Tk9yfPxvnnKZP_Xj5vv9yqPDQlOBv506ikn_VmtBBuHEUvia_TeOGsfh3w1cl2tH7iDzmG0CaPwbe_s9GI8voDNVSydpsbYfygpalNRmzJsiud3AjPcN-zJse07QeVZ-T5l_F2RZpVHU8-3rWHfc87tbvWmVH5xqyDOcE4WKGM5SZe4YChOlnHCUFhElQd4hTdp0oyT6nMeArLEnMcE7CJgZwQZrN1lCXK8xhEPQbFgK0YBSZdLRoo4TcCVBG5vAYJzykGG46RgOSBpUrCkkF6avuF1kTV0XduaOEMvQI7nOp6NXGdmo64dnEyGo5paLokH3z7-_PrhS7f65G_l7onaU1kURbktQ1WU5basSnuO53f2rJHVGFZedU3DynoOaBlb83KHubE1xznarFTjf2zN-dYcb03jD5lXD6y5fd0fXBEjtlRuKrr0uVT-VFoURcY7grBer5v_VhLmmYDXAhVMsQffeObM115nFOUUZcsFzfWivuAYkRzFVBfrlzHVYUuDbREeaXKd5zoEEtAiqjCVqECMZAkoEIZAwyEBNKJai1KRYErrsY4zXsc5i3S_FyyKSLHT1W8SVb4p&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_1_rating&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4#customerReviews
+                        - generic [ref=f4e1760]:
+                          - generic [ref=f4e1761]: "4.2"
+                          - generic [ref=f4e1762]: 4.2 out of 5 stars.
+                          - generic [ref=f4e1764]: "681"
+                      - link "₹1,528.00" [ref=f4e1766] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUE2P0kAYDm7UFb82HNYEbxg5kAzttN1CMY1pS2HL1gItsOteJtOZKXSFtttplpUDd28mJv4KTcz-GP-HBw_eTGQ18Tk9yfPxvnnKZP_Xj5vv9yqPDQlOBv506ikn_VmtBBuHEUvia_TeOGsfh3w1cl2tH7iDzmG0CaPwbe_s9GI8voDNVSydpsbYfygpalNRmzJsiud3AjPcN-zJse07QeVZ-T5l_F2RZpVHU8-3rWHfc87tbvWmVH5xqyDOcE4WKGM5SZe4YChOlnHCUFhElQd4hTdp0oyT6nMeArLEnMcE7CJgZwQZrN1lCXK8xhEPQbFgK0YBSZdLRoo4TcCVBG5vAYJzykGG46RgOSBpUrCkkF6avuF1kTV0XduaOEMvQI7nOp6NXGdmo64dnEyGo5paLokH3z7-_PrhS7f65G_l7onaU1kURbktQ1WU5basSnuO53f2rJHVGFZedU3DynoOaBlb83KHubE1xznarFTjf2zN-dYcb03jD5lXD6y5fd0fXBEjtlRuKrr0uVT-VFoURcY7grBer5v_VhLmmYDXAhVMsQffeObM115nFOUUZcsFzfWivuAYkRzFVBfrlzHVYUuDbREeaXKd5zoEEtAiqjCVqECMZAkoEIZAwyEBNKJai1KRYErrsY4zXsc5i3S_FyyKSLHT1W8SVb4p&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MNBVR9%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-2-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_1_price&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                        - generic [ref=f4e1768]:
+                          - generic [ref=f4e1769]: ₹1,528.00
+                          - generic [ref=f4e1770]:
+                            - text: ₹
+                            - generic [ref=f4e1771]:
+                              - text: 1,528
+                              - generic [ref=f4e1772]: .
+                            - text: "00"
+                      - generic [ref=f4e1773]: "M.R.P: ₹1,899.00"
+                - listitem [ref=f4e1776]:
+                  - generic [ref=f4e1778]:
+                    - link [ref=f4e1779] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSJx3adB7KQ7TipU9dJ7DR9bEbjmXHs4tiux2pKFtmzQ0LiK0BC_Rj-gwULdkikIHFWRzqPe3XKZPfXj9vvDypPNRHORu7JiSMfDee1EmzsByyJbtB77axz6PPlxLa7Q88e9faDtR_454Oz08vp9BI2l5F4mmpT97EoK01ZaUqwKVzc83R_VzNnh6ZreZUX5YeU8XdFmlWenDiuaYyHjnVh9qu3pfKrOwVxhnMSoozlJI1xwVCUxFHCkF8ElUd4iddp0oyS6kvuAxJjziMCthGwNYIM1u6zBFlO44D7oAjZklFA0jhmpIjSBFyL4O4WIDinHGQ4SgqWA5ImBUsK8bXuak4fGWPbNo2ZNXY8ZDm25ZjItuYm6pve0Ww8qSnlkrD37ePPrx--9KvP_lZun6g9lwRBkDoSVARJ6kiKuGM5bm_HmBiNceVNX9eMbGCBtrbRr7ZYaBt9mqP1UtH-x0ZfbPTpRtf-kEV1z1iYN8PRNdEiQ-G6rIqfS-VPpbAoMt5rtVarVfPfSq1F1sKrFm3pwgAeH88m8_nbjKKcoiwOaa4W9ZBjRHIUUVWoX0VUhe0u7AjwoCvVea5CIIFuQGWmEAUIgSQCGUIfdLFPAA1ot02pQDCl9UjFGa_jnAWqO_DCIpDNdPkbJUu-Vg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_2_bkgd&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                    - link [ref=f4e1781] [cursor=pointer]:
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSJx3adB7KQ7TipU9dJ7DR9bEbjmXHs4tiux2pKFtmzQ0LiK0BC_Rj-gwULdkikIHFWRzqPe3XKZPfXj9vvDypPNRHORu7JiSMfDee1EmzsByyJbtB77axz6PPlxLa7Q88e9faDtR_454Oz08vp9BI2l5F4mmpT97EoK01ZaUqwKVzc83R_VzNnh6ZreZUX5YeU8XdFmlWenDiuaYyHjnVh9qu3pfKrOwVxhnMSoozlJI1xwVCUxFHCkF8ElUd4iddp0oyS6kvuAxJjziMCthGwNYIM1u6zBFlO44D7oAjZklFA0jhmpIjSBFyL4O4WIDinHGQ4SgqWA5ImBUsK8bXuak4fGWPbNo2ZNXY8ZDm25ZjItuYm6pve0Ww8qSnlkrD37ePPrx--9KvP_lZun6g9lwRBkDoSVARJ6kiKuGM5bm_HmBiNceVNX9eMbGCBtrbRr7ZYaBt9mqP1UtH-x0ZfbPTpRtf-kEV1z1iYN8PRNdEiQ-G6rIqfS-VPpbAoMt5rtVarVfPfSq1F1sKrFm3pwgAeH88m8_nbjKKcoiwOaa4W9ZBjRHIUUVWoX0VUhe0u7AjwoCvVea5CIIFuQGWmEAUIgSQCGUIfdLFPAA1ot02pQDCl9UjFGa_jnAWqO_DCIpDNdPkbJUu-Vg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_2_img&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                      - img "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e1784]
+                    - generic [ref=f4e1785]:
+                      - link [ref=f4e1786] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSJx3adB7KQ7TipU9dJ7DR9bEbjmXHs4tiux2pKFtmzQ0LiK0BC_Rj-gwULdkikIHFWRzqPe3XKZPfXj9vvDypPNRHORu7JiSMfDee1EmzsByyJbtB77axz6PPlxLa7Q88e9faDtR_454Oz08vp9BI2l5F4mmpT97EoK01ZaUqwKVzc83R_VzNnh6ZreZUX5YeU8XdFmlWenDiuaYyHjnVh9qu3pfKrOwVxhnMSoozlJI1xwVCUxFHCkF8ElUd4iddp0oyS6kvuAxJjziMCthGwNYIM1u6zBFlO44D7oAjZklFA0jhmpIjSBFyL4O4WIDinHGQ4SgqWA5ImBUsK8bXuak4fGWPbNo2ZNXY8ZDm25ZjItuYm6pve0Ww8qSnlkrD37ePPrx--9KvP_lZun6g9lwRBkDoSVARJ6kiKuGM5bm_HmBiNceVNX9eMbGCBtrbRr7ZYaBt9mqP1UtH-x0ZfbPTpRtf-kEV1z1iYN8PRNdEiQ-G6rIqfS-VPpbAoMt5rtVarVfPfSq1F1sKrFm3pwgAeH88m8_nbjKKcoiwOaa4W9ZBjRHIUUVWoX0VUhe0u7AjwoCvVea5CIIFuQGWmEAUIgSQCGUIfdLFPAA1ot02pQDCl9UjFGa_jnAWqO_DCIpDNdPkbJUu-Vg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_2_bkgd&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                      - link "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [ref=f4e1788] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSJx3adB7KQ7TipU9dJ7DR9bEbjmXHs4tiux2pKFtmzQ0LiK0BC_Rj-gwULdkikIHFWRzqPe3XKZPfXj9vvDypPNRHORu7JiSMfDee1EmzsByyJbtB77axz6PPlxLa7Q88e9faDtR_454Oz08vp9BI2l5F4mmpT97EoK01ZaUqwKVzc83R_VzNnh6ZreZUX5YeU8XdFmlWenDiuaYyHjnVh9qu3pfKrOwVxhnMSoozlJI1xwVCUxFHCkF8ElUd4iddp0oyS6kvuAxJjziMCthGwNYIM1u6zBFlO44D7oAjZklFA0jhmpIjSBFyL4O4WIDinHGQ4SgqWA5ImBUsK8bXuak4fGWPbNo2ZNXY8ZDm25ZjItuYm6pve0Ww8qSnlkrD37ePPrx--9KvP_lZun6g9lwRBkDoSVARJ6kiKuGM5bm_HmBiNceVNX9eMbGCBtrbRr7ZYaBt9mqP1UtH-x0ZfbPTpRtf-kEV1z1iYN8PRNdEiQ-G6rIqfS-VPpbAoMt5rtVarVfPfSq1F1sKrFm3pwgAeH88m8_nbjKKcoiwOaa4W9ZBjRHIUUVWoX0VUhe0u7AjwoCvVea5CIIFuQGWmEAUIgSQCGUIfdLFPAA1ot02pQDCl9UjFGa_jnAWqO_DCIpDNdPkbJUu-Vg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_2_title&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                      - link "Rated 4.2 out of 5 stars by 681 reviews. Go to review section." [ref=f4e1791] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSJx3adB7KQ7TipU9dJ7DR9bEbjmXHs4tiux2pKFtmzQ0LiK0BC_Rj-gwULdkikIHFWRzqPe3XKZPfXj9vvDypPNRHORu7JiSMfDee1EmzsByyJbtB77axz6PPlxLa7Q88e9faDtR_454Oz08vp9BI2l5F4mmpT97EoK01ZaUqwKVzc83R_VzNnh6ZreZUX5YeU8XdFmlWenDiuaYyHjnVh9qu3pfKrOwVxhnMSoozlJI1xwVCUxFHCkF8ElUd4iddp0oyS6kvuAxJjziMCthGwNYIM1u6zBFlO44D7oAjZklFA0jhmpIjSBFyL4O4WIDinHGQ4SgqWA5ImBUsK8bXuak4fGWPbNo2ZNXY8ZDm25ZjItuYm6pve0Ww8qSnlkrD37ePPrx--9KvP_lZun6g9lwRBkDoSVARJ6kiKuGM5bm_HmBiNceVNX9eMbGCBtrbRr7ZYaBt9mqP1UtH-x0ZfbPTpRtf-kEV1z1iYN8PRNdEiQ-G6rIqfS-VPpbAoMt5rtVarVfPfSq1F1sKrFm3pwgAeH88m8_nbjKKcoiwOaa4W9ZBjRHIUUVWoX0VUhe0u7AjwoCvVea5CIIFuQGWmEAUIgSQCGUIfdLFPAA1ot02pQDCl9UjFGa_jnAWqO_DCIpDNdPkbJUu-Vg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_2_rating&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4#customerReviews
+                        - generic [ref=f4e1792]:
+                          - generic [ref=f4e1793]: "4.2"
+                          - generic [ref=f4e1794]: 4.2 out of 5 stars.
+                          - generic [ref=f4e1796]: "681"
+                      - link "₹1,528.00" [ref=f4e1798] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFVUMtu00AUVaiAEl5VFkUKuyCyiDSJx3adB7KQ7TipU9dJ7DR9bEbjmXHs4tiux2pKFtmzQ0LiK0BC_Rj-gwULdkikIHFWRzqPe3XKZPfXj9vvDypPNRHORu7JiSMfDee1EmzsByyJbtB77axz6PPlxLa7Q88e9faDtR_454Oz08vp9BI2l5F4mmpT97EoK01ZaUqwKVzc83R_VzNnh6ZreZUX5YeU8XdFmlWenDiuaYyHjnVh9qu3pfKrOwVxhnMSoozlJI1xwVCUxFHCkF8ElUd4iddp0oyS6kvuAxJjziMCthGwNYIM1u6zBFlO44D7oAjZklFA0jhmpIjSBFyL4O4WIDinHGQ4SgqWA5ImBUsK8bXuak4fGWPbNo2ZNXY8ZDm25ZjItuYm6pve0Ww8qSnlkrD37ePPrx--9KvP_lZun6g9lwRBkDoSVARJ6kiKuGM5bm_HmBiNceVNX9eMbGCBtrbRr7ZYaBt9mqP1UtH-x0ZfbPTpRtf-kEV1z1iYN8PRNdEiQ-G6rIqfS-VPpbAoMt5rtVarVfPfSq1F1sKrFm3pwgAeH88m8_nbjKKcoiwOaa4W9ZBjRHIUUVWoX0VUhe0u7AjwoCvVea5CIIFuQGWmEAUIgSQCGUIfdLFPAA1ot02pQDCl9UjFGa_jnAWqO_DCIpDNdPkbJUu-Vg&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fgp%2Faw%2Fd%2FB0F1MMTPVV%3Fpd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26qid%3D1791801593%26sr%3D1-3-9fd4e6c6-0f32-411b-9abc-dfd97dd0cadd%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx__sbtcd2_asin_2_price&pd_rd_w=mRGwe&content-id=amzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d%3Aamzn1.sym.1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_p=1183c3aa-8812-4b69-b5a0-47d783e4595d&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=4Hu8m&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+                        - generic [ref=f4e1800]:
+                          - generic [ref=f4e1801]: ₹1,528.00
+                          - generic [ref=f4e1802]:
+                            - text: ₹
+                            - generic [ref=f4e1803]:
+                              - text: 1,528
+                              - generic [ref=f4e1804]: .
+                            - text: "00"
+                      - generic [ref=f4e1805]: "M.R.P: ₹1,899.00"
+      - generic [ref=f4e1815]:
+        - link "Sponsored video; click to navigate to featured product page." [ref=f4e1819] [cursor=pointer]:
+          - /url: https://sponsored-ads.amazon.in/clk?p=eAFVTt1OgmAAnbnK6M9xURuXtHXRxq9IaGPt-xANLUz8Kb1hKIhMRAQmjQteojfpFXqF7LJ36LK7tnS1ztXZ-dtBGrmvz5f3HfQQsEynrnW7Kteo9fAMUz6hH-3bBZwWA6LZTu5KceIuIj7W9lmOJzmeLDAkPdhqw2EOyJ0bWVPa6Cmya1rhNJr76EFX1WSpWVOVgVzBJORsY-ihZQSjie5bwWjuGpGlO57reJY-jMbonjEzkrlHOh6GhMMlsc7i25anKyrOIxk6__axel69VrCjzR6xruPHLE0zNCOUWKFQ5DmGzSqqVs5K99JFE72qQCD5VYW4BClcrGGDFLYCPZnx4D9SaKewlULwQ2wsL9nyU62-HAFH4kPIiWwP6UyiyA_LFBXHMfl7mjJ9CtLV9kArwbpwbQTWWHSmUv-u_wAF59w39cDUHfEvspF8d2IGYvQNm5d9Xg&v=c1&r=https://www.amazon.in/dp/B0FSZR9BJ8?aref=ikCYMYWB8i&pd_rd_i=B0FSZR9BJ8&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pd_rd_wg=4Hu8m&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_w=YWYka&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4
+        - generic [ref=f4e1828]:
+          - link [ref=f4e1834] [cursor=pointer]:
+            - /url: https://sponsored-ads.amazon.in/clk?p=eAFVTt1OgmAAnbnK6M9xURuXtHXRxq9IaGPt-xANLUz8Kb1hKIhMRAQmjQteojfpFXqF7LJ36LK7tnS1ztXZ-dtBGrmvz5f3HfQQsEynrnW7Kteo9fAMUz6hH-3bBZwWA6LZTu5KceIuIj7W9lmOJzmeLDAkPdhqw2EOyJ0bWVPa6Cmya1rhNJr76EFX1WSpWVOVgVzBJORsY-ihZQSjie5bwWjuGpGlO57reJY-jMbonjEzkrlHOh6GhMMlsc7i25anKyrOIxk6__axel69VrCjzR6xruPHLE0zNCOUWKFQ5DmGzSqqVs5K99JFE72qQCD5VYW4BClcrGGDFLYCPZnx4D9SaKewlULwQ2wsL9nyU62-HAFH4kPIiWwP6UyiyA_LFBXHMfl7mjJ9CtLV9kArwbpwbQTWWHSmUv-u_wAF59w39cDUHfEvspF8d2IGYvQNm5d9Xg&v=c1&r=https://www.amazon.in/TVS-Cruisetown-Protection-Comfortable-Lightweight/dp/B0FSZR9BJ8/ref=sxin_17_sbv_search_btf?aref=ikCYMYWB8i&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&crid=19Z8HO7J9JH7F&cv_ct_cx=helmets+for+men+bike&keywords=helmets+for+men+bike&pd_rd_i=B0FSZR9BJ8&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4&pd_rd_w=YWYka&pd_rd_wg=4Hu8m&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=ZZQD4252EJXE1K2BT76N&qid=1791801593&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Helmet%2Caps%2C291&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413
+          - generic [ref=f4e1839]:
+            - generic [ref=f4e1840]:
+              - generic [ref=f4e1841]: Sponsored
+              - link [ref=f4e1845] [cursor=pointer]:
+                - /url: https://sponsored-ads.amazon.in/clk?p=eAFVTt1OgmAAnbnK6M9xURuXtHXRxq9IaGPt-xANLUz8Kb1hKIhMRAQmjQteojfpFXqF7LJ36LK7tnS1ztXZ-dtBGrmvz5f3HfQQsEynrnW7Kteo9fAMUz6hH-3bBZwWA6LZTu5KceIuIj7W9lmOJzmeLDAkPdhqw2EOyJ0bWVPa6Cmya1rhNJr76EFX1WSpWVOVgVzBJORsY-ihZQSjie5bwWjuGpGlO57reJY-jMbonjEzkrlHOh6GhMMlsc7i25anKyrOIxk6__axel69VrCjzR6xruPHLE0zNCOUWKFQ5DmGzSqqVs5K99JFE72qQCD5VYW4BClcrGGDFLYCPZnx4D9SaKewlULwQ2wsL9nyU62-HAFH4kPIiWwP6UyiyA_LFBXHMfl7mjJ9CtLV9kArwbpwbQTWWHSmUv-u_wAF59w39cDUHfEvspF8d2IGYvQNm5d9Xg&v=c1&r=https://www.amazon.in/TVS-Cruisetown-Protection-Comfortable-Lightweight/dp/B0FSZR9BJ8/ref=sxin_17_sbv_search_btf?aref=ikCYMYWB8i&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&crid=19Z8HO7J9JH7F&cv_ct_cx=helmets+for+men+bike&keywords=helmets+for+men+bike&pd_rd_i=B0FSZR9BJ8&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4&pd_rd_w=YWYka&pd_rd_wg=4Hu8m&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=ZZQD4252EJXE1K2BT76N&qid=1791801593&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Helmet%2Caps%2C291&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413
+                - heading "TVS Cruisetown Open Face Helmet, Half Face Helmet for Riders | ISI & DOT Certified | Premium Protection for Men & Women | Comfortable, Durable & Lightweight Design with Visor" [level=2] [ref=f4e1846]
+            - generic [ref=f4e1847]:
+              - generic [ref=f4e1848]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e1850] [cursor=pointer]:
+                  - generic [ref=f4e1851]: 4.2 out of 5 stars
+                - link "681 ratings" [ref=f4e1854] [cursor=pointer]:
+                  - /url: https://sponsored-ads.amazon.in/clk?p=eAFVTt1OgmAAnbnK6M9xURuXtHXRxq9IaGPt-xANLUz8Kb1hKIhMRAQmjQteojfpFXqF7LJ36LK7tnS1ztXZ-dtBGrmvz5f3HfQQsEynrnW7Kteo9fAMUz6hH-3bBZwWA6LZTu5KceIuIj7W9lmOJzmeLDAkPdhqw2EOyJ0bWVPa6Cmya1rhNJr76EFX1WSpWVOVgVzBJORsY-ihZQSjie5bwWjuGpGlO57reJY-jMbonjEzkrlHOh6GhMMlsc7i25anKyrOIxk6__axel69VrCjzR6xruPHLE0zNCOUWKFQ5DmGzSqqVs5K99JFE72qQCD5VYW4BClcrGGDFLYCPZnx4D9SaKewlULwQ2wsL9nyU62-HAFH4kPIiWwP6UyiyA_LFBXHMfl7mjJ9CtLV9kArwbpwbQTWWHSmUv-u_wAF59w39cDUHfEvspF8d2IGYvQNm5d9Xg&v=c1&r=https://www.amazon.in/TVS-Cruisetown-Protection-Comfortable-Lightweight/dp/B0FSZR9BJ8/ref=sxin_17_sbv_search_btf?aref=ikCYMYWB8i&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&crid=19Z8HO7J9JH7F&cv_ct_cx=helmets+for+men+bike&keywords=helmets+for+men+bike&pd_rd_i=B0FSZR9BJ8&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4&pd_rd_w=YWYka&pd_rd_wg=4Hu8m&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=ZZQD4252EJXE1K2BT76N&qid=1791801593&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Helmet%2Caps%2C291&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413#customerReviews
+                  - text: (681)
+              - generic [ref=f4e1855]: 100+ bought in past month
+            - generic [ref=f4e1858]:
+              - generic [ref=f4e1859]:
+                - generic [ref=f4e1861]:
+                  - generic [ref=f4e1862]: Price, product page
+                  - 'link "₹1,528 M.R.P: ₹1,899 M.R.P: ₹1,899" [ref=f4e1863] [cursor=pointer]':
+                    - /url: https://sponsored-ads.amazon.in/clk?p=eAFVTt1OgmAAnbnK6M9xURuXtHXRxq9IaGPt-xANLUz8Kb1hKIhMRAQmjQteojfpFXqF7LJ36LK7tnS1ztXZ-dtBGrmvz5f3HfQQsEynrnW7Kteo9fAMUz6hH-3bBZwWA6LZTu5KceIuIj7W9lmOJzmeLDAkPdhqw2EOyJ0bWVPa6Cmya1rhNJr76EFX1WSpWVOVgVzBJORsY-ihZQSjie5bwWjuGpGlO57reJY-jMbonjEzkrlHOh6GhMMlsc7i25anKyrOIxk6__axel69VrCjzR6xruPHLE0zNCOUWKFQ5DmGzSqqVs5K99JFE72qQCD5VYW4BClcrGGDFLYCPZnx4D9SaKewlULwQ2wsL9nyU62-HAFH4kPIiWwP6UyiyA_LFBXHMfl7mjJ9CtLV9kArwbpwbQTWWHSmUv-u_wAF59w39cDUHfEvspF8d2IGYvQNm5d9Xg&v=c1&r=https://www.amazon.in/TVS-Cruisetown-Protection-Comfortable-Lightweight/dp/B0FSZR9BJ8/ref=sxin_17_sbv_search_btf?aref=ikCYMYWB8i&content-id=amzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece%3Aamzn1.sym.0de98169-95e4-458d-8ca2-b1da70ccdece&crid=19Z8HO7J9JH7F&cv_ct_cx=helmets+for+men+bike&keywords=helmets+for+men+bike&pd_rd_i=B0FSZR9BJ8&pd_rd_r=606dcba1-1891-4b7d-9ae5-8c2fb29f46d4&pd_rd_w=YWYka&pd_rd_wg=4Hu8m&pf_rd_p=0de98169-95e4-458d-8ca2-b1da70ccdece&pf_rd_r=ZZQD4252EJXE1K2BT76N&qid=1791801593&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Helmet%2Caps%2C291&sr=1-1-bc174091-0cdb-4802-a37c-8b1bf6a53413
+                    - generic [ref=f4e1864]:
+                      - generic [ref=f4e1865]: ₹1,528
+                      - generic [ref=f4e1866]: ₹1,528
+                    - generic [ref=f4e1867]: "M.R.P: ₹1,899"
+                    - generic [ref=f4e1868]:
+                      - text: "M.R.P:"
+                      - generic [ref=f4e1869]:
+                        - generic [ref=f4e1870]: ₹1,899
+                        - text: ₹1,899
+                  - text: (20% off)
+                - generic [ref=f4e1871]: Up to 5% back with Amazon Pay ICICI card
+              - generic [ref=f4e1878]:
+                - generic [ref=f4e1879]: FREE delivery Wed, 14 Oct
+                - generic [ref=f4e1881]: Or fastest delivery Tomorrow, 13 Oct
+      - generic [ref=f4e1884]:
+        - heading "More results" [level=2] [ref=f4e1888]
+        - generic:
+          - list
+      - listitem [ref=f4e1889]:
+        - generic [ref=f4e1894]:
+          - link [ref=f4e1897] [cursor=pointer]:
+            - /url: /Certified-Flip-Up-Helmet-Women-Clear/dp/B011GOY6HG/ref=sr_1_9?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-9
+          - generic [ref=f4e1900]:
+            - link [ref=f4e1902] [cursor=pointer]:
+              - /url: /Certified-Flip-Up-Helmet-Women-Clear/dp/B011GOY6HG/ref=sr_1_9?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-9
+              - heading "Vega Crux ISI Certified Flip-Up Helmet for Men and Women with Clear Visor(Black, Size:M)" [level=2] [ref=f4e1903]
+            - generic [ref=f4e1904]:
+              - generic [ref=f4e1905]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e1907] [cursor=pointer]:
+                  - generic [ref=f4e1908]: 4.2 out of 5 stars
+                - link "29,414 ratings" [ref=f4e1911] [cursor=pointer]:
+                  - /url: /Certified-Flip-Up-Helmet-Women-Clear/dp/B011GOY6HG/ref=sr_1_9?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-9#customerReviews
+                  - text: (29.4K)
+              - generic [ref=f4e1912]: 2K+ bought in past month
+            - link "See options" [ref=f4e1920] [cursor=pointer]:
+              - /url: /Certified-Flip-Up-Helmet-Women-Clear/dp/B011GOY6HG/ref=sr_1_9_so_AUTOMOTIVE_HELMET?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-9
+      - listitem [ref=f4e1921]:
+        - generic [ref=f4e1926]:
+          - link [ref=f4e1929] [cursor=pointer]:
+            - /url: /Steelbird-SBA-7-7Wings-Certified-Thermoplastic/dp/B09MKLNBB1/ref=sr_1_10?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-10
+          - generic [ref=f4e1932]:
+            - link [ref=f4e1934] [cursor=pointer]:
+              - /url: /Steelbird-SBA-7-7Wings-Certified-Thermoplastic/dp/B09MKLNBB1/ref=sr_1_10?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-10
+              - heading "Steelbird SBA-7 7Wings ISI Certified Flip-Up Helmet for Men and Women with Inner Smoke Sun Shield with Skull Cap" [level=2] [ref=f4e1935]
+            - generic [ref=f4e1936]:
+              - generic [ref=f4e1937]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e1939] [cursor=pointer]:
+                  - generic [ref=f4e1940]: 4.2 out of 5 stars
+                - link "26,670 ratings" [ref=f4e1943] [cursor=pointer]:
+                  - /url: /Steelbird-SBA-7-7Wings-Certified-Thermoplastic/dp/B09MKLNBB1/ref=sr_1_10?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-10#customerReviews
+                  - text: (26.6K)
+              - generic [ref=f4e1944]: 300+ bought in past month
+            - generic [ref=f4e1945]:
+              - generic [ref=f4e1947]:
+                - generic [ref=f4e1948]: Price, product page
+                - 'link "₹1,832 M.R.P: ₹2,349 M.R.P: ₹2,349" [ref=f4e1949] [cursor=pointer]':
+                  - /url: /Steelbird-SBA-7-7Wings-Certified-Thermoplastic/dp/B09MKLNBB1/ref=sr_1_10?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-10
+                  - generic [ref=f4e1950]:
+                    - generic [ref=f4e1951]: ₹1,832
+                    - generic [ref=f4e1952]: ₹1,832
+                  - generic [ref=f4e1953]: "M.R.P: ₹2,349"
+                  - generic [ref=f4e1954]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e1955]:
+                      - generic [ref=f4e1956]: ₹2,349
+                      - text: ₹2,349
+                - text: (22% off)
+              - generic [ref=f4e1957]: Flat 5% Off on all cc dc cards
+            - generic [ref=f4e1962]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e1980] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e1981]
+              - generic [ref=f4e1982]: Add to cart
+            - generic [ref=f4e1984]:
+              - text: More Buying Choices₹1,691
+              - link "(2 new offers)" [ref=f4e1986] [cursor=pointer]:
+                - /url: /gp/offer-listing/B09MKLNBB1/ref=sr_1_10_olp?keywords=helmets+for+men+bike&crid=19Z8HO7J9JH7F&sprefix=Helmet%2Caps%2C291&dib_tag=se&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&qid=1791801593&sr=8-10
+      - listitem [ref=f4e1987]:
+        - generic [ref=f4e1994]:
+          - link [ref=f4e1997] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4OTMzMjo6MDo6&url=%2FSteelbird-SBA-20-Certified-Flip-Up-Spoiler%2Fdp%2FB0CXXFJSYG%2Fref%3Dsr_1_11_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-11-spons%26aref%3DmvPGhJThFY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=mvPGhJThFY&sp_cr=ZAZ
+          - generic [ref=f4e2000]:
+            - generic [ref=f4e2001]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e2004] [cursor=pointer]:
+                - generic [ref=f4e2005]: Sponsored
+              - link [ref=f4e2007] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4OTMzMjo6MDo6&url=%2FSteelbird-SBA-20-Certified-Flip-Up-Spoiler%2Fdp%2FB0CXXFJSYG%2Fref%3Dsr_1_11_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-11-spons%26aref%3DmvPGhJThFY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=mvPGhJThFY&sp_cr=ZAZ
+                - heading "Sponsored Ad - Steelbird SBA-20 7Wings ISI Certified Flip-Up Helmet with Black Spoiler for Men and Women with Inner Smoke Sun Shield with Skull Cap" [level=2] [ref=f4e2008]: Steelbird SBA-20 7Wings ISI Certified Flip-Up Helmet with Black Spoiler for Men and Women with Inner Smoke Sun Shield with Skull Cap
+            - generic [ref=f4e2009]:
+              - generic [ref=f4e2010]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e2012] [cursor=pointer]:
+                  - generic [ref=f4e2013]: 4.2 out of 5 stars
+                - link "1,947 ratings" [ref=f4e2016] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4OTMzMjo6MDo6&url=%2FSteelbird-SBA-20-Certified-Flip-Up-Spoiler%2Fdp%2FB0CXXFJSYG%2Fref%3Dsr_1_11_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-11-spons%26aref%3DmvPGhJThFY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=mvPGhJThFY&sp_cr=ZAZ#customerReviews
+                  - text: (1.9K)
+              - generic [ref=f4e2017]: 200+ bought in past month
+            - generic [ref=f4e2018]:
+              - link "Limited time deal" [ref=f4e2020] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2026]:
+                - generic [ref=f4e2027]: Price, product page
+                - 'link "₹1,942 M.R.P: ₹2,199 M.R.P: ₹2,199" [ref=f4e2028] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4OTMzMjo6MDo6&url=%2FSteelbird-SBA-20-Certified-Flip-Up-Spoiler%2Fdp%2FB0CXXFJSYG%2Fref%3Dsr_1_11_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-11-spons%26aref%3DmvPGhJThFY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=mvPGhJThFY&sp_cr=ZAZ
+                  - generic [ref=f4e2029]:
+                    - generic [ref=f4e2030]: ₹1,942
+                    - generic [ref=f4e2031]: ₹1,942
+                  - generic [ref=f4e2032]: "M.R.P: ₹2,199"
+                  - generic [ref=f4e2033]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2034]:
+                      - generic [ref=f4e2035]: ₹2,199
+                      - text: ₹2,199
+                - text: (12% off)
+              - generic [ref=f4e2036]: Flat 5% Off on all cc dc cards
+            - generic [ref=f4e2041]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e2059] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2060]
+              - generic [ref=f4e2061]: Add to cart
+      - listitem [ref=f4e2062]:
+        - generic [ref=f4e2069]:
+          - link [ref=f4e2072] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4MjIzMjo6MDo6&url=%2FSteelbird-SBA-21-Genie-Certified-Graphic%2Fdp%2FB0D2QQ5253%2Fref%3Dsr_1_12_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-12-spons%26aref%3DOV01KDDK5H%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=OV01KDDK5H&sp_cr=ZAZ
+          - generic [ref=f4e2075]:
+            - generic [ref=f4e2076]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e2079] [cursor=pointer]:
+                - generic [ref=f4e2080]: Sponsored
+              - link [ref=f4e2082] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4MjIzMjo6MDo6&url=%2FSteelbird-SBA-21-Genie-Certified-Graphic%2Fdp%2FB0D2QQ5253%2Fref%3Dsr_1_12_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-12-spons%26aref%3DOV01KDDK5H%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=OV01KDDK5H&sp_cr=ZAZ
+                - heading "Sponsored Ad - Steelbird SBA-21 Genie ISI Certified Full Face Graphic Helmet for Men and Women with Inner Smoke Sun Shield with Skull Cap" [level=2] [ref=f4e2083]: Steelbird SBA-21 Genie ISI Certified Full Face Graphic Helmet for Men and Women with Inner Smoke Sun Shield with Skull Cap
+            - generic [ref=f4e2085]:
+              - text: "3.7"
+              - button "3.7 out of 5 stars, rating details" [ref=f4e2087] [cursor=pointer]:
+                - generic [ref=f4e2088]: 3.7 out of 5 stars
+              - link "491 ratings" [ref=f4e2091] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4MjIzMjo6MDo6&url=%2FSteelbird-SBA-21-Genie-Certified-Graphic%2Fdp%2FB0D2QQ5253%2Fref%3Dsr_1_12_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-12-spons%26aref%3DOV01KDDK5H%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=OV01KDDK5H&sp_cr=ZAZ#customerReviews
+                - text: (491)
+            - generic [ref=f4e2092]:
+              - link "Limited time deal" [ref=f4e2094] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2100]:
+                - generic [ref=f4e2101]: Price, product page
+                - 'link "₹2,061 M.R.P: ₹2,749 M.R.P: ₹2,749" [ref=f4e2102] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4MjIzMjo6MDo6&url=%2FSteelbird-SBA-21-Genie-Certified-Graphic%2Fdp%2FB0D2QQ5253%2Fref%3Dsr_1_12_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-12-spons%26aref%3DOV01KDDK5H%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=OV01KDDK5H&sp_cr=ZAZ
+                  - generic [ref=f4e2103]:
+                    - generic [ref=f4e2104]: ₹2,061
+                    - generic [ref=f4e2105]: ₹2,061
+                  - generic [ref=f4e2106]: "M.R.P: ₹2,749"
+                  - generic [ref=f4e2107]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2108]:
+                      - generic [ref=f4e2109]: ₹2,749
+                      - text: ₹2,749
+                - text: (25% off)
+              - generic [ref=f4e2110]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2115]:
+              - generic [ref=f4e2116]: FREE delivery Sat, 17 Oct
+              - generic "Only 1 left in stock." [ref=f4e2121]
+            - generic [ref=f4e2135] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2136]
+              - generic [ref=f4e2137]: Add to cart
+      - listitem [ref=f4e2138]:
+        - generic [ref=f4e2145]:
+          - link [ref=f4e2148] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4NTQzMjo6MDo6&url=%2FSteelbird-Huracan-Certified-Flip-Up-Helmet%2Fdp%2FB09S9VK3SY%2Fref%3Dsr_1_13_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-13-spons%26aref%3DRKYVxKHbrK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=RKYVxKHbrK&sp_cr=ZAZ
+          - generic [ref=f4e2151]:
+            - generic [ref=f4e2152]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e2155] [cursor=pointer]:
+                - generic [ref=f4e2156]: Sponsored
+              - link [ref=f4e2158] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4NTQzMjo6MDo6&url=%2FSteelbird-Huracan-Certified-Flip-Up-Helmet%2Fdp%2FB09S9VK3SY%2Fref%3Dsr_1_13_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-13-spons%26aref%3DRKYVxKHbrK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=RKYVxKHbrK&sp_cr=ZAZ
+                - heading "Sponsored Ad - Steelbird SBA-7 Huracan ISI Certified Flip-Up Helmet for Men and Women with Inner Sun Shield with Skull Cap" [level=2] [ref=f4e2159]: Steelbird SBA-7 Huracan ISI Certified Flip-Up Helmet for Men and Women with Inner Sun Shield with Skull Cap
+            - generic [ref=f4e2161]:
+              - text: "4.1"
+              - button "4.1 out of 5 stars, rating details" [ref=f4e2163] [cursor=pointer]:
+                - generic [ref=f4e2164]: 4.1 out of 5 stars
+              - link "2,058 ratings" [ref=f4e2167] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4NTQzMjo6MDo6&url=%2FSteelbird-Huracan-Certified-Flip-Up-Helmet%2Fdp%2FB09S9VK3SY%2Fref%3Dsr_1_13_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-13-spons%26aref%3DRKYVxKHbrK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=RKYVxKHbrK&sp_cr=ZAZ#customerReviews
+                - text: (2K)
+            - generic [ref=f4e2168]:
+              - link "Limited time deal" [ref=f4e2170] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2176]:
+                - generic [ref=f4e2177]: Price, product page
+                - 'link "₹1,974 M.R.P: ₹2,309 M.R.P: ₹2,309" [ref=f4e2178] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY4NTQzMjo6MDo6&url=%2FSteelbird-Huracan-Certified-Flip-Up-Helmet%2Fdp%2FB09S9VK3SY%2Fref%3Dsr_1_13_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-13-spons%26aref%3DRKYVxKHbrK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=RKYVxKHbrK&sp_cr=ZAZ
+                  - generic [ref=f4e2179]:
+                    - generic [ref=f4e2180]: ₹1,974
+                    - generic [ref=f4e2181]: ₹1,974
+                  - generic [ref=f4e2182]: "M.R.P: ₹2,309"
+                  - generic [ref=f4e2183]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2184]:
+                      - generic [ref=f4e2185]: ₹2,309
+                      - text: ₹2,309
+                - text: (15% off)
+              - generic [ref=f4e2186]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2191]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e2209] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2210]
+              - generic [ref=f4e2211]: Add to cart
+      - listitem [ref=f4e2212]:
+        - generic [ref=f4e2219]:
+          - link [ref=f4e2222] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5MzMzMjo6MDo6&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0DSLHQZFQ%2Fref%3Dsr_1_14_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-14-spons%26aref%3DTPQq54QmLR%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=TPQq54QmLR&sp_cr=ZAZ
+          - generic [ref=f4e2225]:
+            - generic [ref=f4e2226]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e2229] [cursor=pointer]:
+                - generic [ref=f4e2230]: Sponsored
+              - link [ref=f4e2232] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5MzMzMjo6MDo6&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0DSLHQZFQ%2Fref%3Dsr_1_14_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-14-spons%26aref%3DTPQq54QmLR%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=TPQq54QmLR&sp_cr=ZAZ
+                - heading "Sponsored Ad - Steelbird SBH-57 Fighter F5 ISI and DOT Certified Full Face Helmet for Men and Women with Inner Silver Sun Shield with Arm Sleeve" [level=2] [ref=f4e2233]: Steelbird SBH-57 Fighter F5 ISI and DOT Certified Full Face Helmet for Men and Women with Inner Silver Sun Shield with Arm Sleeve
+            - generic [ref=f4e2235]:
+              - text: "4.2"
+              - button "4.2 out of 5 stars, rating details" [ref=f4e2237] [cursor=pointer]:
+                - generic [ref=f4e2238]: 4.2 out of 5 stars
+              - link "42 ratings" [ref=f4e2241] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5MzMzMjo6MDo6&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0DSLHQZFQ%2Fref%3Dsr_1_14_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-14-spons%26aref%3DTPQq54QmLR%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=TPQq54QmLR&sp_cr=ZAZ#customerReviews
+                - text: (42)
+            - generic [ref=f4e2242]:
+              - generic [ref=f4e2244]:
+                - generic [ref=f4e2245]: Price, product page
+                - 'link "₹3,079 M.R.P: ₹3,999 M.R.P: ₹3,999" [ref=f4e2246] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5MzMzMjo6MDo6&url=%2FSteelbird-SBH-57-Fighter-Certified-Helmet%2Fdp%2FB0DSLHQZFQ%2Fref%3Dsr_1_14_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-14-spons%26aref%3DTPQq54QmLR%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=TPQq54QmLR&sp_cr=ZAZ
+                  - generic [ref=f4e2247]:
+                    - generic [ref=f4e2248]: ₹3,079
+                    - generic [ref=f4e2249]: ₹3,079
+                  - generic [ref=f4e2250]: "M.R.P: ₹3,999"
+                  - generic [ref=f4e2251]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2252]:
+                      - generic [ref=f4e2253]: ₹3,999
+                      - text: ₹3,999
+                - text: (23% off)
+              - generic [ref=f4e2254]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2259]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e2277] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2278]
+              - generic [ref=f4e2279]: Add to cart
+      - listitem [ref=f4e2280]:
+        - generic [ref=f4e2287]:
+          - link [ref=f4e2290] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMTI4Mzk4NDA5MzEzMjo6MDo6&url=%2FSteelbird-SBH-23-Brutal-Certified-Dashing%2Fdp%2FB0CBC5F6YH%2Fref%3Dsr_1_15_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-15-spons%26aref%3DL7hvL4lDSb%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=L7hvL4lDSb&sp_cr=ZAZ
+          - generic [ref=f4e2293]:
+            - generic [ref=f4e2294]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e2297] [cursor=pointer]:
+                - generic [ref=f4e2298]: Sponsored
+              - link [ref=f4e2300] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMTI4Mzk4NDA5MzEzMjo6MDo6&url=%2FSteelbird-SBH-23-Brutal-Certified-Dashing%2Fdp%2FB0CBC5F6YH%2Fref%3Dsr_1_15_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-15-spons%26aref%3DL7hvL4lDSb%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=L7hvL4lDSb&sp_cr=ZAZ
+                - heading "Sponsored Ad - Steelbird SBH-23 Brutal ISI Certified Open Face Helmet Men and Women with Skull Cap" [level=2] [ref=f4e2301]: Steelbird SBH-23 Brutal ISI Certified Open Face Helmet Men and Women with Skull Cap
+            - generic [ref=f4e2302]:
+              - generic [ref=f4e2303]:
+                - text: "4.3"
+                - button "4.3 out of 5 stars, rating details" [ref=f4e2305] [cursor=pointer]:
+                  - generic [ref=f4e2306]: 4.3 out of 5 stars
+                - link "3,340 ratings" [ref=f4e2309] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMTI4Mzk4NDA5MzEzMjo6MDo6&url=%2FSteelbird-SBH-23-Brutal-Certified-Dashing%2Fdp%2FB0CBC5F6YH%2Fref%3Dsr_1_15_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-15-spons%26aref%3DL7hvL4lDSb%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=L7hvL4lDSb&sp_cr=ZAZ#customerReviews
+                  - text: (3.3K)
+              - generic [ref=f4e2310]: 100+ bought in past month
+            - generic [ref=f4e2311]:
+              - link "Limited time deal" [ref=f4e2313] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2319]:
+                - generic [ref=f4e2320]: Price, product page
+                - 'link "₹998 M.R.P: ₹1,549 M.R.P: ₹1,549" [ref=f4e2321] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMTI4Mzk4NDA5MzEzMjo6MDo6&url=%2FSteelbird-SBH-23-Brutal-Certified-Dashing%2Fdp%2FB0CBC5F6YH%2Fref%3Dsr_1_15_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-15-spons%26aref%3DL7hvL4lDSb%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=L7hvL4lDSb&sp_cr=ZAZ
+                  - generic [ref=f4e2322]:
+                    - generic [ref=f4e2323]: ₹998
+                    - generic [ref=f4e2324]: ₹998
+                  - generic [ref=f4e2325]: "M.R.P: ₹1,549"
+                  - generic [ref=f4e2326]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2327]:
+                      - generic [ref=f4e2328]: ₹1,549
+                      - text: ₹1,549
+                - text: (36% off)
+              - generic [ref=f4e2329]: Flat 5% Off on all cc dc cards
+            - generic [ref=f4e2336]:
+              - generic [ref=f4e2337]: FREE delivery Sat, 17 Oct
+              - generic [ref=f4e2339]: Or fastest delivery Wed, 14 Oct
+            - generic [ref=f4e2354] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2355]
+              - generic [ref=f4e2356]: Add to cart
+      - listitem [ref=f4e2357]:
+        - generic [ref=f4e2362]:
+          - link [ref=f4e2365] [cursor=pointer]:
+            - /url: /Vega-Absorbing-Comfortable-Lightweight-Aerodynamic/dp/B0DSPM46C4/ref=sr_1_16?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-16
+          - generic [ref=f4e2368]:
+            - link [ref=f4e2370] [cursor=pointer]:
+              - /url: /Vega-Absorbing-Comfortable-Lightweight-Aerodynamic/dp/B0DSPM46C4/ref=sr_1_16?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-16
+              - heading "Vega Zap D/V Full Face Riding Helmet with Dual Visor, Shock Absorbing Liner, Comfortable Interior, Lightweight Shell, Aerodynamic Design, and Modern Black Styling Black-L" [level=2] [ref=f4e2371]
+            - generic [ref=f4e2372]:
+              - generic [ref=f4e2373]:
+                - text: "4.1"
+                - button "4.1 out of 5 stars, rating details" [ref=f4e2375] [cursor=pointer]:
+                  - generic [ref=f4e2376]: 4.1 out of 5 stars
+                - link "521 ratings" [ref=f4e2379] [cursor=pointer]:
+                  - /url: /Vega-Absorbing-Comfortable-Lightweight-Aerodynamic/dp/B0DSPM46C4/ref=sr_1_16?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-16#customerReviews
+                  - text: (521)
+              - generic [ref=f4e2380]: 200+ bought in past month
+            - generic [ref=f4e2381]:
+              - link "Great Indian Festival" [ref=f4e2383] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2389]:
+                - generic [ref=f4e2390]: Price, product page
+                - 'link "₹1,782 M.R.P: ₹2,546 M.R.P: ₹2,546" [ref=f4e2391] [cursor=pointer]':
+                  - /url: /Vega-Absorbing-Comfortable-Lightweight-Aerodynamic/dp/B0DSPM46C4/ref=sr_1_16?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-16
+                  - generic [ref=f4e2392]:
+                    - generic [ref=f4e2393]: ₹1,782
+                    - generic [ref=f4e2394]: ₹1,782
+                  - generic [ref=f4e2395]: "M.R.P: ₹2,546"
+                  - generic [ref=f4e2396]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2397]:
+                      - generic [ref=f4e2398]: ₹2,546
+                      - text: ₹2,546
+                - text: (30% off)
+              - generic [ref=f4e2399]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2404]: ₹99 delivery Today 6 pm - 8 pm
+            - generic [ref=f4e2424] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2425]
+              - generic [ref=f4e2426]: Add to cart
+      - listitem [ref=f4e2427]:
+        - generic [ref=f4e2432]:
+          - link [ref=f4e2435] [cursor=pointer]:
+            - /url: /Steelbird-SBA-20-Certified-Flip-Up-Spoiler/dp/B0CXXFJSYG/ref=sr_1_17?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-17
+          - generic [ref=f4e2438]:
+            - link [ref=f4e2440] [cursor=pointer]:
+              - /url: /Steelbird-SBA-20-Certified-Flip-Up-Spoiler/dp/B0CXXFJSYG/ref=sr_1_17?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-17
+              - heading "Steelbird SBA-20 7Wings ISI Certified Flip-Up Helmet with Black Spoiler for Men and Women with Inner Smoke Sun Shield with Skull Cap" [level=2] [ref=f4e2441]
+            - generic [ref=f4e2442]:
+              - generic [ref=f4e2443]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e2445] [cursor=pointer]:
+                  - generic [ref=f4e2446]: 4.2 out of 5 stars
+                - link "1,947 ratings" [ref=f4e2449] [cursor=pointer]:
+                  - /url: /Steelbird-SBA-20-Certified-Flip-Up-Spoiler/dp/B0CXXFJSYG/ref=sr_1_17?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-17#customerReviews
+                  - text: (1.9K)
+              - generic [ref=f4e2450]: 200+ bought in past month
+            - generic [ref=f4e2451]:
+              - link "Limited time deal" [ref=f4e2453] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2459]:
+                - generic [ref=f4e2460]: Price, product page
+                - 'link "₹1,942 M.R.P: ₹2,199 M.R.P: ₹2,199" [ref=f4e2461] [cursor=pointer]':
+                  - /url: /Steelbird-SBA-20-Certified-Flip-Up-Spoiler/dp/B0CXXFJSYG/ref=sr_1_17?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-17
+                  - generic [ref=f4e2462]:
+                    - generic [ref=f4e2463]: ₹1,942
+                    - generic [ref=f4e2464]: ₹1,942
+                  - generic [ref=f4e2465]: "M.R.P: ₹2,199"
+                  - generic [ref=f4e2466]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2467]:
+                      - generic [ref=f4e2468]: ₹2,199
+                      - text: ₹2,199
+                - text: (12% off)
+              - generic [ref=f4e2469]: Flat 5% Off on all cc dc cards
+            - generic [ref=f4e2474]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e2492] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2493]
+              - generic [ref=f4e2494]: Add to cart
+      - listitem [ref=f4e2495]:
+        - generic [ref=f4e2500]:
+          - link [ref=f4e2503] [cursor=pointer]:
+            - /url: /4U-Supreme-Marked-Unbreakable-Motorbike/dp/B0FV2WT7N3/ref=sr_1_18?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-18
+          - generic [ref=f4e2506]:
+            - link [ref=f4e2508] [cursor=pointer]:
+              - /url: /4U-Supreme-Marked-Unbreakable-Motorbike/dp/B0FV2WT7N3/ref=sr_1_18?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-18
+              - heading "Volt Full Face ISI Marked 100% ABS with Unbreakable Dual Visor Motorbike Helmet Black" [level=2] [ref=f4e2509]
+            - generic [ref=f4e2510]:
+              - generic [ref=f4e2511]:
+                - text: "4.0"
+                - button "4.0 out of 5 stars, rating details" [ref=f4e2513] [cursor=pointer]:
+                  - generic [ref=f4e2514]: 4.0 out of 5 stars
+                - link "187 ratings" [ref=f4e2517] [cursor=pointer]:
+                  - /url: /4U-Supreme-Marked-Unbreakable-Motorbike/dp/B0FV2WT7N3/ref=sr_1_18?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-18#customerReviews
+                  - text: (187)
+              - generic [ref=f4e2518]: 300+ bought in past month
+            - generic [ref=f4e2519]:
+              - generic [ref=f4e2521]:
+                - generic [ref=f4e2522]: Price, product page
+                - 'link "₹999 ( ₹99,900 /100 g) M.R.P: ₹1,599 M.R.P: ₹1,599" [ref=f4e2523] [cursor=pointer]':
+                  - /url: /4U-Supreme-Marked-Unbreakable-Motorbike/dp/B0FV2WT7N3/ref=sr_1_18?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-18
+                  - generic [ref=f4e2524]:
+                    - generic [ref=f4e2525]: ₹999
+                    - generic [ref=f4e2526]: ₹999
+                  - generic [ref=f4e2527]:
+                    - text: (
+                    - generic [ref=f4e2528]:
+                      - generic [ref=f4e2529]: ₹99,900
+                      - text: ₹99,900
+                    - text: /100 g)
+                  - generic [ref=f4e2530]: "M.R.P: ₹1,599"
+                  - generic [ref=f4e2531]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2532]:
+                      - generic [ref=f4e2533]: ₹1,599
+                      - text: ₹1,599
+                - text: (38% off)
+              - generic [ref=f4e2534]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2539]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e2559] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2560]
+              - generic [ref=f4e2561]: Add to cart
+      - listitem [ref=f4e2562]:
+        - generic [ref=f4e2567]:
+          - link [ref=f4e2570] [cursor=pointer]:
+            - /url: /Vega-Cliff-CLF-LK-M-Helmet-Black/dp/B00NXG86UE/ref=sr_1_19?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-19
+          - generic [ref=f4e2573]:
+            - link [ref=f4e2575] [cursor=pointer]:
+              - /url: /Vega-Cliff-CLF-LK-M-Helmet-Black/dp/B00NXG86UE/ref=sr_1_19?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-19
+              - heading "Vega Cliff ISI Certified Lightweight Full Face Gloss Finish Helmet for Men and Women with Clear Visor(Black, Size:M)" [level=2] [ref=f4e2576]
+            - generic [ref=f4e2577]:
+              - generic [ref=f4e2578]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e2580] [cursor=pointer]:
+                  - generic [ref=f4e2581]: 4.2 out of 5 stars
+                - link "37,725 ratings" [ref=f4e2584] [cursor=pointer]:
+                  - /url: /Vega-Cliff-CLF-LK-M-Helmet-Black/dp/B00NXG86UE/ref=sr_1_19?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-19#customerReviews
+                  - text: (37.7K)
+              - generic [ref=f4e2585]: 1K+ bought in past month
+            - generic [ref=f4e2586]:
+              - link "Great Indian Festival" [ref=f4e2588] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2594]:
+                - generic [ref=f4e2595]: Price, product page
+                - 'link "₹767 M.R.P: ₹1,098 M.R.P: ₹1,098" [ref=f4e2596] [cursor=pointer]':
+                  - /url: /Vega-Cliff-CLF-LK-M-Helmet-Black/dp/B00NXG86UE/ref=sr_1_19?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-19
+                  - generic [ref=f4e2597]:
+                    - generic [ref=f4e2598]: ₹767
+                    - generic [ref=f4e2599]: ₹767
+                  - generic [ref=f4e2600]: "M.R.P: ₹1,098"
+                  - generic [ref=f4e2601]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2602]:
+                      - generic [ref=f4e2603]: ₹1,098
+                      - text: ₹1,098
+                - text: (30% off)
+              - generic [ref=f4e2604]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2609]: FREE delivery Mon, 19 Oct
+            - generic [ref=f4e2627] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2628]
+              - generic [ref=f4e2629]: Add to cart
+      - listitem [ref=f4e2630]:
+        - generic [ref=f4e2635]:
+          - link [ref=f4e2638] [cursor=pointer]:
+            - /url: /Certified-Gloss-Finish-Visor-Helmet/dp/B00OJZO8OG/ref=sr_1_20?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-20
+          - generic [ref=f4e2641]:
+            - link [ref=f4e2643] [cursor=pointer]:
+              - /url: /Certified-Gloss-Finish-Visor-Helmet/dp/B00OJZO8OG/ref=sr_1_20?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-20
+              - heading "Vega Off Road ISI Certified Gloss Finish Full Face Helmet for Men with Dual Visor and Stylish Peak-Black, Size:L" [level=2] [ref=f4e2644]
+            - generic [ref=f4e2645]:
+              - generic [ref=f4e2646]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e2648] [cursor=pointer]:
+                  - generic [ref=f4e2649]: 4.2 out of 5 stars
+                - link "18,826 ratings" [ref=f4e2652] [cursor=pointer]:
+                  - /url: /Certified-Gloss-Finish-Visor-Helmet/dp/B00OJZO8OG/ref=sr_1_20?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-20#customerReviews
+                  - text: (18.8K)
+              - generic [ref=f4e2653]: 300+ bought in past month
+            - generic [ref=f4e2654]:
+              - generic [ref=f4e2656]:
+                - generic [ref=f4e2657]: Price, product page
+                - 'link "₹1,243 M.R.P: ₹1,871 M.R.P: ₹1,871" [ref=f4e2658] [cursor=pointer]':
+                  - /url: /Certified-Gloss-Finish-Visor-Helmet/dp/B00OJZO8OG/ref=sr_1_20?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-20
+                  - generic [ref=f4e2659]:
+                    - generic [ref=f4e2660]: ₹1,243
+                    - generic [ref=f4e2661]: ₹1,243
+                  - generic [ref=f4e2662]: "M.R.P: ₹1,871"
+                  - generic [ref=f4e2663]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2664]:
+                      - generic [ref=f4e2665]: ₹1,871
+                      - text: ₹1,871
+                - text: (34% off)
+              - generic [ref=f4e2666]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2671]: FREE delivery Mon, 19 Oct
+            - generic [ref=f4e2689] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2690]
+              - generic [ref=f4e2691]: Add to cart
+      - listitem [ref=f4e2692]:
+        - generic [ref=f4e2699]:
+          - link [ref=f4e2702] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5NDUzMjo6MDo6&url=%2FSteelbird-SBA-7-7Wings-Certified-Thermoplastic%2Fdp%2FB09MKN3B2L%2Fref%3Dsr_1_21_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-21-spons%26aref%3DrPof7PkaY2%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=rPof7PkaY2&sp_cr=ZAZ
+          - generic [ref=f4e2705]:
+            - generic [ref=f4e2706]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e2709] [cursor=pointer]:
+                - generic [ref=f4e2710]: Sponsored
+              - link [ref=f4e2712] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5NDUzMjo6MDo6&url=%2FSteelbird-SBA-7-7Wings-Certified-Thermoplastic%2Fdp%2FB09MKN3B2L%2Fref%3Dsr_1_21_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-21-spons%26aref%3DrPof7PkaY2%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=rPof7PkaY2&sp_cr=ZAZ
+                - heading "Sponsored Ad - Steelbird SBA-7 7Wings ISI Certified Flip-Up Helmet for Men and Women with Inner Smoke Sun Shield with Skull Cap" [level=2] [ref=f4e2713]: Steelbird SBA-7 7Wings ISI Certified Flip-Up Helmet for Men and Women with Inner Smoke Sun Shield with Skull Cap
+            - generic [ref=f4e2714]:
+              - generic [ref=f4e2715]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e2717] [cursor=pointer]:
+                  - generic [ref=f4e2718]: 4.2 out of 5 stars
+                - link "26,670 ratings" [ref=f4e2721] [cursor=pointer]:
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5NDUzMjo6MDo6&url=%2FSteelbird-SBA-7-7Wings-Certified-Thermoplastic%2Fdp%2FB09MKN3B2L%2Fref%3Dsr_1_21_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-21-spons%26aref%3DrPof7PkaY2%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=rPof7PkaY2&sp_cr=ZAZ#customerReviews
+                  - text: (26.6K)
+              - generic [ref=f4e2722]: 200+ bought in past month
+            - generic [ref=f4e2723]:
+              - link "Great Indian Festival" [ref=f4e2725] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2731]:
+                - generic [ref=f4e2732]: Price, product page
+                - 'link "₹1,691 M.R.P: ₹2,349 M.R.P: ₹2,349" [ref=f4e2733] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5NDUzMjo6MDo6&url=%2FSteelbird-SBA-7-7Wings-Certified-Thermoplastic%2Fdp%2FB09MKN3B2L%2Fref%3Dsr_1_21_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-21-spons%26aref%3DrPof7PkaY2%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=rPof7PkaY2&sp_cr=ZAZ
+                  - generic [ref=f4e2734]:
+                    - generic [ref=f4e2735]: ₹1,691
+                    - generic [ref=f4e2736]: ₹1,691
+                  - generic [ref=f4e2737]: "M.R.P: ₹2,349"
+                  - generic [ref=f4e2738]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2739]:
+                      - generic [ref=f4e2740]: ₹2,349
+                      - text: ₹2,349
+                - text: (28% off)
+              - generic [ref=f4e2741]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2746]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e2764] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2765]
+              - generic [ref=f4e2766]: Add to cart
+      - listitem [ref=f4e2767]:
+        - generic [ref=f4e2774]:
+          - link [ref=f4e2777] [cursor=pointer]:
+            - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5MTkzMjo6MDo6&url=%2FSteelbird-SBH-57-Carbon-Fighter-Certified%2Fdp%2FB0DFT26J8G%2Fref%3Dsr_1_22_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-22-spons%26aref%3DHnkgiTjGrf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=HnkgiTjGrf&sp_cr=ZAZ
+          - generic [ref=f4e2780]:
+            - generic [ref=f4e2781]:
+              - button "View Sponsored information or leave ad feedback" [ref=f4e2784] [cursor=pointer]:
+                - generic [ref=f4e2785]: Sponsored
+              - link [ref=f4e2787] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5MTkzMjo6MDo6&url=%2FSteelbird-SBH-57-Carbon-Fighter-Certified%2Fdp%2FB0DFT26J8G%2Fref%3Dsr_1_22_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-22-spons%26aref%3DHnkgiTjGrf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=HnkgiTjGrf&sp_cr=ZAZ
+                - heading "Sponsored Ad - Steelbird SBH-57 Carbon Fighter ISI and DOT Certified Full Face Helmet for Men and Women with Inner Chrome Sun Shield with Arm Sleeve" [level=2] [ref=f4e2788]: Steelbird SBH-57 Carbon Fighter ISI and DOT Certified Full Face Helmet for Men and Women with Inner Chrome Sun Shield with Arm Sleeve
+            - generic [ref=f4e2790]:
+              - text: "4.4"
+              - button "4.4 out of 5 stars, rating details" [ref=f4e2792] [cursor=pointer]:
+                - generic [ref=f4e2793]: 4.4 out of 5 stars
+              - link "512 ratings" [ref=f4e2796] [cursor=pointer]:
+                - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5MTkzMjo6MDo6&url=%2FSteelbird-SBH-57-Carbon-Fighter-Certified%2Fdp%2FB0DFT26J8G%2Fref%3Dsr_1_22_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-22-spons%26aref%3DHnkgiTjGrf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=HnkgiTjGrf&sp_cr=ZAZ#customerReviews
+                - text: (512)
+            - generic [ref=f4e2797]:
+              - generic [ref=f4e2799]:
+                - generic [ref=f4e2800]: Price, product page
+                - 'link "₹3,079 M.R.P: ₹3,999 M.R.P: ₹3,999" [ref=f4e2801] [cursor=pointer]':
+                  - /url: /sspa/click?ie=UTF8&spc=MTo0Mzg4NDY4MjQ0ODQwODY5OjE3OTE4MDE1OTM6c3BfbXRmOjMwMDcyNTI4MzY5MTkzMjo6MDo6&url=%2FSteelbird-SBH-57-Carbon-Fighter-Certified%2Fdp%2FB0DFT26J8G%2Fref%3Dsr_1_22_sspa%3Fcrid%3D19Z8HO7J9JH7F%26dib%3DeyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc%26dib_tag%3Dse%26keywords%3Dhelmets%2Bfor%2Bmen%2Bbike%26qid%3D1791801593%26sprefix%3DHelmet%252Caps%252C291%26sr%3D8-22-spons%26aref%3DHnkgiTjGrf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=HnkgiTjGrf&sp_cr=ZAZ
+                  - generic [ref=f4e2802]:
+                    - generic [ref=f4e2803]: ₹3,079
+                    - generic [ref=f4e2804]: ₹3,079
+                  - generic [ref=f4e2805]: "M.R.P: ₹3,999"
+                  - generic [ref=f4e2806]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2807]:
+                      - generic [ref=f4e2808]: ₹3,999
+                      - text: ₹3,999
+                - text: (23% off)
+              - generic [ref=f4e2809]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2814]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e2832] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2833]
+              - generic [ref=f4e2834]: Add to cart
+      - listitem [ref=f4e2835]:
+        - generic [ref=f4e2840]:
+          - link [ref=f4e2843] [cursor=pointer]:
+            - /url: /Steelbird-SBH-23-Brutal-Certified-Dashing/dp/B0CBC6C2H7/ref=sr_1_23?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-23
+          - generic [ref=f4e2846]:
+            - link [ref=f4e2848] [cursor=pointer]:
+              - /url: /Steelbird-SBH-23-Brutal-Certified-Dashing/dp/B0CBC6C2H7/ref=sr_1_23?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-23
+              - heading "Steelbird SBH-23 Brutal ISI Certified Open Face Helmet Men and Women with Skull Cap" [level=2] [ref=f4e2849]
+            - generic [ref=f4e2850]:
+              - generic [ref=f4e2851]:
+                - text: "4.3"
+                - button "4.3 out of 5 stars, rating details" [ref=f4e2853] [cursor=pointer]:
+                  - generic [ref=f4e2854]: 4.3 out of 5 stars
+                - link "3,340 ratings" [ref=f4e2857] [cursor=pointer]:
+                  - /url: /Steelbird-SBH-23-Brutal-Certified-Dashing/dp/B0CBC6C2H7/ref=sr_1_23?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-23#customerReviews
+                  - text: (3.3K)
+              - generic [ref=f4e2858]: 200+ bought in past month
+            - generic [ref=f4e2859]:
+              - generic [ref=f4e2861]:
+                - generic [ref=f4e2862]: Price, product page
+                - 'link "₹999 M.R.P: ₹1,549 M.R.P: ₹1,549" [ref=f4e2863] [cursor=pointer]':
+                  - /url: /Steelbird-SBH-23-Brutal-Certified-Dashing/dp/B0CBC6C2H7/ref=sr_1_23?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-23
+                  - generic [ref=f4e2864]:
+                    - generic [ref=f4e2865]: ₹999
+                    - generic [ref=f4e2866]: ₹999
+                  - generic [ref=f4e2867]: "M.R.P: ₹1,549"
+                  - generic [ref=f4e2868]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2869]:
+                      - generic [ref=f4e2870]: ₹1,549
+                      - text: ₹1,549
+                - text: (36% off)
+              - generic [ref=f4e2871]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2878]:
+              - generic [ref=f4e2879]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e2881]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e2896] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2897]
+              - generic [ref=f4e2898]: Add to cart
+      - listitem [ref=f4e2899]:
+        - generic [ref=f4e2904]:
+          - link [ref=f4e2907] [cursor=pointer]:
+            - /url: /O2-Certified-Metallic-Lightweight-Compact/dp/B0CB8X85WN/ref=sr_1_24?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-24
+          - generic [ref=f4e2909]:
+            - link [ref=f4e2911] [cursor=pointer]:
+              - /url: /O2-Certified-Metallic-Lightweight-Compact/dp/B0CB8X85WN/ref=sr_1_24?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-24
+              - heading "O2 Open Face / Half face Helmet Unisex for Bike Women Men ISI Certified with Clear Visor Metallic Smooth Finish Lightweight & Compact (Black, 580mm Medium)" [level=2] [ref=f4e2912]
+            - generic [ref=f4e2913]:
+              - generic [ref=f4e2914]:
+                - text: "3.7"
+                - button "3.7 out of 5 stars, rating details" [ref=f4e2916] [cursor=pointer]:
+                  - generic [ref=f4e2917]: 3.7 out of 5 stars
+                - link "1,752 ratings" [ref=f4e2920] [cursor=pointer]:
+                  - /url: /O2-Certified-Metallic-Lightweight-Compact/dp/B0CB8X85WN/ref=sr_1_24?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-24#customerReviews
+                  - text: (1.7K)
+              - generic [ref=f4e2921]: 600+ bought in past month
+            - generic [ref=f4e2922]:
+              - link "Great Indian Festival" [ref=f4e2924] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2930]:
+                - generic [ref=f4e2931]: Price, product page
+                - 'link "₹550 M.R.P: ₹800 M.R.P: ₹800" [ref=f4e2932] [cursor=pointer]':
+                  - /url: /O2-Certified-Metallic-Lightweight-Compact/dp/B0CB8X85WN/ref=sr_1_24?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-24
+                  - generic [ref=f4e2933]:
+                    - generic [ref=f4e2934]: ₹550
+                    - generic [ref=f4e2935]: ₹550
+                  - generic [ref=f4e2936]: "M.R.P: ₹800"
+                  - generic [ref=f4e2937]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e2938]:
+                      - generic [ref=f4e2939]: ₹800
+                      - text: ₹800
+                - text: (31% off)
+              - generic [ref=f4e2940]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e2947]:
+              - generic [ref=f4e2948]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e2950]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e2965] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e2966]
+              - generic [ref=f4e2967]: Add to cart
+      - listitem [ref=f4e2968]:
+        - generic [ref=f4e2973]:
+          - link [ref=f4e2976] [cursor=pointer]:
+            - /url: /Certified-Texture-Lightweight-Resistant-Visor-Black-M/dp/B0D91RJVL3/ref=sr_1_25?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-25
+          - generic [ref=f4e2978]:
+            - link [ref=f4e2980] [cursor=pointer]:
+              - /url: /Certified-Texture-Lightweight-Resistant-Visor-Black-M/dp/B0D91RJVL3/ref=sr_1_25?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-25
+              - heading "Vega Ranger ISI Certified Texture Finish Lightweight Full Face Helmet for Men and Women with Scratch and UV Resistant Clear Visor-Black-M" [level=2] [ref=f4e2981]
+            - generic [ref=f4e2982]:
+              - generic [ref=f4e2983]:
+                - text: "3.9"
+                - button "3.9 out of 5 stars, rating details" [ref=f4e2985] [cursor=pointer]:
+                  - generic [ref=f4e2986]: 3.9 out of 5 stars
+                - link "298 ratings" [ref=f4e2989] [cursor=pointer]:
+                  - /url: /Certified-Texture-Lightweight-Resistant-Visor-Black-M/dp/B0D91RJVL3/ref=sr_1_25?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-25#customerReviews
+                  - text: (298)
+              - generic [ref=f4e2990]: 200+ bought in past month
+            - generic [ref=f4e2991]:
+              - link "Great Indian Festival" [ref=f4e2993] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e2999]:
+                - generic [ref=f4e3000]: Price, product page
+                - 'link "₹886 M.R.P: ₹1,098 M.R.P: ₹1,098" [ref=f4e3001] [cursor=pointer]':
+                  - /url: /Certified-Texture-Lightweight-Resistant-Visor-Black-M/dp/B0D91RJVL3/ref=sr_1_25?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-25
+                  - generic [ref=f4e3002]:
+                    - generic [ref=f4e3003]: ₹886
+                    - generic [ref=f4e3004]: ₹886
+                  - generic [ref=f4e3005]: "M.R.P: ₹1,098"
+                  - generic [ref=f4e3006]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3007]:
+                      - generic [ref=f4e3008]: ₹1,098
+                      - text: ₹1,098
+                - text: (19% off)
+              - generic [ref=f4e3009]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3014]: FREE delivery Thu, 29 Oct
+            - generic [ref=f4e3032] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3033]
+              - generic [ref=f4e3034]: Add to cart
+      - listitem [ref=f4e3035]:
+        - generic [ref=f4e3040]:
+          - link [ref=f4e3043] [cursor=pointer]:
+            - /url: /DELETION-Certified-Motorcycle-Resistant-Lightweight/dp/B0H6M5NW8H/ref=sr_1_26?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-26
+          - generic [ref=f4e3045]:
+            - link [ref=f4e3047] [cursor=pointer]:
+              - /url: /DELETION-Certified-Motorcycle-Resistant-Lightweight/dp/B0H6M5NW8H/ref=sr_1_26?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-26
+              - heading "DELETION Full Face Bike Helmet Black | ISI Certified Motorcycle Helmet for Men Impact Resistant ABS Shell | Scratch Resistant Visor | Lightweight Riding for Bike & Scooter" [level=2] [ref=f4e3048]
+            - generic [ref=f4e3049]:
+              - generic [ref=f4e3050]:
+                - text: "3.1"
+                - button "3.1 out of 5 stars, rating details" [ref=f4e3052] [cursor=pointer]:
+                  - generic [ref=f4e3053]: 3.1 out of 5 stars
+                - link "25 ratings" [ref=f4e3056] [cursor=pointer]:
+                  - /url: /DELETION-Certified-Motorcycle-Resistant-Lightweight/dp/B0H6M5NW8H/ref=sr_1_26?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-26#customerReviews
+                  - text: (25)
+              - generic [ref=f4e3057]: 100+ bought in past month
+            - generic [ref=f4e3058]:
+              - generic [ref=f4e3060]:
+                - generic [ref=f4e3061]: Price, product page
+                - 'link "₹758 M.R.P: ₹1,999 M.R.P: ₹1,999" [ref=f4e3062] [cursor=pointer]':
+                  - /url: /DELETION-Certified-Motorcycle-Resistant-Lightweight/dp/B0H6M5NW8H/ref=sr_1_26?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-26
+                  - generic [ref=f4e3063]:
+                    - generic [ref=f4e3064]: ₹758
+                    - generic [ref=f4e3065]: ₹758
+                  - generic [ref=f4e3066]: "M.R.P: ₹1,999"
+                  - generic [ref=f4e3067]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3068]:
+                      - generic [ref=f4e3069]: ₹1,999
+                      - text: ₹1,999
+                - text: (62% off)
+              - generic [ref=f4e3070]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3075]: ₹72 delivery Sat, 17 Oct
+            - generic [ref=f4e3095] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3096]
+              - generic [ref=f4e3097]: Add to cart
+      - listitem [ref=f4e3098]:
+        - generic [ref=f4e3103]:
+          - link [ref=f4e3106] [cursor=pointer]:
+            - /url: /STUDDS-Raider-Street-Certified-Helmet/dp/B0CSG11927/ref=sr_1_27?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-27
+          - generic [ref=f4e3108]:
+            - link [ref=f4e3110] [cursor=pointer]:
+              - /url: /STUDDS-Raider-Street-Certified-Helmet/dp/B0CSG11927/ref=sr_1_27?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-27
+              - heading "STUDDS Raider Street ISI Certified Full Face Helmet for Men and Women with Clear Visor (Black - L)" [level=2] [ref=f4e3111]
+            - generic [ref=f4e3112]:
+              - generic [ref=f4e3113]:
+                - text: "4.0"
+                - button "4.0 out of 5 stars, rating details" [ref=f4e3115] [cursor=pointer]:
+                  - generic [ref=f4e3116]: 4.0 out of 5 stars
+                - link "748 ratings" [ref=f4e3119] [cursor=pointer]:
+                  - /url: /STUDDS-Raider-Street-Certified-Helmet/dp/B0CSG11927/ref=sr_1_27?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-27#customerReviews
+                  - text: (748)
+              - generic [ref=f4e3120]: 300+ bought in past month
+            - generic [ref=f4e3121]:
+              - generic [ref=f4e3123]:
+                - generic [ref=f4e3124]: Price, product page
+                - 'link "₹1,008 M.R.P: ₹1,095 M.R.P: ₹1,095" [ref=f4e3125] [cursor=pointer]':
+                  - /url: /STUDDS-Raider-Street-Certified-Helmet/dp/B0CSG11927/ref=sr_1_27?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-27
+                  - generic [ref=f4e3126]:
+                    - generic [ref=f4e3127]: ₹1,008
+                    - generic [ref=f4e3128]: ₹1,008
+                  - generic [ref=f4e3129]: "M.R.P: ₹1,095"
+                  - generic [ref=f4e3130]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3131]:
+                      - generic [ref=f4e3132]: ₹1,095
+                      - text: ₹1,095
+                - text: (8% off)
+              - generic [ref=f4e3133]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3138]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e3156] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3157]
+              - generic [ref=f4e3158]: Add to cart
+      - listitem [ref=f4e3159]:
+        - generic [ref=f4e3164]:
+          - link [ref=f4e3167] [cursor=pointer]:
+            - /url: /Steelbird-Dashing-Certified-Helmet-Mechanism/dp/B0B59LXZBY/ref=sr_1_28?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-28
+          - generic [ref=f4e3169]:
+            - link [ref=f4e3171] [cursor=pointer]:
+              - /url: /Steelbird-Dashing-Certified-Helmet-Mechanism/dp/B0B59LXZBY/ref=sr_1_28?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-28
+              - heading "Steelbird GT Dashing ISI Certified Open Face Helmet for Men and Women with Inner Sun Shield ( Dual Visor Mechanism ) with Skull Cap" [level=2] [ref=f4e3172]
+            - generic [ref=f4e3174]:
+              - text: "4.2"
+              - button "4.2 out of 5 stars, rating details" [ref=f4e3176] [cursor=pointer]:
+                - generic [ref=f4e3177]: 4.2 out of 5 stars
+              - link "7,517 ratings" [ref=f4e3180] [cursor=pointer]:
+                - /url: /Steelbird-Dashing-Certified-Helmet-Mechanism/dp/B0B59LXZBY/ref=sr_1_28?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-28#customerReviews
+                - text: (7.5K)
+            - generic [ref=f4e3181]:
+              - link "Great Indian Festival" [ref=f4e3183] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e3189]:
+                - generic [ref=f4e3190]: Price, product page
+                - 'link "₹1,475 M.R.P: ₹1,749 M.R.P: ₹1,749" [ref=f4e3191] [cursor=pointer]':
+                  - /url: /Steelbird-Dashing-Certified-Helmet-Mechanism/dp/B0B59LXZBY/ref=sr_1_28?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-28
+                  - generic [ref=f4e3192]:
+                    - generic [ref=f4e3193]: ₹1,475
+                    - generic [ref=f4e3194]: ₹1,475
+                  - generic [ref=f4e3195]: "M.R.P: ₹1,749"
+                  - generic [ref=f4e3196]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3197]:
+                      - generic [ref=f4e3198]: ₹1,749
+                      - text: ₹1,749
+                - text: (16% off)
+              - generic [ref=f4e3199]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3204]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e3222] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3223]
+              - generic [ref=f4e3224]: Add to cart
+      - listitem [ref=f4e3225]:
+        - generic [ref=f4e3230]:
+          - group "Best sellerin Half Helmets" [ref=f4e3235]:
+            - generic "Best seller" [ref=f4e3237]
+          - link [ref=f4e3240] [cursor=pointer]:
+            - /url: /OTO2EYE-Open-Strap-Purpose-Black/dp/B0DBGNP629/ref=sr_1_29?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-29
+          - generic [ref=f4e3242]:
+            - group "colours available" [ref=f4e3244]:
+              - list [ref=f4e3245]:
+                - generic [ref=f4e3246]:
+                  - listitem:
+                    - link "Black":
+                      - /url: /OTO2EYE-Open-Strap-Purpose-Black/dp/B0DBGNP629/ref=cs_sr_dp_1?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-29
+                      - generic [ref=f4e3247] [cursor=pointer]
+                - generic [ref=f4e3249]:
+                  - listitem:
+                    - link "Blue":
+                      - /url: /OTO2EYE-Open-Strap-Purpose-Black/dp/B0DH5MQPR4/ref=cs_sr_dp_2?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-29
+                      - generic [ref=f4e3250] [cursor=pointer]
+                - generic [ref=f4e3252]:
+                  - listitem:
+                    - link "Green":
+                      - /url: /OTO2EYE-Open-Strap-Purpose-Black/dp/B0DH5BMZQT/ref=cs_sr_dp_3?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-29
+                      - generic [ref=f4e3253] [cursor=pointer]
+                - generic [ref=f4e3255]:
+                  - listitem:
+                    - link "Red":
+                      - /url: /OTO2EYE-Open-Strap-Purpose-Black/dp/B0DHCHDC8N/ref=cs_sr_dp_4?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-29
+                      - generic [ref=f4e3256] [cursor=pointer]
+            - link [ref=f4e3259] [cursor=pointer]:
+              - /url: /OTO2EYE-Open-Strap-Purpose-Black/dp/B0DBGNP629/ref=sr_1_29?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-29
+              - heading "OTO2EYE Open Face Cap/Half Cap with Strap All Purpose Size M" [level=2] [ref=f4e3260]
+            - generic [ref=f4e3261]:
+              - generic [ref=f4e3262]:
+                - text: "3.6"
+                - button "3.6 out of 5 stars, rating details" [ref=f4e3264] [cursor=pointer]:
+                  - generic [ref=f4e3265]: 3.6 out of 5 stars
+                - link "915 ratings" [ref=f4e3268] [cursor=pointer]:
+                  - /url: /OTO2EYE-Open-Strap-Purpose-Black/dp/B0DBGNP629/ref=sr_1_29?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-29#customerReviews
+                  - text: (915)
+              - generic [ref=f4e3269]: 1K+ bought in past month
+            - generic [ref=f4e3270]:
+              - link "Great Indian Festival" [ref=f4e3272] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e3278]:
+                - generic [ref=f4e3279]: Price, product page
+                - 'link "₹185 ( ₹18,500 /100 g) M.R.P: ₹299 M.R.P: ₹299" [ref=f4e3280] [cursor=pointer]':
+                  - /url: /OTO2EYE-Open-Strap-Purpose-Black/dp/B0DBGNP629/ref=sr_1_29?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-29
+                  - generic [ref=f4e3281]:
+                    - generic [ref=f4e3282]: ₹185
+                    - generic [ref=f4e3283]: ₹185
+                  - generic [ref=f4e3284]:
+                    - text: (
+                    - generic [ref=f4e3285]:
+                      - generic [ref=f4e3286]: ₹18,500
+                      - text: ₹18,500
+                    - text: /100 g)
+                  - generic [ref=f4e3287]: "M.R.P: ₹299"
+                  - generic [ref=f4e3288]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3289]:
+                      - generic [ref=f4e3290]: ₹299
+                      - text: ₹299
+                - text: (38% off)
+              - generic [ref=f4e3291]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3298]:
+              - generic [ref=f4e3300]:
+                - img "Bazaar"
+              - generic [ref=f4e3301]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e3303]: Or fastest delivery Today 6 pm - 8 pm
+            - generic [ref=f4e3318] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3319]
+              - generic [ref=f4e3320]: Add to cart
+      - listitem [ref=f4e3321]:
+        - generic [ref=f4e3326]:
+          - link [ref=f4e3329] [cursor=pointer]:
+            - /url: /O2-Helmet-Certified-Lightweight-Compact/dp/B0CB8ZLJKT/ref=sr_1_30?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-30
+          - generic [ref=f4e3331]:
+            - link [ref=f4e3333] [cursor=pointer]:
+              - /url: /O2-Helmet-Certified-Lightweight-Compact/dp/B0CB8ZLJKT/ref=sr_1_30?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-30
+              - heading "O2 Open Face / Half face Helmet Unisex for Bike Women Men ISI Certified with Clear Visor Smooth Finish Lightweight & Compact (ChRed, 580mm Medium)" [level=2] [ref=f4e3334]
+            - generic [ref=f4e3335]:
+              - generic [ref=f4e3336]:
+                - text: "3.7"
+                - button "3.7 out of 5 stars, rating details" [ref=f4e3338] [cursor=pointer]:
+                  - generic [ref=f4e3339]: 3.7 out of 5 stars
+                - link "1,752 ratings" [ref=f4e3342] [cursor=pointer]:
+                  - /url: /O2-Helmet-Certified-Lightweight-Compact/dp/B0CB8ZLJKT/ref=sr_1_30?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-30#customerReviews
+                  - text: (1.7K)
+              - generic [ref=f4e3343]: 200+ bought in past month
+            - generic [ref=f4e3344]:
+              - link "Great Indian Festival" [ref=f4e3346] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e3352]:
+                - generic [ref=f4e3353]: Price, product page
+                - 'link "₹550 M.R.P: ₹795 M.R.P: ₹795" [ref=f4e3354] [cursor=pointer]':
+                  - /url: /O2-Helmet-Certified-Lightweight-Compact/dp/B0CB8ZLJKT/ref=sr_1_30?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-30
+                  - generic [ref=f4e3355]:
+                    - generic [ref=f4e3356]: ₹550
+                    - generic [ref=f4e3357]: ₹550
+                  - generic [ref=f4e3358]: "M.R.P: ₹795"
+                  - generic [ref=f4e3359]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3360]:
+                      - generic [ref=f4e3361]: ₹795
+                      - text: ₹795
+                - text: (31% off)
+              - generic [ref=f4e3362]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3367]: FREE delivery 14 - 23 Oct
+            - generic [ref=f4e3385] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3386]
+              - generic [ref=f4e3387]: Add to cart
+      - listitem [ref=f4e3388]:
+        - generic [ref=f4e3393]:
+          - link [ref=f4e3396] [cursor=pointer]:
+            - /url: /Vega-Certified-Motorcycle-Resistant-Comfortable/dp/B083G63BVD/ref=sr_1_31?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-31
+          - generic [ref=f4e3398]:
+            - link [ref=f4e3400] [cursor=pointer]:
+              - /url: /Vega-Certified-Motorcycle-Resistant-Comfortable/dp/B083G63BVD/ref=sr_1_31?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-31
+              - heading "Vega Aster Helmet ComfortFit RideGuard Protection System Advanced ImpactAbsorb Shell UltraVent AirFlow Technology Black-L" [level=2] [ref=f4e3401]
+            - generic [ref=f4e3403]:
+              - text: "3.8"
+              - button "3.8 out of 5 stars, rating details" [ref=f4e3405] [cursor=pointer]:
+                - generic [ref=f4e3406]: 3.8 out of 5 stars
+              - link "4,013 ratings" [ref=f4e3409] [cursor=pointer]:
+                - /url: /Vega-Certified-Motorcycle-Resistant-Comfortable/dp/B083G63BVD/ref=sr_1_31?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-31#customerReviews
+                - text: (4K)
+            - generic [ref=f4e3410]:
+              - link "Great Indian Festival" [ref=f4e3412] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e3418]:
+                - generic [ref=f4e3419]: Price, product page
+                - 'link "₹767 M.R.P: ₹890 M.R.P: ₹890" [ref=f4e3420] [cursor=pointer]':
+                  - /url: /Vega-Certified-Motorcycle-Resistant-Comfortable/dp/B083G63BVD/ref=sr_1_31?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-31
+                  - generic [ref=f4e3421]:
+                    - generic [ref=f4e3422]: ₹767
+                    - generic [ref=f4e3423]: ₹767
+                  - generic [ref=f4e3424]: "M.R.P: ₹890"
+                  - generic [ref=f4e3425]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3426]:
+                      - generic [ref=f4e3427]: ₹890
+                      - text: ₹890
+                - text: (14% off)
+              - generic [ref=f4e3428]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3433]: FREE delivery Mon, 19 Oct
+            - generic [ref=f4e3451] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3452]
+              - generic [ref=f4e3453]: Add to cart
+      - listitem [ref=f4e3454]:
+        - generic [ref=f4e3459]:
+          - link [ref=f4e3462] [cursor=pointer]:
+            - /url: /Helmet-DualSpoiler-Performance-HighDensity-UltraComfort/dp/B0H8CRNGR4/ref=sr_1_32?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-32
+          - generic [ref=f4e3464]:
+            - link [ref=f4e3466] [cursor=pointer]:
+              - /url: /Helmet-DualSpoiler-Performance-HighDensity-UltraComfort/dp/B0H8CRNGR4/ref=sr_1_32?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-32
+              - heading "Deletion Apex Solid Full Face Helmet DualSpoiler AeroFlow Performance HighDensity EPS Liner UltraComfort Padding -M" [level=2] [ref=f4e3467]
+            - generic [ref=f4e3468]:
+              - generic [ref=f4e3469]:
+                - text: "2.8"
+                - button "2.8 out of 5 stars, rating details" [ref=f4e3471] [cursor=pointer]:
+                  - generic [ref=f4e3472]: 2.8 out of 5 stars
+                - link "14 ratings" [ref=f4e3475] [cursor=pointer]:
+                  - /url: /Helmet-DualSpoiler-Performance-HighDensity-UltraComfort/dp/B0H8CRNGR4/ref=sr_1_32?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-32#customerReviews
+                  - text: (14)
+              - generic [ref=f4e3476]: 100+ bought in past month
+            - generic [ref=f4e3477]:
+              - generic [ref=f4e3479]:
+                - generic [ref=f4e3480]: Price, product page
+                - 'link "₹999 M.R.P: ₹2,500 M.R.P: ₹2,500" [ref=f4e3481] [cursor=pointer]':
+                  - /url: /Helmet-DualSpoiler-Performance-HighDensity-UltraComfort/dp/B0H8CRNGR4/ref=sr_1_32?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-32
+                  - generic [ref=f4e3482]:
+                    - generic [ref=f4e3483]: ₹999
+                    - generic [ref=f4e3484]: ₹999
+                  - generic [ref=f4e3485]: "M.R.P: ₹2,500"
+                  - generic [ref=f4e3486]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3487]:
+                      - generic [ref=f4e3488]: ₹2,500
+                      - text: ₹2,500
+                - text: (60% off)
+              - generic [ref=f4e3489]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3494]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e3512] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3513]
+              - generic [ref=f4e3514]: Add to cart
+      - listitem [ref=f4e3515]:
+        - generic [ref=f4e3520]:
+          - link [ref=f4e3523] [cursor=pointer]:
+            - /url: /Vega-Cruiser-Open-Helmet-Burgundy/dp/B00NXFTGZY/ref=sr_1_33?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-33
+          - generic [ref=f4e3525]:
+            - link [ref=f4e3527] [cursor=pointer]:
+              - /url: /Vega-Cruiser-Open-Helmet-Burgundy/dp/B00NXFTGZY/ref=sr_1_33?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-33
+              - heading "Vega Cruiser ISI Certified Matt Finish Lightweight & Compact with Peak Open Face Helmet for Men and Women with Clear Visor(Dull Burgundy, Size:M)" [level=2] [ref=f4e3528]
+            - generic [ref=f4e3529]:
+              - generic [ref=f4e3530]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e3532] [cursor=pointer]:
+                  - generic [ref=f4e3533]: 4.2 out of 5 stars
+                - link "21,799 ratings" [ref=f4e3536] [cursor=pointer]:
+                  - /url: /Vega-Cruiser-Open-Helmet-Burgundy/dp/B00NXFTGZY/ref=sr_1_33?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-33#customerReviews
+                  - text: (21.7K)
+              - generic [ref=f4e3537]: 400+ bought in past month
+            - generic [ref=f4e3538]:
+              - link "Great Indian Festival" [ref=f4e3540] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e3546]:
+                - generic [ref=f4e3547]: Price, product page
+                - 'link "₹1,012 M.R.P: ₹1,088 M.R.P: ₹1,088" [ref=f4e3548] [cursor=pointer]':
+                  - /url: /Vega-Cruiser-Open-Helmet-Burgundy/dp/B00NXFTGZY/ref=sr_1_33?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-33
+                  - generic [ref=f4e3549]:
+                    - generic [ref=f4e3550]: ₹1,012
+                    - generic [ref=f4e3551]: ₹1,012
+                  - generic [ref=f4e3552]: "M.R.P: ₹1,088"
+                  - generic [ref=f4e3553]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3554]:
+                      - generic [ref=f4e3555]: ₹1,088
+                      - text: ₹1,088
+                - text: (7% off)
+              - generic [ref=f4e3556]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3561]: FREE delivery 14 - 31 Oct
+            - generic [ref=f4e3579] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3580]
+              - generic [ref=f4e3581]: Add to cart
+      - listitem [ref=f4e3582]:
+        - generic [ref=f4e3587]:
+          - link [ref=f4e3590] [cursor=pointer]:
+            - /url: /Vega-Crux-DX-Flip-Up-Helmet/dp/B06XDKDMB2/ref=sr_1_34?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-34
+          - generic [ref=f4e3592]:
+            - link [ref=f4e3594] [cursor=pointer]:
+              - /url: /Vega-Crux-DX-Flip-Up-Helmet/dp/B06XDKDMB2/ref=sr_1_34?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-34
+              - heading "Vega Crux Dx Black Helmet-L" [level=2] [ref=f4e3595]
+            - generic [ref=f4e3596]:
+              - generic [ref=f4e3597]:
+                - text: "4.1"
+                - button "4.1 out of 5 stars, rating details" [ref=f4e3599] [cursor=pointer]:
+                  - generic [ref=f4e3600]: 4.1 out of 5 stars
+                - link "1,236 ratings" [ref=f4e3603] [cursor=pointer]:
+                  - /url: /Vega-Crux-DX-Flip-Up-Helmet/dp/B06XDKDMB2/ref=sr_1_34?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-34#customerReviews
+                  - text: (1.2K)
+              - generic [ref=f4e3604]: 200+ bought in past month
+            - generic [ref=f4e3605]:
+              - generic [ref=f4e3607]:
+                - generic [ref=f4e3608]: Price, product page
+                - 'link "₹1,094 M.R.P: ₹1,493 M.R.P: ₹1,493" [ref=f4e3609] [cursor=pointer]':
+                  - /url: /Vega-Crux-DX-Flip-Up-Helmet/dp/B06XDKDMB2/ref=sr_1_34?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-34
+                  - generic [ref=f4e3610]:
+                    - generic [ref=f4e3611]: ₹1,094
+                    - generic [ref=f4e3612]: ₹1,094
+                  - generic [ref=f4e3613]: "M.R.P: ₹1,493"
+                  - generic [ref=f4e3614]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3615]:
+                      - generic [ref=f4e3616]: ₹1,493
+                      - text: ₹1,493
+                - text: (27% off)
+              - generic [ref=f4e3617]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3622]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e3640] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3641]
+              - generic [ref=f4e3642]: Add to cart
+      - listitem [ref=f4e3643]:
+        - generic [ref=f4e3648]:
+          - link [ref=f4e3651] [cursor=pointer]:
+            - /url: /HEADFOX-Bluetooth-Aircraft-Cancellation-Assistance/dp/B0FK4NTR46/ref=sr_1_35?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-35
+          - generic [ref=f4e3653]:
+            - link [ref=f4e3655] [cursor=pointer]:
+              - /url: /HEADFOX-Bluetooth-Aircraft-Cancellation-Assistance/dp/B0FK4NTR46/ref=sr_1_35?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-35
+              - heading "HEADFOX N2F Sharp Full Face Bluetooth Helmets for Bike | Waterproof Smart Helmet for Man & Women | ISI Certified | Built-in Bluetooth | Gloss Finish" [level=2] [ref=f4e3656]
+            - generic [ref=f4e3657]:
+              - generic [ref=f4e3658]:
+                - text: "3.8"
+                - button "3.8 out of 5 stars, rating details" [ref=f4e3660] [cursor=pointer]:
+                  - generic [ref=f4e3661]: 3.8 out of 5 stars
+                - link "85 ratings" [ref=f4e3664] [cursor=pointer]:
+                  - /url: /HEADFOX-Bluetooth-Aircraft-Cancellation-Assistance/dp/B0FK4NTR46/ref=sr_1_35?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-35#customerReviews
+                  - text: (85)
+              - generic [ref=f4e3665]: 100+ bought in past month
+            - generic [ref=f4e3666]:
+              - link "Mega Festival Deal" [ref=f4e3668] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e3674]:
+                - generic [ref=f4e3675]: Price, product page
+                - 'link "₹3,799 M.R.P: ₹7,899 M.R.P: ₹7,899" [ref=f4e3676] [cursor=pointer]':
+                  - /url: /HEADFOX-Bluetooth-Aircraft-Cancellation-Assistance/dp/B0FK4NTR46/ref=sr_1_35?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-35
+                  - generic [ref=f4e3677]:
+                    - generic [ref=f4e3678]: ₹3,799
+                    - generic [ref=f4e3679]: ₹3,799
+                  - generic [ref=f4e3680]: "M.R.P: ₹7,899"
+                  - generic [ref=f4e3681]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3682]:
+                      - generic [ref=f4e3683]: ₹7,899
+                      - text: ₹7,899
+                - text: (52% off)
+              - generic [ref=f4e3684]: Flat 5% Off on all cc dc cards
+            - generic [ref=f4e3689]: FREE delivery Mon, 26 Oct
+            - generic [ref=f4e3707] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3708]
+              - generic [ref=f4e3709]: Add to cart
+      - listitem [ref=f4e3710]:
+        - generic [ref=f4e3715]:
+          - link [ref=f4e3718] [cursor=pointer]:
+            - /url: /HEADFOX-Motorcycle-Navigation-Waterproof-Compatible/dp/B0DHL6GJS4/ref=sr_1_36?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-36
+          - generic [ref=f4e3720]:
+            - link [ref=f4e3722] [cursor=pointer]:
+              - /url: /HEADFOX-Motorcycle-Navigation-Waterproof-Compatible/dp/B0DHL6GJS4/ref=sr_1_36?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-36
+              - heading "Headfox N2 Road Motorcycle Bluetooth Flip-up ISI Certified Helmet for Men, Connects Two Mobiles at Same Time with Music, Navigation & Waterproof, Compatible with iOS and Android" [level=2] [ref=f4e3723]
+            - generic [ref=f4e3724]:
+              - generic [ref=f4e3725]:
+                - text: "4.1"
+                - button "4.1 out of 5 stars, rating details" [ref=f4e3727] [cursor=pointer]:
+                  - generic [ref=f4e3728]: 4.1 out of 5 stars
+                - link "155 ratings" [ref=f4e3731] [cursor=pointer]:
+                  - /url: /HEADFOX-Motorcycle-Navigation-Waterproof-Compatible/dp/B0DHL6GJS4/ref=sr_1_36?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-36#customerReviews
+                  - text: (155)
+              - generic [ref=f4e3732]: 100+ bought in past month
+            - generic [ref=f4e3733]:
+              - link "Mega Festival Deal" [ref=f4e3735] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e3741]:
+                - generic [ref=f4e3742]: Price, product page
+                - 'link "₹3,420 M.R.P: ₹7,899 M.R.P: ₹7,899" [ref=f4e3743] [cursor=pointer]':
+                  - /url: /HEADFOX-Motorcycle-Navigation-Waterproof-Compatible/dp/B0DHL6GJS4/ref=sr_1_36?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-36
+                  - generic [ref=f4e3744]:
+                    - generic [ref=f4e3745]: ₹3,420
+                    - generic [ref=f4e3746]: ₹3,420
+                  - generic [ref=f4e3747]: "M.R.P: ₹7,899"
+                  - generic [ref=f4e3748]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3749]:
+                      - generic [ref=f4e3750]: ₹7,899
+                      - text: ₹7,899
+                - text: (57% off)
+              - generic [ref=f4e3751]: Flat 5% Off on all cc dc cards
+            - generic [ref=f4e3758]:
+              - generic [ref=f4e3759]: FREE delivery Sun, 18 Oct
+              - generic [ref=f4e3761]: Or fastest delivery Wed, 14 Oct
+            - generic [ref=f4e3776] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3777]
+              - generic [ref=f4e3778]: Add to cart
+      - listitem [ref=f4e3779]:
+        - generic [ref=f4e3784]:
+          - link [ref=f4e3787] [cursor=pointer]:
+            - /url: /Vega-V-SKT-DKS_L-Sketch-Graphic-Helmet/dp/B00OJZPYJE/ref=sr_1_37?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-37
+          - generic [ref=f4e3789]:
+            - link [ref=f4e3791] [cursor=pointer]:
+              - /url: /Vega-V-SKT-DKS_L-Sketch-Graphic-Helmet/dp/B00OJZPYJE/ref=sr_1_37?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-37
+              - 'heading "Vega Off Road Sketch ISI Certified Matte Finish Full Face Helmet for Men with Dual Visor and Stylish Peak-Dull Black Silver, Size: L" [level=2] [ref=f4e3792]'
+            - generic [ref=f4e3793]:
+              - generic [ref=f4e3794]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e3796] [cursor=pointer]:
+                  - generic [ref=f4e3797]: 4.2 out of 5 stars
+                - link "2,271 ratings" [ref=f4e3800] [cursor=pointer]:
+                  - /url: /Vega-V-SKT-DKS_L-Sketch-Graphic-Helmet/dp/B00OJZPYJE/ref=sr_1_37?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-37#customerReviews
+                  - text: (2.2K)
+              - generic [ref=f4e3801]: 100+ bought in past month
+            - generic [ref=f4e3802]:
+              - link "Great Indian Festival" [ref=f4e3804] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e3810]:
+                - generic [ref=f4e3811]: Price, product page
+                - 'link "₹1,479 M.R.P: ₹2,114 M.R.P: ₹2,114" [ref=f4e3812] [cursor=pointer]':
+                  - /url: /Vega-V-SKT-DKS_L-Sketch-Graphic-Helmet/dp/B00OJZPYJE/ref=sr_1_37?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-37
+                  - generic [ref=f4e3813]:
+                    - generic [ref=f4e3814]: ₹1,479
+                    - generic [ref=f4e3815]: ₹1,479
+                  - generic [ref=f4e3816]: "M.R.P: ₹2,114"
+                  - generic [ref=f4e3817]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3818]:
+                      - generic [ref=f4e3819]: ₹2,114
+                      - text: ₹2,114
+                - text: (30% off)
+              - generic [ref=f4e3820]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3825]: FREE delivery 21 - 22 Oct
+            - generic [ref=f4e3843] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3844]
+              - generic [ref=f4e3845]: Add to cart
+      - listitem [ref=f4e3846]:
+        - generic [ref=f4e3851]:
+          - link [ref=f4e3854] [cursor=pointer]:
+            - /url: /STUDDS-Trooper-Certified-Finish-Flip-up/dp/B0CB8F52JM/ref=sr_1_38?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-38
+          - generic [ref=f4e3857]:
+            - link [ref=f4e3859] [cursor=pointer]:
+              - /url: /STUDDS-Trooper-Certified-Finish-Flip-up/dp/B0CB8F52JM/ref=sr_1_38?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-38
+              - heading "STUDDS Trooper ISI and DOT Certified Matt Finish Flip-up Full Face Helmet for Men and Women with Inner Sun Visor (Matt Gun Grey M)" [level=2] [ref=f4e3860]
+            - generic [ref=f4e3861]:
+              - generic [ref=f4e3862]:
+                - text: "4.3"
+                - button "4.3 out of 5 stars, rating details" [ref=f4e3864] [cursor=pointer]:
+                  - generic [ref=f4e3865]: 4.3 out of 5 stars
+                - link "743 ratings" [ref=f4e3868] [cursor=pointer]:
+                  - /url: /STUDDS-Trooper-Certified-Finish-Flip-up/dp/B0CB8F52JM/ref=sr_1_38?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-38#customerReviews
+                  - text: (743)
+              - generic [ref=f4e3869]: 100+ bought in past month
+            - generic [ref=f4e3870]:
+              - generic [ref=f4e3872]:
+                - generic [ref=f4e3873]: Price, product page
+                - 'link "₹1,629 M.R.P: ₹2,175 M.R.P: ₹2,175" [ref=f4e3874] [cursor=pointer]':
+                  - /url: /STUDDS-Trooper-Certified-Finish-Flip-up/dp/B0CB8F52JM/ref=sr_1_38?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-38
+                  - generic [ref=f4e3875]:
+                    - generic [ref=f4e3876]: ₹1,629
+                    - generic [ref=f4e3877]: ₹1,629
+                  - generic [ref=f4e3878]: "M.R.P: ₹2,175"
+                  - generic [ref=f4e3879]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3880]:
+                      - generic [ref=f4e3881]: ₹2,175
+                      - text: ₹2,175
+                - text: (25% off)
+              - generic [ref=f4e3882]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3887]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e3905] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3906]
+              - generic [ref=f4e3907]: Add to cart
+      - listitem [ref=f4e3908]:
+        - generic [ref=f4e3913]:
+          - link [ref=f4e3916] [cursor=pointer]:
+            - /url: /Royal-Enfiedl-Visor-Helmet-RRGHEM000203/dp/B08FT6423S/ref=sr_1_39?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-39
+          - generic [ref=f4e3918]:
+            - link [ref=f4e3920] [cursor=pointer]:
+              - /url: /Royal-Enfiedl-Visor-Helmet-RRGHEM000203/dp/B08FT6423S/ref=sr_1_39?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-39
+              - heading "Royal Enfield Open Face MLG Helmet |Made Like a Gun | with Clear Visor | Impact Protection | High Density EPS | ISI and DOT Certified | Micrometric Lock MATT Black (L) 60 CM" [level=2] [ref=f4e3921]
+            - generic [ref=f4e3922]:
+              - generic [ref=f4e3923]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e3925] [cursor=pointer]:
+                  - generic [ref=f4e3926]: 4.2 out of 5 stars
+                - link "6,010 ratings" [ref=f4e3929] [cursor=pointer]:
+                  - /url: /Royal-Enfiedl-Visor-Helmet-RRGHEM000203/dp/B08FT6423S/ref=sr_1_39?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-39#customerReviews
+                  - text: (6K)
+              - generic [ref=f4e3930]: 500+ bought in past month
+            - generic [ref=f4e3931]:
+              - generic [ref=f4e3933]:
+                - generic [ref=f4e3934]: Price, product page
+                - 'link "₹1,750 ( ₹1,75,000 /100 g) M.R.P: ₹1,950 M.R.P: ₹1,950" [ref=f4e3935] [cursor=pointer]':
+                  - /url: /Royal-Enfiedl-Visor-Helmet-RRGHEM000203/dp/B08FT6423S/ref=sr_1_39?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-39
+                  - generic [ref=f4e3936]:
+                    - generic [ref=f4e3937]: ₹1,750
+                    - generic [ref=f4e3938]: ₹1,750
+                  - generic [ref=f4e3939]:
+                    - text: (
+                    - generic [ref=f4e3940]:
+                      - generic [ref=f4e3941]: ₹1,75,000
+                      - text: ₹1,75,000
+                    - text: /100 g)
+                  - generic [ref=f4e3942]: "M.R.P: ₹1,950"
+                  - generic [ref=f4e3943]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e3944]:
+                      - generic [ref=f4e3945]: ₹1,950
+                      - text: ₹1,950
+                - text: (10% off)
+              - generic [ref=f4e3946]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e3953]:
+              - generic [ref=f4e3954]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e3956]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e3971] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e3972]
+              - generic [ref=f4e3973]: Add to cart
+      - listitem [ref=f4e3974]:
+        - generic [ref=f4e3979]:
+          - link [ref=f4e3982] [cursor=pointer]:
+            - /url: /TVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release/dp/B0F1MNJ9SF/ref=sr_1_40?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-40
+          - generic [ref=f4e3984]:
+            - link [ref=f4e3986] [cursor=pointer]:
+              - /url: /TVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release/dp/B0F1MNJ9SF/ref=sr_1_40?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-40
+              - heading "TVS Racing Anti Matter Full Face Helmet for Bike & Motorcycle Riders-DOT & ISI Certified-Lightweight ABS Shell, UV Resistant-Ventilated Comfort Liner, Quick-Release Visor & Chin Strap" [level=2] [ref=f4e3987]
+            - generic [ref=f4e3988]:
+              - generic [ref=f4e3989]:
+                - text: "4.0"
+                - button "4.0 out of 5 stars, rating details" [ref=f4e3991] [cursor=pointer]:
+                  - generic [ref=f4e3992]: 4.0 out of 5 stars
+                - link "732 ratings" [ref=f4e3995] [cursor=pointer]:
+                  - /url: /TVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release/dp/B0F1MNJ9SF/ref=sr_1_40?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-40#customerReviews
+                  - text: (732)
+              - generic [ref=f4e3996]: 100+ bought in past month
+            - generic [ref=f4e3997]:
+              - generic [ref=f4e3999]:
+                - generic [ref=f4e4000]: Price, product page
+                - 'link "₹1,597 M.R.P: ₹2,399 M.R.P: ₹2,399" [ref=f4e4001] [cursor=pointer]':
+                  - /url: /TVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release/dp/B0F1MNJ9SF/ref=sr_1_40?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-40
+                  - generic [ref=f4e4002]:
+                    - generic [ref=f4e4003]: ₹1,597
+                    - generic [ref=f4e4004]: ₹1,597
+                  - generic [ref=f4e4005]: "M.R.P: ₹2,399"
+                  - generic [ref=f4e4006]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4007]:
+                      - generic [ref=f4e4008]: ₹2,399
+                      - text: ₹2,399
+                - text: (33% off)
+              - generic [ref=f4e4009]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4016]:
+              - generic [ref=f4e4017]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e4019]: Or fastest delivery Today 6 pm - 8 pm
+            - generic [ref=f4e4034] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4035]
+              - generic [ref=f4e4036]: Add to cart
+      - listitem [ref=f4e4037]:
+        - generic [ref=f4e4042]:
+          - link [ref=f4e4045] [cursor=pointer]:
+            - /url: /Vega-Ryker-Bolder-Silver-Helmet/dp/B07RBZJL9G/ref=sr_1_41?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-41
+          - generic [ref=f4e4047]:
+            - link [ref=f4e4049] [cursor=pointer]:
+              - /url: /Vega-Ryker-Bolder-Silver-Helmet/dp/B07RBZJL9G/ref=sr_1_41?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-41
+              - heading "Vega Ryker D/V Bolder Dull Black Silver Helmet-L" [level=2] [ref=f4e4050]
+            - generic [ref=f4e4051]:
+              - generic [ref=f4e4052]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e4054] [cursor=pointer]:
+                  - generic [ref=f4e4055]: 4.2 out of 5 stars
+                - link "6,096 ratings" [ref=f4e4058] [cursor=pointer]:
+                  - /url: /Vega-Ryker-Bolder-Silver-Helmet/dp/B07RBZJL9G/ref=sr_1_41?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-41#customerReviews
+                  - text: (6K)
+              - generic [ref=f4e4059]: 100+ bought in past month
+            - generic [ref=f4e4060]:
+              - link "Great Indian Festival" [ref=f4e4062] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e4068]:
+                - generic [ref=f4e4069]: Price, product page
+                - 'link "₹1,761 ( ₹1,76,100 /100 g) M.R.P: ₹1,898 M.R.P: ₹1,898" [ref=f4e4070] [cursor=pointer]':
+                  - /url: /Vega-Ryker-Bolder-Silver-Helmet/dp/B07RBZJL9G/ref=sr_1_41?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-41
+                  - generic [ref=f4e4071]:
+                    - generic [ref=f4e4072]: ₹1,761
+                    - generic [ref=f4e4073]: ₹1,761
+                  - generic [ref=f4e4074]:
+                    - text: (
+                    - generic [ref=f4e4075]:
+                      - generic [ref=f4e4076]: ₹1,76,100
+                      - text: ₹1,76,100
+                    - text: /100 g)
+                  - generic [ref=f4e4077]: "M.R.P: ₹1,898"
+                  - generic [ref=f4e4078]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4079]:
+                      - generic [ref=f4e4080]: ₹1,898
+                      - text: ₹1,898
+                - text: (7% off)
+              - generic [ref=f4e4081]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4086]: FREE delivery Mon, 19 Oct
+            - generic [ref=f4e4104] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4105]
+              - generic [ref=f4e4106]: Add to cart
+      - listitem [ref=f4e4107]:
+        - generic [ref=f4e4112]:
+          - link [ref=f4e4115] [cursor=pointer]:
+            - /url: /Axor-Deadpool-Certified-Protection-Pinlock/dp/B0DBZDR6DS/ref=sr_1_42?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-42
+          - generic [ref=f4e4117]:
+            - link [ref=f4e4119] [cursor=pointer]:
+              - /url: /Axor-Deadpool-Certified-Protection-Pinlock/dp/B0DBZDR6DS/ref=sr_1_42?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-42
+              - heading "Axor Apex Marvel Deadpool ISI ECE DOT Certified Full Face Dual Visor Helmet for Men and Women Dual EPS Protection with Pinlock Fitted Outer Clear Visor and Inner Smoke Sun Visor Red Black-L" [level=2] [ref=f4e4120]
+            - generic [ref=f4e4122]:
+              - text: "4.1"
+              - button "4.1 out of 5 stars, rating details" [ref=f4e4124] [cursor=pointer]:
+                - generic [ref=f4e4125]: 4.1 out of 5 stars
+              - link "56 ratings" [ref=f4e4128] [cursor=pointer]:
+                - /url: /Axor-Deadpool-Certified-Protection-Pinlock/dp/B0DBZDR6DS/ref=sr_1_42?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-42#customerReviews
+                - text: (56)
+            - generic [ref=f4e4129]:
+              - generic [ref=f4e4131]:
+                - generic [ref=f4e4132]: Price, product page
+                - 'link "₹5,720 M.R.P: ₹6,500 M.R.P: ₹6,500" [ref=f4e4133] [cursor=pointer]':
+                  - /url: /Axor-Deadpool-Certified-Protection-Pinlock/dp/B0DBZDR6DS/ref=sr_1_42?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-42
+                  - generic [ref=f4e4134]:
+                    - generic [ref=f4e4135]: ₹5,720
+                    - generic [ref=f4e4136]: ₹5,720
+                  - generic [ref=f4e4137]: "M.R.P: ₹6,500"
+                  - generic [ref=f4e4138]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4139]:
+                      - generic [ref=f4e4140]: ₹6,500
+                      - text: ₹6,500
+                - text: (12% off)
+              - generic [ref=f4e4141]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4148]:
+              - generic [ref=f4e4149]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e4151]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e4166] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4167]
+              - generic [ref=f4e4168]: Add to cart
+      - listitem [ref=f4e4169]:
+        - generic [ref=f4e4174]:
+          - link [ref=f4e4177] [cursor=pointer]:
+            - /url: /TVS-Certified-Dynamic-Ventilation-Increased-Airflow/dp/B08P63F17N/ref=sr_1_43?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-43
+          - generic [ref=f4e4179]:
+            - link [ref=f4e4181] [cursor=pointer]:
+              - /url: /TVS-Certified-Dynamic-Ventilation-Increased-Airflow/dp/B08P63F17N/ref=sr_1_43?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-43
+              - 'heading "TVS Lightweight Full Face Helmet for Man and Woman | Clear and Scratch Resistant Visor | ISI Certified | Quick-Release Buckle | Bike Helmet (Colour: Black, Size: XL)" [level=2] [ref=f4e4182]'
+            - generic [ref=f4e4183]:
+              - generic [ref=f4e4184]:
+                - text: "3.9"
+                - button "3.9 out of 5 stars, rating details" [ref=f4e4186] [cursor=pointer]:
+                  - generic [ref=f4e4187]: 3.9 out of 5 stars
+                - link "700 ratings" [ref=f4e4190] [cursor=pointer]:
+                  - /url: /TVS-Certified-Dynamic-Ventilation-Increased-Airflow/dp/B08P63F17N/ref=sr_1_43?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-43#customerReviews
+                  - text: (700)
+              - generic [ref=f4e4191]: 300+ bought in past month
+            - generic [ref=f4e4192]:
+              - generic [ref=f4e4194]:
+                - generic [ref=f4e4195]: Price, product page
+                - 'link "₹1,002 M.R.P: ₹1,055 M.R.P: ₹1,055" [ref=f4e4196] [cursor=pointer]':
+                  - /url: /TVS-Certified-Dynamic-Ventilation-Increased-Airflow/dp/B08P63F17N/ref=sr_1_43?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-43
+                  - generic [ref=f4e4197]:
+                    - generic [ref=f4e4198]: ₹1,002
+                    - generic [ref=f4e4199]: ₹1,002
+                  - generic [ref=f4e4200]: "M.R.P: ₹1,055"
+                  - generic [ref=f4e4201]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4202]:
+                      - generic [ref=f4e4203]: ₹1,055
+                      - text: ₹1,055
+                - text: (5% off)
+              - generic [ref=f4e4204]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4211]:
+              - generic [ref=f4e4212]: FREE delivery Sun, 18 Oct
+              - generic [ref=f4e4214]: Or fastest delivery Wed, 14 Oct
+            - generic [ref=f4e4229] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4230]
+              - generic [ref=f4e4231]: Add to cart
+      - listitem [ref=f4e4232]:
+        - generic [ref=f4e4237]:
+          - link [ref=f4e4240] [cursor=pointer]:
+            - /url: /Brutale-Ryden-Dual-Spoiler-Helmet/dp/B0FR5GW48Z/ref=sr_1_44?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-44
+          - generic [ref=f4e4242]:
+            - link [ref=f4e4244] [cursor=pointer]:
+              - /url: /Brutale-Ryden-Dual-Spoiler-Helmet/dp/B0FR5GW48Z/ref=sr_1_44?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-44
+              - heading "Brutale Ryden Dual Spoiler Helmet – Aerodynamic Full Face Design | Certified (ISI, DOT, ECE) | Premium Safety & Comfort- White Red, Size:XL" [level=2] [ref=f4e4245]
+            - generic [ref=f4e4247]:
+              - text: "3.2"
+              - button "3.2 out of 5 stars, rating details" [ref=f4e4249] [cursor=pointer]:
+                - generic [ref=f4e4250]: 3.2 out of 5 stars
+              - link "54 ratings" [ref=f4e4253] [cursor=pointer]:
+                - /url: /Brutale-Ryden-Dual-Spoiler-Helmet/dp/B0FR5GW48Z/ref=sr_1_44?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-44#customerReviews
+                - text: (54)
+            - generic [ref=f4e4254]:
+              - generic [ref=f4e4256]:
+                - generic [ref=f4e4257]: Price, product page
+                - link "₹7,991" [ref=f4e4258] [cursor=pointer]:
+                  - /url: /Brutale-Ryden-Dual-Spoiler-Helmet/dp/B0FR5GW48Z/ref=sr_1_44?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-44
+                  - generic [ref=f4e4259]:
+                    - generic [ref=f4e4260]: ₹7,991
+                    - generic [ref=f4e4261]: ₹7,991
+              - generic [ref=f4e4262]: 10% on select bank cards
+            - generic [ref=f4e4269]:
+              - generic [ref=f4e4270]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e4272]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e4287] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4288]
+              - generic [ref=f4e4289]: Add to cart
+      - listitem [ref=f4e4290]:
+        - generic [ref=f4e4295]:
+          - link [ref=f4e4298] [cursor=pointer]:
+            - /url: /ROYAL-ENFIELD-Airforce-Helmet-Certification/dp/B0FDKL967B/ref=sr_1_45?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-45
+          - generic [ref=f4e4300]:
+            - link [ref=f4e4302] [cursor=pointer]:
+              - /url: /ROYAL-ENFIELD-Airforce-Helmet-Certification/dp/B0FDKL967B/ref=sr_1_45?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-45
+              - 'heading "Royal Enfield Airforce 1901 Open Face Helmet | Certification: ISI & DOT | High Impact Grade ABS Shell|High Strength EPS Liner for Added Strength|Sleek Aviator Inspired Design | Battle Green (L) 60 CM" [level=2] [ref=f4e4303]'
+            - generic [ref=f4e4304]:
+              - generic [ref=f4e4305]:
+                - text: "4.4"
+                - button "4.4 out of 5 stars, rating details" [ref=f4e4307] [cursor=pointer]:
+                  - generic [ref=f4e4308]: 4.4 out of 5 stars
+                - link "130 ratings" [ref=f4e4311] [cursor=pointer]:
+                  - /url: /ROYAL-ENFIELD-Airforce-Helmet-Certification/dp/B0FDKL967B/ref=sr_1_45?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-45#customerReviews
+                  - text: (130)
+              - generic [ref=f4e4312]: 100+ bought in past month
+            - generic [ref=f4e4313]:
+              - generic [ref=f4e4315]:
+                - generic [ref=f4e4316]: Price, product page
+                - 'link "₹2,017 M.R.P: ₹2,690 M.R.P: ₹2,690" [ref=f4e4317] [cursor=pointer]':
+                  - /url: /ROYAL-ENFIELD-Airforce-Helmet-Certification/dp/B0FDKL967B/ref=sr_1_45?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-45
+                  - generic [ref=f4e4318]:
+                    - generic [ref=f4e4319]: ₹2,017
+                    - generic [ref=f4e4320]: ₹2,017
+                  - generic [ref=f4e4321]: "M.R.P: ₹2,690"
+                  - generic [ref=f4e4322]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4323]:
+                      - generic [ref=f4e4324]: ₹2,690
+                      - text: ₹2,690
+                - text: (25% off)
+              - generic [ref=f4e4325]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4330]: FREE delivery Sun, 25 Oct
+            - generic [ref=f4e4348] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4349]
+              - generic [ref=f4e4350]: Add to cart
+      - listitem [ref=f4e4351]:
+        - generic [ref=f4e4356]:
+          - link [ref=f4e4359] [cursor=pointer]:
+            - /url: /Studds-Ninja-Elite-Helmet-Carbon/dp/B071KP1LNM/ref=sr_1_46?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-46
+          - generic [ref=f4e4361]:
+            - link [ref=f4e4363] [cursor=pointer]:
+              - /url: /Studds-Ninja-Elite-Helmet-Carbon/dp/B071KP1LNM/ref=sr_1_46?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-46
+              - heading "Studds Ninja Elite With Carbon Strip With Clear Visor Full Face Helmet -Black (L), motorcycling" [level=2] [ref=f4e4364]
+            - generic [ref=f4e4365]:
+              - generic [ref=f4e4366]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e4368] [cursor=pointer]:
+                  - generic [ref=f4e4369]: 4.2 out of 5 stars
+                - link "6,761 ratings" [ref=f4e4372] [cursor=pointer]:
+                  - /url: /Studds-Ninja-Elite-Helmet-Carbon/dp/B071KP1LNM/ref=sr_1_46?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-46#customerReviews
+                  - text: (6.7K)
+              - generic [ref=f4e4373]: 100+ bought in past month
+            - generic [ref=f4e4374]:
+              - generic [ref=f4e4376]:
+                - generic [ref=f4e4377]: Price, product page
+                - 'link "₹1,262 M.R.P: ₹1,330 M.R.P: ₹1,330" [ref=f4e4378] [cursor=pointer]':
+                  - /url: /Studds-Ninja-Elite-Helmet-Carbon/dp/B071KP1LNM/ref=sr_1_46?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-46
+                  - generic [ref=f4e4379]:
+                    - generic [ref=f4e4380]: ₹1,262
+                    - generic [ref=f4e4381]: ₹1,262
+                  - generic [ref=f4e4382]: "M.R.P: ₹1,330"
+                  - generic [ref=f4e4383]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4384]:
+                      - generic [ref=f4e4385]: ₹1,330
+                      - text: ₹1,330
+                - text: (5% off)
+              - generic [ref=f4e4386]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4391]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e4409] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4410]
+              - generic [ref=f4e4411]: Add to cart
+      - listitem [ref=f4e4412]:
+        - generic [ref=f4e4417]:
+          - link [ref=f4e4420] [cursor=pointer]:
+            - /url: /Steelbird-SBA-20-Certified-Flip-Up-Graphic/dp/B0CZXSXJRL/ref=sr_1_47?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-47
+          - generic [ref=f4e4422]:
+            - link [ref=f4e4424] [cursor=pointer]:
+              - /url: /Steelbird-SBA-20-Certified-Flip-Up-Graphic/dp/B0CZXSXJRL/ref=sr_1_47?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-47
+              - heading "Steelbird SBA-20 Hunt ISI Certified Flip-Up Graphic Helmet for Men and Women with Inner Smoke Sun Shield with Skull Cup" [level=2] [ref=f4e4425]
+            - generic [ref=f4e4427]:
+              - text: "4.3"
+              - button "4.3 out of 5 stars, rating details" [ref=f4e4429] [cursor=pointer]:
+                - generic [ref=f4e4430]: 4.3 out of 5 stars
+              - link "347 ratings" [ref=f4e4433] [cursor=pointer]:
+                - /url: /Steelbird-SBA-20-Certified-Flip-Up-Graphic/dp/B0CZXSXJRL/ref=sr_1_47?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-47#customerReviews
+                - text: (347)
+            - generic [ref=f4e4434]:
+              - link "Limited time deal" [ref=f4e4436] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e4442]:
+                - generic [ref=f4e4443]: Price, product page
+                - 'link "₹2,222 M.R.P: ₹3,099 M.R.P: ₹3,099" [ref=f4e4444] [cursor=pointer]':
+                  - /url: /Steelbird-SBA-20-Certified-Flip-Up-Graphic/dp/B0CZXSXJRL/ref=sr_1_47?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-47
+                  - generic [ref=f4e4445]:
+                    - generic [ref=f4e4446]: ₹2,222
+                    - generic [ref=f4e4447]: ₹2,222
+                  - generic [ref=f4e4448]: "M.R.P: ₹3,099"
+                  - generic [ref=f4e4449]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4450]:
+                      - generic [ref=f4e4451]: ₹3,099
+                      - text: ₹3,099
+                - text: (28% off)
+              - generic [ref=f4e4452]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4457]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e4475] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4476]
+              - generic [ref=f4e4477]: Add to cart
+      - listitem [ref=f4e4478]:
+        - generic [ref=f4e4483]:
+          - link [ref=f4e4486] [cursor=pointer]:
+            - /url: /HEADFOX-Bluetooth-Helmet-Waterproof-Certified/dp/B0GWMTJRGS/ref=sr_1_48?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-48
+          - generic [ref=f4e4488]:
+            - link [ref=f4e4490] [cursor=pointer]:
+              - /url: /HEADFOX-Bluetooth-Helmet-Waterproof-Certified/dp/B0GWMTJRGS/ref=sr_1_48?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-48
+              - heading "HEADFOX Track Full Face Bluetooth Helmet for Bike | Waterproof Helmet for Men & Women | Built-in Bluetooth for Calls, ENC, Music & Voice Assist | ISI Certified | Glossy" [level=2] [ref=f4e4491]
+            - generic [ref=f4e4492]:
+              - generic [ref=f4e4493]:
+                - text: "3.8"
+                - button "3.8 out of 5 stars, rating details" [ref=f4e4495] [cursor=pointer]:
+                  - generic [ref=f4e4496]: 3.8 out of 5 stars
+                - link "84 ratings" [ref=f4e4499] [cursor=pointer]:
+                  - /url: /HEADFOX-Bluetooth-Helmet-Waterproof-Certified/dp/B0GWMTJRGS/ref=sr_1_48?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-48#customerReviews
+                  - text: (84)
+              - generic [ref=f4e4500]: 50+ bought in past month
+            - generic [ref=f4e4501]:
+              - link "Mega Festival Deal" [ref=f4e4503] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e4509]:
+                - generic [ref=f4e4510]: Price, product page
+                - 'link "₹4,179 M.R.P: ₹7,899 M.R.P: ₹7,899" [ref=f4e4511] [cursor=pointer]':
+                  - /url: /HEADFOX-Bluetooth-Helmet-Waterproof-Certified/dp/B0GWMTJRGS/ref=sr_1_48?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-48
+                  - generic [ref=f4e4512]:
+                    - generic [ref=f4e4513]: ₹4,179
+                    - generic [ref=f4e4514]: ₹4,179
+                  - generic [ref=f4e4515]: "M.R.P: ₹7,899"
+                  - generic [ref=f4e4516]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4517]:
+                      - generic [ref=f4e4518]: ₹7,899
+                      - text: ₹7,899
+                - text: (47% off)
+              - generic [ref=f4e4519]: Flat 5% Off on all cc dc cards
+            - generic [ref=f4e4526]:
+              - generic [ref=f4e4527]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e4529]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e4544] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4545]
+              - generic [ref=f4e4546]: Add to cart
+      - listitem [ref=f4e4547]:
+        - generic [ref=f4e4552]:
+          - link [ref=f4e4555] [cursor=pointer]:
+            - /url: /HEADFOX-Bluetooth-Waterproof-Certified-CM/dp/B0FH2QXJ2D/ref=sr_1_49?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-49
+          - generic [ref=f4e4557]:
+            - link [ref=f4e4559] [cursor=pointer]:
+              - /url: /HEADFOX-Bluetooth-Waterproof-Certified-CM/dp/B0FH2QXJ2D/ref=sr_1_49?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-49
+              - heading "HEADFOX N2F Shady Full Face Bluetooth Helmet for Bike | Waterproof Smart Helmet for Men & Women | ISI Certified | Built-in Bluetooth & LED Lights | Matte & Gloss Finish" [level=2] [ref=f4e4560]
+            - generic [ref=f4e4561]:
+              - generic [ref=f4e4562]:
+                - text: "3.9"
+                - button "3.9 out of 5 stars, rating details" [ref=f4e4564] [cursor=pointer]:
+                  - generic [ref=f4e4565]: 3.9 out of 5 stars
+                - link "371 ratings" [ref=f4e4568] [cursor=pointer]:
+                  - /url: /HEADFOX-Bluetooth-Waterproof-Certified-CM/dp/B0FH2QXJ2D/ref=sr_1_49?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-49#customerReviews
+                  - text: (371)
+              - generic [ref=f4e4569]: 50+ bought in past month
+            - generic [ref=f4e4570]:
+              - link "Mega Festival Deal" [ref=f4e4572] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e4578]:
+                - generic [ref=f4e4579]: Price, product page
+                - 'link "₹3,799 M.R.P: ₹7,899 M.R.P: ₹7,899" [ref=f4e4580] [cursor=pointer]':
+                  - /url: /HEADFOX-Bluetooth-Waterproof-Certified-CM/dp/B0FH2QXJ2D/ref=sr_1_49?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-49
+                  - generic [ref=f4e4581]:
+                    - generic [ref=f4e4582]: ₹3,799
+                    - generic [ref=f4e4583]: ₹3,799
+                  - generic [ref=f4e4584]: "M.R.P: ₹7,899"
+                  - generic [ref=f4e4585]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4586]:
+                      - generic [ref=f4e4587]: ₹7,899
+                      - text: ₹7,899
+                - text: (52% off)
+              - generic [ref=f4e4588]: Flat 5% Off on all cc dc cards
+            - generic [ref=f4e4593]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e4611] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4612]
+              - generic [ref=f4e4613]: Add to cart
+      - listitem [ref=f4e4614]:
+        - generic [ref=f4e4619]:
+          - link [ref=f4e4622] [cursor=pointer]:
+            - /url: /Axor-Gambling-Certified-Off-Road-Peak-Black/dp/B0FPQGK872/ref=sr_1_50?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-50
+          - generic [ref=f4e4624]:
+            - link [ref=f4e4626] [cursor=pointer]:
+              - /url: /Axor-Gambling-Certified-Off-Road-Peak-Black/dp/B0FPQGK872/ref=sr_1_50?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-50
+              - heading "Axor X-Cross Gambling ISI ECE and DOT Certified Premium Off-Road Full Face Helmet with Pinlock Fitted Dual Visors and Stylish Peak-Black Neon Yellow-L" [level=2] [ref=f4e4627]
+            - generic [ref=f4e4629]:
+              - text: "4.3"
+              - button "4.3 out of 5 stars, rating details" [ref=f4e4631] [cursor=pointer]:
+                - generic [ref=f4e4632]: 4.3 out of 5 stars
+              - link "32 ratings" [ref=f4e4635] [cursor=pointer]:
+                - /url: /Axor-Gambling-Certified-Off-Road-Peak-Black/dp/B0FPQGK872/ref=sr_1_50?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-50#customerReviews
+                - text: (32)
+            - generic [ref=f4e4636]:
+              - generic [ref=f4e4638]:
+                - generic [ref=f4e4639]: Price, product page
+                - 'link "₹6,517 M.R.P: ₹7,406 M.R.P: ₹7,406" [ref=f4e4640] [cursor=pointer]':
+                  - /url: /Axor-Gambling-Certified-Off-Road-Peak-Black/dp/B0FPQGK872/ref=sr_1_50?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-50
+                  - generic [ref=f4e4641]:
+                    - generic [ref=f4e4642]: ₹6,517
+                    - generic [ref=f4e4643]: ₹6,517
+                  - generic [ref=f4e4644]: "M.R.P: ₹7,406"
+                  - generic [ref=f4e4645]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4646]:
+                      - generic [ref=f4e4647]: ₹7,406
+                      - text: ₹7,406
+                - text: (12% off)
+              - generic [ref=f4e4648]: 10% on select bank cards
+            - generic [ref=f4e4653]:
+              - generic [ref=f4e4655]:
+                - generic [ref=f4e4656]: FREE delivery Wed, 14 Oct
+                - generic [ref=f4e4658]: Or fastest delivery Tomorrow, 13 Oct
+              - generic "Only 2 left in stock." [ref=f4e4661]
+            - generic [ref=f4e4675] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4676]
+              - generic [ref=f4e4677]: Add to cart
+      - listitem [ref=f4e4678]:
+        - generic [ref=f4e4683]:
+          - link [ref=f4e4686] [cursor=pointer]:
+            - /url: /Certified-Motorcycle-Polycarbonate-Comfortable-Padding/dp/B0BR5CXLN4/ref=sr_1_51?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-51
+          - generic [ref=f4e4688]:
+            - link [ref=f4e4690] [cursor=pointer]:
+              - /url: /Certified-Motorcycle-Polycarbonate-Comfortable-Padding/dp/B0BR5CXLN4/ref=sr_1_51?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-51
+              - heading "Zitro Open Face ISI Certified Motorcycle Helmet for Men & Women | Medium 580MM | ABS Shell, Polycarbonate Visor, Comfortable Padding, Bullet Bike Riders" [level=2] [ref=f4e4691]
+            - generic [ref=f4e4693]:
+              - text: "3.8"
+              - button "3.8 out of 5 stars, rating details" [ref=f4e4695] [cursor=pointer]:
+                - generic [ref=f4e4696]: 3.8 out of 5 stars
+              - link "65 ratings" [ref=f4e4699] [cursor=pointer]:
+                - /url: /Certified-Motorcycle-Polycarbonate-Comfortable-Padding/dp/B0BR5CXLN4/ref=sr_1_51?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-51#customerReviews
+                - text: (65)
+            - generic [ref=f4e4700]:
+              - generic [ref=f4e4702]:
+                - generic [ref=f4e4703]: Price, product page
+                - 'link "₹885 M.R.P: ₹1,255 M.R.P: ₹1,255" [ref=f4e4704] [cursor=pointer]':
+                  - /url: /Certified-Motorcycle-Polycarbonate-Comfortable-Padding/dp/B0BR5CXLN4/ref=sr_1_51?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-51
+                  - generic [ref=f4e4705]:
+                    - generic [ref=f4e4706]: ₹885
+                    - generic [ref=f4e4707]: ₹885
+                  - generic [ref=f4e4708]: "M.R.P: ₹1,255"
+                  - generic [ref=f4e4709]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4710]:
+                      - generic [ref=f4e4711]: ₹1,255
+                      - text: ₹1,255
+                - text: (29% off)
+              - generic [ref=f4e4712]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4719]:
+              - generic [ref=f4e4720]: FREE delivery Sat, 17 Oct
+              - generic [ref=f4e4722]: Or fastest delivery Wed, 14 Oct
+            - generic [ref=f4e4737] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4738]
+              - generic [ref=f4e4739]: Add to cart
+      - listitem [ref=f4e4740]:
+        - generic [ref=f4e4745]:
+          - link [ref=f4e4748] [cursor=pointer]:
+            - /url: /Studds-Chrome-Eco-Helmet-Black/dp/B01N27OVUE/ref=sr_1_52?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-52
+          - generic [ref=f4e4750]:
+            - link [ref=f4e4752] [cursor=pointer]:
+              - /url: /Studds-Chrome-Eco-Helmet-Black/dp/B01N27OVUE/ref=sr_1_52?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-52
+              - heading "Studds Chrome Eco Full Face Helmet- Black (Xl)" [level=2] [ref=f4e4753]
+            - generic [ref=f4e4754]:
+              - generic [ref=f4e4755]:
+                - text: "4.1"
+                - button "4.1 out of 5 stars, rating details" [ref=f4e4757] [cursor=pointer]:
+                  - generic [ref=f4e4758]: 4.1 out of 5 stars
+                - link "4,325 ratings" [ref=f4e4761] [cursor=pointer]:
+                  - /url: /Studds-Chrome-Eco-Helmet-Black/dp/B01N27OVUE/ref=sr_1_52?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-52#customerReviews
+                  - text: (4.3K)
+              - generic [ref=f4e4762]: 400+ bought in past month
+            - generic [ref=f4e4763]:
+              - generic [ref=f4e4765]:
+                - generic [ref=f4e4766]: Price, product page
+                - 'link "₹1,046 M.R.P: ₹1,075 M.R.P: ₹1,075" [ref=f4e4767] [cursor=pointer]':
+                  - /url: /Studds-Chrome-Eco-Helmet-Black/dp/B01N27OVUE/ref=sr_1_52?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-52
+                  - generic [ref=f4e4768]:
+                    - generic [ref=f4e4769]: ₹1,046
+                    - generic [ref=f4e4770]: ₹1,046
+                  - generic [ref=f4e4771]: "M.R.P: ₹1,075"
+                  - generic [ref=f4e4772]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4773]:
+                      - generic [ref=f4e4774]: ₹1,075
+                      - text: ₹1,075
+                - text: (3% off)
+              - generic [ref=f4e4775]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4780]:
+              - generic [ref=f4e4781]: FREE delivery 14 - 21 Oct
+              - generic "Only 1 left in stock." [ref=f4e4786]
+            - generic [ref=f4e4800] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4801]
+              - generic [ref=f4e4802]: Add to cart
+      - listitem [ref=f4e4803]:
+        - generic [ref=f4e4808]:
+          - link [ref=f4e4811] [cursor=pointer]:
+            - /url: /Steelbird-SBH-34-Certified-Helmet-Dashing/dp/B0CBCGH1Y1/ref=sr_1_53?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-53
+          - generic [ref=f4e4813]:
+            - link [ref=f4e4815] [cursor=pointer]:
+              - /url: /Steelbird-SBH-34-Certified-Helmet-Dashing/dp/B0CBCGH1Y1/ref=sr_1_53?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-53
+              - heading "Steelbird SBH-34 Rox Road ISI Certified Full Face Helmet with Inner Smoke Sun Shield and Outer Clear Visor with Skull Cap" [level=2] [ref=f4e4816]
+            - generic [ref=f4e4817]:
+              - generic [ref=f4e4818]:
+                - text: "4.3"
+                - button "4.3 out of 5 stars, rating details" [ref=f4e4820] [cursor=pointer]:
+                  - generic [ref=f4e4821]: 4.3 out of 5 stars
+                - link "1,455 ratings" [ref=f4e4824] [cursor=pointer]:
+                  - /url: /Steelbird-SBH-34-Certified-Helmet-Dashing/dp/B0CBCGH1Y1/ref=sr_1_53?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-53#customerReviews
+                  - text: (1.4K)
+              - generic [ref=f4e4825]: 100+ bought in past month
+            - generic [ref=f4e4826]:
+              - generic [ref=f4e4828]:
+                - generic [ref=f4e4829]: Price, product page
+                - 'link "₹1,399.99 M.R.P: ₹1,799 M.R.P: ₹1,799" [ref=f4e4830] [cursor=pointer]':
+                  - /url: /Steelbird-SBH-34-Certified-Helmet-Dashing/dp/B0CBCGH1Y1/ref=sr_1_53?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-53
+                  - generic [ref=f4e4831]:
+                    - generic [ref=f4e4832]: ₹1,399.99
+                    - generic [ref=f4e4833]:
+                      - text: ₹
+                      - generic [ref=f4e4834]:
+                        - text: 1,399
+                        - generic [ref=f4e4835]: .
+                      - text: "99"
+                  - generic [ref=f4e4836]: "M.R.P: ₹1,799"
+                  - generic [ref=f4e4837]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4838]:
+                      - generic [ref=f4e4839]: ₹1,799
+                      - text: ₹1,799
+                - text: (22% off)
+              - generic [ref=f4e4840]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4845]: FREE delivery Tue, 20 Oct
+            - generic [ref=f4e4865] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4866]
+              - generic [ref=f4e4867]: Add to cart
+      - listitem [ref=f4e4868]:
+        - generic [ref=f4e4873]:
+          - link [ref=f4e4876] [cursor=pointer]:
+            - /url: /HEADFOX-Bluetooth-Waterproof-Certified-X-Large/dp/B0F7LXJTBJ/ref=sr_1_54?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-54
+          - generic [ref=f4e4878]:
+            - link [ref=f4e4880] [cursor=pointer]:
+              - /url: /HEADFOX-Bluetooth-Waterproof-Certified-X-Large/dp/B0F7LXJTBJ/ref=sr_1_54?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-54
+              - heading "HEADFOX N2F Wolf Full Face Bluetooth Helmet for Bike | Waterproof Smart Helmet for Man & Women | ISI Certified | Built-in Bluetooth | Gloss & Mette" [level=2] [ref=f4e4881]
+            - generic [ref=f4e4882]:
+              - generic [ref=f4e4883]:
+                - text: "3.9"
+                - button "3.9 out of 5 stars, rating details" [ref=f4e4885] [cursor=pointer]:
+                  - generic [ref=f4e4886]: 3.9 out of 5 stars
+                - link "207 ratings" [ref=f4e4889] [cursor=pointer]:
+                  - /url: /HEADFOX-Bluetooth-Waterproof-Certified-X-Large/dp/B0F7LXJTBJ/ref=sr_1_54?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-54#customerReviews
+                  - text: (207)
+              - generic [ref=f4e4890]: 50+ bought in past month
+            - generic [ref=f4e4891]:
+              - link "Mega Festival Deal" [ref=f4e4893] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e4899]:
+                - generic [ref=f4e4900]: Price, product page
+                - 'link "₹3,799 M.R.P: ₹7,899 M.R.P: ₹7,899" [ref=f4e4901] [cursor=pointer]':
+                  - /url: /HEADFOX-Bluetooth-Waterproof-Certified-X-Large/dp/B0F7LXJTBJ/ref=sr_1_54?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-54
+                  - generic [ref=f4e4902]:
+                    - generic [ref=f4e4903]: ₹3,799
+                    - generic [ref=f4e4904]: ₹3,799
+                  - generic [ref=f4e4905]: "M.R.P: ₹7,899"
+                  - generic [ref=f4e4906]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4907]:
+                      - generic [ref=f4e4908]: ₹7,899
+                      - text: ₹7,899
+                - text: (52% off)
+              - generic [ref=f4e4909]: Flat 5% Off on all cc dc cards
+            - generic [ref=f4e4916]:
+              - generic [ref=f4e4917]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e4919]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e4934] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e4935]
+              - generic [ref=f4e4936]: Add to cart
+      - listitem [ref=f4e4937]:
+        - generic [ref=f4e4942]:
+          - link [ref=f4e4945] [cursor=pointer]:
+            - /url: /SARTE-Purpose-Safety-Strap-Black/dp/B08SHTJDVK/ref=sr_1_55?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-55
+          - generic [ref=f4e4947]:
+            - link [ref=f4e4949] [cursor=pointer]:
+              - /url: /SARTE-Purpose-Safety-Strap-Black/dp/B08SHTJDVK/ref=sr_1_55?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-55
+              - heading "SARTE All Purpose Cap with Strap (Black)" [level=2] [ref=f4e4950]
+            - generic [ref=f4e4951]:
+              - generic [ref=f4e4952]:
+                - text: "3.5"
+                - button "3.5 out of 5 stars, rating details" [ref=f4e4954] [cursor=pointer]:
+                  - generic [ref=f4e4955]: 3.5 out of 5 stars
+                - link "1,020 ratings" [ref=f4e4958] [cursor=pointer]:
+                  - /url: /SARTE-Purpose-Safety-Strap-Black/dp/B08SHTJDVK/ref=sr_1_55?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-55#customerReviews
+                  - text: (1K)
+              - generic [ref=f4e4959]: 600+ bought in past month
+            - generic [ref=f4e4960]:
+              - link "Great Indian Festival" [ref=f4e4962] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e4968]:
+                - generic [ref=f4e4969]: Price, product page
+                - 'link "₹203 M.R.P: ₹299 M.R.P: ₹299" [ref=f4e4970] [cursor=pointer]':
+                  - /url: /SARTE-Purpose-Safety-Strap-Black/dp/B08SHTJDVK/ref=sr_1_55?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-55
+                  - generic [ref=f4e4971]:
+                    - generic [ref=f4e4972]: ₹203
+                    - generic [ref=f4e4973]: ₹203
+                  - generic [ref=f4e4974]: "M.R.P: ₹299"
+                  - generic [ref=f4e4975]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e4976]:
+                      - generic [ref=f4e4977]: ₹299
+                      - text: ₹299
+                - text: (32% off)
+              - generic [ref=f4e4978]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e4985]:
+              - generic [ref=f4e4987]:
+                - img "Bazaar"
+              - generic [ref=f4e4988]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e4990]: Or fastest delivery Today 6 pm - 8 pm
+            - generic [ref=f4e5005] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e5006]
+              - generic [ref=f4e5007]: Add to cart
+      - listitem [ref=f4e5008]:
+        - generic [ref=f4e5013]:
+          - link [ref=f4e5016] [cursor=pointer]:
+            - /url: /Studds-Ninja-Elite-Helmet-Carbon/dp/B078VCJCR8/ref=sr_1_56?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-56
+          - generic [ref=f4e5018]:
+            - link [ref=f4e5020] [cursor=pointer]:
+              - /url: /Studds-Ninja-Elite-Helmet-Carbon/dp/B078VCJCR8/ref=sr_1_56?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-56
+              - heading "Studds Ninja Elite Black With Carbon Strip With Clear Visor Full Face Helmet (Xl)" [level=2] [ref=f4e5021]
+            - generic [ref=f4e5022]:
+              - generic [ref=f4e5023]:
+                - text: "4.2"
+                - button "4.2 out of 5 stars, rating details" [ref=f4e5025] [cursor=pointer]:
+                  - generic [ref=f4e5026]: 4.2 out of 5 stars
+                - link "1,033 ratings" [ref=f4e5029] [cursor=pointer]:
+                  - /url: /Studds-Ninja-Elite-Helmet-Carbon/dp/B078VCJCR8/ref=sr_1_56?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-56#customerReviews
+                  - text: (1K)
+              - generic [ref=f4e5030]: 50+ bought in past month
+            - generic [ref=f4e5031]:
+              - link "Limited time deal" [ref=f4e5033] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e5039]:
+                - generic [ref=f4e5040]: Price, product page
+                - 'link "₹1,346 M.R.P: ₹1,695 M.R.P: ₹1,695" [ref=f4e5041] [cursor=pointer]':
+                  - /url: /Studds-Ninja-Elite-Helmet-Carbon/dp/B078VCJCR8/ref=sr_1_56?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-56
+                  - generic [ref=f4e5042]:
+                    - generic [ref=f4e5043]: ₹1,346
+                    - generic [ref=f4e5044]: ₹1,346
+                  - generic [ref=f4e5045]: "M.R.P: ₹1,695"
+                  - generic [ref=f4e5046]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e5047]:
+                      - generic [ref=f4e5048]: ₹1,695
+                      - text: ₹1,695
+                - text: (21% off)
+              - generic [ref=f4e5049]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e5054]: FREE delivery Sun, 18 Oct
+            - generic [ref=f4e5072] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e5073]
+              - generic [ref=f4e5074]: Add to cart
+      - listitem [ref=f4e5075]:
+        - generic [ref=f4e5080]:
+          - link [ref=f4e5083] [cursor=pointer]:
+            - /url: /TVS-Certified-Flip-Up-Dynamic-Ventilation/dp/B08P613C3M/ref=sr_1_57?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-57
+          - generic [ref=f4e5085]:
+            - link [ref=f4e5087] [cursor=pointer]:
+              - /url: /TVS-Certified-Flip-Up-Dynamic-Ventilation/dp/B08P613C3M/ref=sr_1_57?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-57
+              - 'heading "TVS ISI Certified Open Face Helmet for Men & Women | Clear Visor & Dynamic Ventilation | Colour: Black, Size: XL" [level=2] [ref=f4e5088]'
+            - generic [ref=f4e5090]:
+              - text: "4.1"
+              - button "4.1 out of 5 stars, rating details" [ref=f4e5092] [cursor=pointer]:
+                - generic [ref=f4e5093]: 4.1 out of 5 stars
+              - link "470 ratings" [ref=f4e5096] [cursor=pointer]:
+                - /url: /TVS-Certified-Flip-Up-Dynamic-Ventilation/dp/B08P613C3M/ref=sr_1_57?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-57#customerReviews
+                - text: (470)
+            - generic [ref=f4e5097]:
+              - generic [ref=f4e5099]:
+                - generic [ref=f4e5100]: Price, product page
+                - 'link "₹730 M.R.P: ₹895 M.R.P: ₹895" [ref=f4e5101] [cursor=pointer]':
+                  - /url: /TVS-Certified-Flip-Up-Dynamic-Ventilation/dp/B08P613C3M/ref=sr_1_57?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-57
+                  - generic [ref=f4e5102]:
+                    - generic [ref=f4e5103]: ₹730
+                    - generic [ref=f4e5104]: ₹730
+                  - generic [ref=f4e5105]: "M.R.P: ₹895"
+                  - generic [ref=f4e5106]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e5107]:
+                      - generic [ref=f4e5108]: ₹895
+                      - text: ₹895
+                - text: (18% off)
+              - generic [ref=f4e5109]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e5116]:
+              - generic [ref=f4e5117]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e5119]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e5134] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e5135]
+              - generic [ref=f4e5136]: Add to cart
+      - listitem [ref=f4e5137]:
+        - generic [ref=f4e5142]:
+          - link [ref=f4e5145] [cursor=pointer]:
+            - /url: /Vega-Gangster-GORDVBR1-Helmet-Black/dp/B016KPJP5E/ref=sr_1_58?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-58
+          - generic [ref=f4e5147]:
+            - link [ref=f4e5149] [cursor=pointer]:
+              - /url: /Vega-Gangster-GORDVBR1-Helmet-Black/dp/B016KPJP5E/ref=sr_1_58?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-58
+              - 'heading "Vega Off Road Gangster ISI Certified Gloss Finish Full Face Helmet for Men with Dual Visor and Stylish Peak-Black Red, Size: M" [level=2] [ref=f4e5150]'
+            - generic [ref=f4e5152]:
+              - text: "4.2"
+              - button "4.2 out of 5 stars, rating details" [ref=f4e5154] [cursor=pointer]:
+                - generic [ref=f4e5155]: 4.2 out of 5 stars
+              - link "2,773 ratings" [ref=f4e5158] [cursor=pointer]:
+                - /url: /Vega-Gangster-GORDVBR1-Helmet-Black/dp/B016KPJP5E/ref=sr_1_58?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-58#customerReviews
+                - text: (2.7K)
+            - generic [ref=f4e5159]:
+              - link "Great Indian Festival" [ref=f4e5161] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e5167]:
+                - generic [ref=f4e5168]: Price, product page
+                - 'link "₹1,707 M.R.P: ₹2,114 M.R.P: ₹2,114" [ref=f4e5169] [cursor=pointer]':
+                  - /url: /Vega-Gangster-GORDVBR1-Helmet-Black/dp/B016KPJP5E/ref=sr_1_58?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-58
+                  - generic [ref=f4e5170]:
+                    - generic [ref=f4e5171]: ₹1,707
+                    - generic [ref=f4e5172]: ₹1,707
+                  - generic [ref=f4e5173]: "M.R.P: ₹2,114"
+                  - generic [ref=f4e5174]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e5175]:
+                      - generic [ref=f4e5176]: ₹2,114
+                      - text: ₹2,114
+                - text: (19% off)
+              - generic [ref=f4e5177]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e5184]:
+              - generic [ref=f4e5185]: FREE delivery Sat, 17 Oct
+              - generic [ref=f4e5187]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e5202] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e5203]
+              - generic [ref=f4e5204]: Add to cart
+      - listitem [ref=f4e5205]:
+        - generic [ref=f4e5210]:
+          - link [ref=f4e5213] [cursor=pointer]:
+            - /url: /ROYAL-ENFIELD-AIR-X-Helmet-Certification/dp/B0FDKNVVN4/ref=sr_1_59?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-59
+          - generic [ref=f4e5215]:
+            - link [ref=f4e5217] [cursor=pointer]:
+              - /url: /ROYAL-ENFIELD-AIR-X-Helmet-Certification/dp/B0FDKNVVN4/ref=sr_1_59?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-59
+              - 'heading "Royal Enfield AIR-X 1901 Full Face Helmet | Certification: ISI & DOT | High Impact Grade ABS Shell |Multipore Ventilation System | Aerodynamic Design with Aggressive Styling | Black (XL) 62CM" [level=2] [ref=f4e5218]'
+            - generic [ref=f4e5219]:
+              - generic [ref=f4e5220]:
+                - text: "3.8"
+                - button "3.8 out of 5 stars, rating details" [ref=f4e5222] [cursor=pointer]:
+                  - generic [ref=f4e5223]: 3.8 out of 5 stars
+                - link "158 ratings" [ref=f4e5226] [cursor=pointer]:
+                  - /url: /ROYAL-ENFIELD-AIR-X-Helmet-Certification/dp/B0FDKNVVN4/ref=sr_1_59?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-59#customerReviews
+                  - text: (158)
+              - generic [ref=f4e5227]: 50+ bought in past month
+            - generic [ref=f4e5228]:
+              - link "Mega Festival Deal" [ref=f4e5230] [cursor=pointer]:
+                - /url: /deals
+              - generic [ref=f4e5236]:
+                - generic [ref=f4e5237]: Price, product page
+                - 'link "₹2,302 M.R.P: ₹2,990 M.R.P: ₹2,990" [ref=f4e5238] [cursor=pointer]':
+                  - /url: /ROYAL-ENFIELD-AIR-X-Helmet-Certification/dp/B0FDKNVVN4/ref=sr_1_59?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-59
+                  - generic [ref=f4e5239]:
+                    - generic [ref=f4e5240]: ₹2,302
+                    - generic [ref=f4e5241]: ₹2,302
+                  - generic [ref=f4e5242]: "M.R.P: ₹2,990"
+                  - generic [ref=f4e5243]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e5244]:
+                      - generic [ref=f4e5245]: ₹2,990
+                      - text: ₹2,990
+                - text: (23% off)
+              - generic [ref=f4e5246]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e5253]:
+              - generic [ref=f4e5254]: FREE delivery Wed, 14 Oct
+              - generic [ref=f4e5256]: Or fastest delivery Tomorrow, 13 Oct
+            - generic [ref=f4e5271] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e5272]
+              - generic [ref=f4e5273]: Add to cart
+      - listitem [ref=f4e5274]:
+        - generic [ref=f4e5279]:
+          - link [ref=f4e5282] [cursor=pointer]:
+            - /url: /Steelbird-Certified-Motocross-Double-Helmet/dp/B0B77TC58M/ref=sr_1_60?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-60
+          - generic [ref=f4e5284]:
+            - link [ref=f4e5286] [cursor=pointer]:
+              - /url: /Steelbird-Certified-Motocross-Double-Helmet/dp/B0B77TC58M/ref=sr_1_60?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-60
+              - heading "Steelbird GT Off Road ISI Certified Motocross Double Visor Full Face Helmet Outer Clear Visor and Inner Smoke Sun Shield with Skull Cap" [level=2] [ref=f4e5287]
+            - generic [ref=f4e5289]:
+              - text: "4.1"
+              - button "4.1 out of 5 stars, rating details" [ref=f4e5291] [cursor=pointer]:
+                - generic [ref=f4e5292]: 4.1 out of 5 stars
+              - link "2,100 ratings" [ref=f4e5295] [cursor=pointer]:
+                - /url: /Steelbird-Certified-Motocross-Double-Helmet/dp/B0B77TC58M/ref=sr_1_60?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-60#customerReviews
+                - text: (2.1K)
+            - generic [ref=f4e5296]:
+              - generic [ref=f4e5298]:
+                - generic [ref=f4e5299]: Price, product page
+                - 'link "₹2,193 M.R.P: ₹2,849 M.R.P: ₹2,849" [ref=f4e5300] [cursor=pointer]':
+                  - /url: /Steelbird-Certified-Motocross-Double-Helmet/dp/B0B77TC58M/ref=sr_1_60?crid=19Z8HO7J9JH7F&dib=eyJ2IjoiMSJ9.O2f7ZHasyf-POnx7fXuv6duwZOqFEWiNtfgcJvu5-lVu_1eId6hIR2tCv_9eI8XLjV0HO5tp7h-Jo9gr1FFLn40T9kKDqwhWUDZvplaP4sGSMc2ZOdtbSrIxlOiL40_Oj3mG-VVJSYKUuh0uIxnh96Uh0MOYu2m06qttFILYyq--S7OvLp-EldpG0MdOv7rRbeHjdcNQAu6Avf9Y0HKkRKuMkW4yqWvcvF4zHK3owLt-gghi1uaGaDjUT--Ui7AIt55CN2sBjp3pPj2lYIeS42OhtuCA69pZa_7_vXIga1A.AABogXTz_YGhntcxUf0bA5LEKJmy3xnh5scw2sgGOLc&dib_tag=se&keywords=helmets+for+men+bike&qid=1791801593&sprefix=Helmet%2Caps%2C291&sr=8-60
+                  - generic [ref=f4e5301]:
+                    - generic [ref=f4e5302]: ₹2,193
+                    - generic [ref=f4e5303]: ₹2,193
+                  - generic [ref=f4e5304]: "M.R.P: ₹2,849"
+                  - generic [ref=f4e5305]:
+                    - text: "M.R.P:"
+                    - generic [ref=f4e5306]:
+                      - generic [ref=f4e5307]: ₹2,849
+                      - text: ₹2,849
+                - text: (23% off)
+              - generic [ref=f4e5308]: Up to 5% back with Amazon Pay ICICI card
+            - generic [ref=f4e5313]: FREE delivery Sat, 17 Oct
+            - generic [ref=f4e5331] [cursor=pointer]:
+              - button "Add to cart" [ref=f4e5332]
+              - generic [ref=f4e5333]: Add to cart
+      - generic [ref=f4e5341]:
+        - link "Sponsored video; click to navigate to featured product page." [ref=f4e5345] [cursor=pointer]:
+          - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8ub4-XHTNTYhXkcjwxCvoNBQPxNv9zAlRkMrMS-jXP8072TdglLHUrOQkGS_wlTLwPQgbiMTMz0TMz1jQz2DKKZgpyQOR9cQD9cgz2AhcS72lNTi7JL8AiGeUL8gV2d_dz_PKFcXKS8uZahEfHFqYlFyRnxBalFyfk5iSWp8Un5JSX5ufFJJmhBnYm5iVX6eXmaelGBxUpkuRK0uRIUSa2pevKefkhkXo4HAjku9i9oPu0jxQY2FqeE3MjAwNDAytDAwNjezNDE0Yvb0C7Jidg5w1vIXsnZxcnQucPPUNXescyqEgHTHOqfAoviqXDNHVFDnlF7nFFjn5AhmpEsJOKe7Vrh7lSU7ZjqbFTuZ2BqFcYVklJQUFFvp65eXl-vB3a6fUqDvZOBm6BvgZGHqbJ9YlJpma2hoamyRaVFhbKZWkBJflBKfaYtQAhUqyMlIKbItAQCH4n4N&v=c1&r=https://www.amazon.in/dp/B0F1MPB85C?aref=11538i8x36&pd_rd_i=B0F1MPB85C&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pd_rd_wg=FwloQ&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_w=8eiNA&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372
+        - generic [ref=f4e5354]:
+          - link [ref=f4e5360] [cursor=pointer]:
+            - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8ub4-XHTNTYhXkcjwxCvoNBQPxNv9zAlRkMrMS-jXP8072TdglLHUrOQkGS_wlTLwPQgbiMTMz0TMz1jQz2DKKZgpyQOR9cQD9cgz2AhcS72lNTi7JL8AiGeUL8gV2d_dz_PKFcXKS8uZahEfHFqYlFyRnxBalFyfk5iSWp8Un5JSX5ufFJJmhBnYm5iVX6eXmaelGBxUpkuRK0uRIUSa2pevKefkhkXo4HAjku9i9oPu0jxQY2FqeE3MjAwNDAytDAwNjezNDE0Yvb0C7Jidg5w1vIXsnZxcnQucPPUNXescyqEgHTHOqfAoviqXDNHVFDnlF7nFFjn5AhmpEsJOKe7Vrh7lSU7ZjqbFTuZ2BqFcYVklJQUFFvp65eXl-vB3a6fUqDvZOBm6BvgZGHqbJ9YlJpma2hoamyRaVFhbKZWkBJflBKfaYtQAhUqyMlIKbItAQCH4n4N&v=c1&r=https://www.amazon.in/TVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release/dp/B0F1MPB85C/ref=sxbs_sbv_search_btf?aref=11538i8x36&content-id=amzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2%3Aamzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2&crid=19Z8HO7J9JH7F&cv_ct_cx=helmets+for+men+bike&keywords=helmets+for+men+bike&pd_rd_i=B0F1MPB85C&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&pd_rd_w=8eiNA&pd_rd_wg=FwloQ&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pf_rd_r=ZZQD4252EJXE1K2BT76N&qid=1791801593&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Helmet%2Caps%2C291&sr=1-1-c6261b0d-51ee-49e4-be21-2fbbc07beaa1
+          - generic [ref=f4e5364]:
+            - generic [ref=f4e5365]:
+              - generic [ref=f4e5366]: Sponsored
+              - link [ref=f4e5370] [cursor=pointer]:
+                - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8ub4-XHTNTYhXkcjwxCvoNBQPxNv9zAlRkMrMS-jXP8072TdglLHUrOQkGS_wlTLwPQgbiMTMz0TMz1jQz2DKKZgpyQOR9cQD9cgz2AhcS72lNTi7JL8AiGeUL8gV2d_dz_PKFcXKS8uZahEfHFqYlFyRnxBalFyfk5iSWp8Un5JSX5ufFJJmhBnYm5iVX6eXmaelGBxUpkuRK0uRIUSa2pevKefkhkXo4HAjku9i9oPu0jxQY2FqeE3MjAwNDAytDAwNjezNDE0Yvb0C7Jidg5w1vIXsnZxcnQucPPUNXescyqEgHTHOqfAoviqXDNHVFDnlF7nFFjn5AhmpEsJOKe7Vrh7lSU7ZjqbFTuZ2BqFcYVklJQUFFvp65eXl-vB3a6fUqDvZOBm6BvgZGHqbJ9YlJpma2hoamyRaVFhbKZWkBJflBKfaYtQAhUqyMlIKbItAQCH4n4N&v=c1&r=https://www.amazon.in/TVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release/dp/B0F1MPB85C/ref=sxbs_sbv_search_btf?aref=11538i8x36&content-id=amzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2%3Aamzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2&crid=19Z8HO7J9JH7F&cv_ct_cx=helmets+for+men+bike&keywords=helmets+for+men+bike&pd_rd_i=B0F1MPB85C&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&pd_rd_w=8eiNA&pd_rd_wg=FwloQ&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pf_rd_r=ZZQD4252EJXE1K2BT76N&qid=1791801593&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Helmet%2Caps%2C291&sr=1-1-c6261b0d-51ee-49e4-be21-2fbbc07beaa1
+                - heading "TVS Racing Anti Matter Full Face Helmet for Bike & Motorcycle Riders-DOT & ISI Certified-Lightweight ABS Shell, UV Resistant-Ventilated Comfort Liner, Quick-Release Visor & Chin Strap" [level=2] [ref=f4e5371]
+            - generic [ref=f4e5373]:
+              - text: "4.0"
+              - button "4.0 out of 5 stars, rating details" [ref=f4e5375] [cursor=pointer]:
+                - generic [ref=f4e5376]: 4.0 out of 5 stars
+              - link "732 ratings" [ref=f4e5379] [cursor=pointer]:
+                - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8ub4-XHTNTYhXkcjwxCvoNBQPxNv9zAlRkMrMS-jXP8072TdglLHUrOQkGS_wlTLwPQgbiMTMz0TMz1jQz2DKKZgpyQOR9cQD9cgz2AhcS72lNTi7JL8AiGeUL8gV2d_dz_PKFcXKS8uZahEfHFqYlFyRnxBalFyfk5iSWp8Un5JSX5ufFJJmhBnYm5iVX6eXmaelGBxUpkuRK0uRIUSa2pevKefkhkXo4HAjku9i9oPu0jxQY2FqeE3MjAwNDAytDAwNjezNDE0Yvb0C7Jidg5w1vIXsnZxcnQucPPUNXescyqEgHTHOqfAoviqXDNHVFDnlF7nFFjn5AhmpEsJOKe7Vrh7lSU7ZjqbFTuZ2BqFcYVklJQUFFvp65eXl-vB3a6fUqDvZOBm6BvgZGHqbJ9YlJpma2hoamyRaVFhbKZWkBJflBKfaYtQAhUqyMlIKbItAQCH4n4N&v=c1&r=https://www.amazon.in/TVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release/dp/B0F1MPB85C/ref=sxbs_sbv_search_btf?aref=11538i8x36&content-id=amzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2%3Aamzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2&crid=19Z8HO7J9JH7F&cv_ct_cx=helmets+for+men+bike&keywords=helmets+for+men+bike&pd_rd_i=B0F1MPB85C&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&pd_rd_w=8eiNA&pd_rd_wg=FwloQ&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pf_rd_r=ZZQD4252EJXE1K2BT76N&qid=1791801593&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Helmet%2Caps%2C291&sr=1-1-c6261b0d-51ee-49e4-be21-2fbbc07beaa1#customerReviews
+                - text: (732)
+            - generic [ref=f4e5382]:
+              - generic [ref=f4e5383]:
+                - link "Limited time deal" [ref=f4e5385] [cursor=pointer]:
+                  - /url: /deals
+                - generic [ref=f4e5391]:
+                  - generic [ref=f4e5392]: Price, product page
+                  - 'link "₹1,799 M.R.P: ₹2,399 M.R.P: ₹2,399" [ref=f4e5393] [cursor=pointer]':
+                    - /url: https://sponsored-ads.amazon.in/clk?p=eAHj8ub4-XHTNTYhXkcjwxCvoNBQPxNv9zAlRkMrMS-jXP8072TdglLHUrOQkGS_wlTLwPQgbiMTMz0TMz1jQz2DKKZgpyQOR9cQD9cgz2AhcS72lNTi7JL8AiGeUL8gV2d_dz_PKFcXKS8uZahEfHFqYlFyRnxBalFyfk5iSWp8Un5JSX5ufFJJmhBnYm5iVX6eXmaelGBxUpkuRK0uRIUSa2pevKefkhkXo4HAjku9i9oPu0jxQY2FqeE3MjAwNDAytDAwNjezNDE0Yvb0C7Jidg5w1vIXsnZxcnQucPPUNXescyqEgHTHOqfAoviqXDNHVFDnlF7nFFjn5AhmpEsJOKe7Vrh7lSU7ZjqbFTuZ2BqFcYVklJQUFFvp65eXl-vB3a6fUqDvZOBm6BvgZGHqbJ9YlJpma2hoamyRaVFhbKZWkBJflBKfaYtQAhUqyMlIKbItAQCH4n4N&v=c1&r=https://www.amazon.in/TVS-Motorcycle-Certified-Lightweight-Resistant-Ventilated-Quick-Release/dp/B0F1MPB85C/ref=sxbs_sbv_search_btf?aref=11538i8x36&content-id=amzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2%3Aamzn1.sym.08151b05-d55c-46d5-8d3d-169dbffb31f2&crid=19Z8HO7J9JH7F&cv_ct_cx=helmets+for+men+bike&keywords=helmets+for+men+bike&pd_rd_i=B0F1MPB85C&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&pd_rd_w=8eiNA&pd_rd_wg=FwloQ&pf_rd_p=08151b05-d55c-46d5-8d3d-169dbffb31f2&pf_rd_r=ZZQD4252EJXE1K2BT76N&qid=1791801593&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Helmet%2Caps%2C291&sr=1-1-c6261b0d-51ee-49e4-be21-2fbbc07beaa1
+                    - generic [ref=f4e5394]:
+                      - generic [ref=f4e5395]: ₹1,799
+                      - generic [ref=f4e5396]: ₹1,799
+                    - generic [ref=f4e5397]: "M.R.P: ₹2,399"
+                    - generic [ref=f4e5398]:
+                      - text: "M.R.P:"
+                      - generic [ref=f4e5399]:
+                        - generic [ref=f4e5400]: ₹2,399
+                        - text: ₹2,399
+                  - text: (25% off)
+                - generic [ref=f4e5401]: Up to 5% back with Amazon Pay ICICI card
+              - generic [ref=f4e5408]:
+                - generic [ref=f4e5409]: FREE delivery Sun, 18 Oct
+                - generic [ref=f4e5411]: Or fastest delivery Wed, 14 Oct
+      - generic [ref=f4e5418]:
+        - generic "Related searches in helmets for men bike" [ref=f4e5419]:
+          - heading "Related searches" [level=2] [ref=f4e5422]
+        - list [ref=f4e5424]:
+          - generic [ref=f4e5425]:
+            - listitem [ref=f4e5426]:
+              - link "vega helmet for men" [ref=f4e5428] [cursor=pointer]:
+                - /url: /s?k=vega+helmet+for+men&ref=rsl_sug_0_0&pd_rd_w=15iiX&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=FwloQ&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&qid=1791801593
+            - listitem [ref=f4e5434]:
+              - link "helmet" [ref=f4e5436] [cursor=pointer]:
+                - /url: /s?k=helmet&ref=rsl_sug_0_3&pd_rd_w=15iiX&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=FwloQ&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&qid=1791801593
+          - generic [ref=f4e5442]:
+            - listitem [ref=f4e5443]:
+              - link "helmet for men bike" [ref=f4e5445] [cursor=pointer]:
+                - /url: /s?k=helmet+for+men+bike&ref=rsl_sug_0_1&pd_rd_w=15iiX&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=FwloQ&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&qid=1791801593
+            - listitem [ref=f4e5451]:
+              - link "steelbird helmet for men" [ref=f4e5453] [cursor=pointer]:
+                - /url: /s?k=steelbird+helmet+for+men&ref=rsl_sug_0_4&pd_rd_w=15iiX&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=FwloQ&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&qid=1791801593
+          - generic [ref=f4e5459]:
+            - listitem [ref=f4e5460]:
+              - link "axor helmets for mens" [ref=f4e5462] [cursor=pointer]:
+                - /url: /s?k=axor+helmets+for+mens&ref=rsl_sug_0_2&pd_rd_w=15iiX&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=FwloQ&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&qid=1791801593
+            - listitem [ref=f4e5468]:
+              - link "royal enfield helmet" [ref=f4e5470] [cursor=pointer]:
+                - /url: /s?k=royal+enfield+helmet&ref=rsl_sug_0_5&pd_rd_w=15iiX&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=FwloQ&pd_rd_r=f59648ea-e2df-4c54-a8e4-99e770182372&qid=1791801593
+      - navigation "pagination" [ref=f4e5478]:
+        - list [ref=f4e5480]:
+          - listitem [ref=f4e5481]:
+            - button "Previous" [disabled] [ref=f4e5483]
+          - listitem [ref=f4e5486]:
+            - button "Page 1" [ref=f4e5488]: "1"
+          - listitem [ref=f4e5489]:
+            - button "Go to page 2" [ref=f4e5491] [cursor=pointer]: "2"
+          - listitem [ref=f4e5492]:
+            - button "Go to page 3" [ref=f4e5494] [cursor=pointer]: "3"
+          - button [disabled] [ref=f4e5495]:
+            - img [ref=f4e5496]: ...
+          - button "7" [disabled] [ref=f4e5498]
+          - listitem [ref=f4e5499]:
+            - button "Go to next page, page 2" [ref=f4e5501] [cursor=pointer]: Next
+      - generic [ref=f4e5507]:
+        - separator [ref=f4e5508]
+        - generic [ref=f4e5509]:
+          - heading "Brands related to your search" [ref=f4e5510]
+          - button "Leave feedback on Sponsored ad" [ref=f4e5515] [cursor=pointer]: Sponsored
+          - generic [ref=f4e5519]:
+            - generic [ref=f4e5521]:
+              - generic:
+                - generic:
+                  - link:
+                    - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1u00AUhdVWQAkgoiyKlFUViSwqJhl7pk5SZCGP46RpSOo6aaDdjCb2JLbqv85Mf8gi--54kCIQD8N7sGDBDqUFJDirTzr36N57Cv7mz-9fvz0sPbN0bXzgHR8Pcb87qaxpO1sznkbXtE7w2WiYT5xGnL5fGNbe1ok3dXvhAotZejLpX-u2gdW55T3RsVHDRg1pNXi6PiLTTcsZ7zteb1R6UXgUcHmmsrz09HjoOfZhd9g7ddrlm7XC5sqhUzUrPWYJW2RpLUrLL0PJgOB-liQ8DZiKshRILi4jnwPJmfBDMFWzygOe0t5wR08uYhWBqWBpAHzBmYouOfi9EfhMBBLkLEoVF8DPUsVTpRcHxKbIHb2lbWfUHx-6lWZhDRa_fPzx6ea2XS7-Sa8OQbmMK88RhBA1kWZAhJrI0Dd6Q29vw3btncPS6zax7LzTAw1rSc7vNbeW5EjQRWJY_2pJ5ktytCTWHczLRXvuXHcPLn0rsg1JsKl_Xi_crodK5XKvXr-6uqr9baYuVSa4rOdszutOw-pgTcMAYacNMCIQWMTAoAlxq4Ebbewg481dgAo-M0eEWrClY9TUGvqg09RPdJd0XWBBrQkx3tWOyDsbor572h_Dah5QEdA8DgNhqmooGfUFjQITVuOcMhml0iSwow2G4_02enWPZOK17nEwdieT1eT5BRcfzJDHCVdye5aJ7YSn29PojK9cGWfK_L_qqgxyygI6F9lFbiIINYh11IAtuItwNTJZLqts9ZDXGYVqhp0s-QUiQt_I&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                  - generic:
+                    - link "Harita Accessories LLP - TVS":
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1u00AUhdVWQAkgoiyKlFUViSwqJhl7pk5SZCGP46RpSOo6aaDdjCb2JLbqv85Mf8gi--54kCIQD8N7sGDBDqUFJDirTzr36N57Cv7mz-9fvz0sPbN0bXzgHR8Pcb87qaxpO1sznkbXtE7w2WiYT5xGnL5fGNbe1ok3dXvhAotZejLpX-u2gdW55T3RsVHDRg1pNXi6PiLTTcsZ7zteb1R6UXgUcHmmsrz09HjoOfZhd9g7ddrlm7XC5sqhUzUrPWYJW2RpLUrLL0PJgOB-liQ8DZiKshRILi4jnwPJmfBDMFWzygOe0t5wR08uYhWBqWBpAHzBmYouOfi9EfhMBBLkLEoVF8DPUsVTpRcHxKbIHb2lbWfUHx-6lWZhDRa_fPzx6ea2XS7-Sa8OQbmMK88RhBA1kWZAhJrI0Dd6Q29vw3btncPS6zax7LzTAw1rSc7vNbeW5EjQRWJY_2pJ5ktytCTWHczLRXvuXHcPLn0rsg1JsKl_Xi_crodK5XKvXr-6uqr9baYuVSa4rOdszutOw-pgTcMAYacNMCIQWMTAoAlxq4Ebbewg481dgAo-M0eEWrClY9TUGvqg09RPdJd0XWBBrQkx3tWOyDsbor572h_Dah5QEdA8DgNhqmooGfUFjQITVuOcMhml0iSwow2G4_02enWPZOK17nEwdieT1eT5BRcfzJDHCVdye5aJ7YSn29PojK9cGWfK_L_qqgxyygI6F9lFbiIINYh11IAtuItwNTJZLqts9ZDXGYVqhp0s-QUiQt_I&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                      - img "Harita Accessories LLP - TVS"
+                  - generic [ref=f4e5523]:
+                    - generic [ref=f4e5524]:
+                      - link [ref=f4e5525] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1u00AUhdVWQAkgoiyKlFUViSwqJhl7pk5SZCGP46RpSOo6aaDdjCb2JLbqv85Mf8gi--54kCIQD8N7sGDBDqUFJDirTzr36N57Cv7mz-9fvz0sPbN0bXzgHR8Pcb87qaxpO1sznkbXtE7w2WiYT5xGnL5fGNbe1ok3dXvhAotZejLpX-u2gdW55T3RsVHDRg1pNXi6PiLTTcsZ7zteb1R6UXgUcHmmsrz09HjoOfZhd9g7ddrlm7XC5sqhUzUrPWYJW2RpLUrLL0PJgOB-liQ8DZiKshRILi4jnwPJmfBDMFWzygOe0t5wR08uYhWBqWBpAHzBmYouOfi9EfhMBBLkLEoVF8DPUsVTpRcHxKbIHb2lbWfUHx-6lWZhDRa_fPzx6ea2XS7-Sa8OQbmMK88RhBA1kWZAhJrI0Dd6Q29vw3btncPS6zax7LzTAw1rSc7vNbeW5EjQRWJY_2pJ5ktytCTWHczLRXvuXHcPLn0rsg1JsKl_Xi_crodK5XKvXr-6uqr9baYuVSa4rOdszutOw-pgTcMAYacNMCIQWMTAoAlxq4Ebbewg481dgAo-M0eEWrClY9TUGvqg09RPdJd0XWBBrQkx3tWOyDsbor572h_Dah5QEdA8DgNhqmooGfUFjQITVuOcMhml0iSwow2G4_02enWPZOK17nEwdieT1eT5BRcfzJDHCVdye5aJ7YSn29PojK9cGWfK_L_qqgxyygI6F9lFbiIINYh11IAtuItwNTJZLqts9ZDXGYVqhp0s-QUiQt_I&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                      - link "Harita Accessories LLP - TVS":
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1u00AUhdVWQAkgoiyKlFUViSwqJhl7pk5SZCGP46RpSOo6aaDdjCb2JLbqv85Mf8gi--54kCIQD8N7sGDBDqUFJDirTzr36N57Cv7mz-9fvz0sPbN0bXzgHR8Pcb87qaxpO1sznkbXtE7w2WiYT5xGnL5fGNbe1ok3dXvhAotZejLpX-u2gdW55T3RsVHDRg1pNXi6PiLTTcsZ7zteb1R6UXgUcHmmsrz09HjoOfZhd9g7ddrlm7XC5sqhUzUrPWYJW2RpLUrLL0PJgOB-liQ8DZiKshRILi4jnwPJmfBDMFWzygOe0t5wR08uYhWBqWBpAHzBmYouOfi9EfhMBBLkLEoVF8DPUsVTpRcHxKbIHb2lbWfUHx-6lWZhDRa_fPzx6ea2XS7-Sa8OQbmMK88RhBA1kWZAhJrI0Dd6Q29vw3btncPS6zax7LzTAw1rSc7vNbeW5EjQRWJY_2pJ5ktytCTWHczLRXvuXHcPLn0rsg1JsKl_Xi_crodK5XKvXr-6uqr9baYuVSa4rOdszutOw-pgTcMAYacNMCIQWMTAoAlxq4Ebbewg481dgAo-M0eEWrClY9TUGvqg09RPdJd0XWBBrQkx3tWOyDsbor572h_Dah5QEdA8DgNhqmooGfUFjQITVuOcMhml0iSwow2G4_02enWPZOK17nEwdieT1eT5BRcfzJDHCVdye5aJ7YSn29PojK9cGWfK_L_qqgxyygI6F9lFbiIINYh11IAtuItwNTJZLqts9ZDXGYVqhp0s-QUiQt_I&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                        - generic:
+                          - img "Harita Accessories LLP - TVS"
+                    - generic [ref=f4e5526]:
+                      - link [ref=f4e5527] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1u00AUhdVWQAkgoiyKlFUViSwqJhl7pk5SZCGP46RpSOo6aaDdjCb2JLbqv85Mf8gi--54kCIQD8N7sGDBDqUFJDirTzr36N57Cv7mz-9fvz0sPbN0bXzgHR8Pcb87qaxpO1sznkbXtE7w2WiYT5xGnL5fGNbe1ok3dXvhAotZejLpX-u2gdW55T3RsVHDRg1pNXi6PiLTTcsZ7zteb1R6UXgUcHmmsrz09HjoOfZhd9g7ddrlm7XC5sqhUzUrPWYJW2RpLUrLL0PJgOB-liQ8DZiKshRILi4jnwPJmfBDMFWzygOe0t5wR08uYhWBqWBpAHzBmYouOfi9EfhMBBLkLEoVF8DPUsVTpRcHxKbIHb2lbWfUHx-6lWZhDRa_fPzx6ea2XS7-Sa8OQbmMK88RhBA1kWZAhJrI0Dd6Q29vw3btncPS6zax7LzTAw1rSc7vNbeW5EjQRWJY_2pJ5ktytCTWHczLRXvuXHcPLn0rsg1JsKl_Xi_crodK5XKvXr-6uqr9baYuVSa4rOdszutOw-pgTcMAYacNMCIQWMTAoAlxq4Ebbewg481dgAo-M0eEWrClY9TUGvqg09RPdJd0XWBBrQkx3tWOyDsbor572h_Dah5QEdA8DgNhqmooGfUFjQITVuOcMhml0iSwow2G4_02enWPZOK17nEwdieT1eT5BRcfzJDHCVdye5aJ7YSn29PojK9cGWfK_L_qqgxyygI6F9lFbiIINYh11IAtuItwNTJZLqts9ZDXGYVqhp0s-QUiQt_I&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                      - link "Breathe Easy. Ride Safe" [ref=f4e5528] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1u00AUhdVWQAkgoiyKlFUViSwqJhl7pk5SZCGP46RpSOo6aaDdjCb2JLbqv85Mf8gi--54kCIQD8N7sGDBDqUFJDirTzr36N57Cv7mz-9fvz0sPbN0bXzgHR8Pcb87qaxpO1sznkbXtE7w2WiYT5xGnL5fGNbe1ok3dXvhAotZejLpX-u2gdW55T3RsVHDRg1pNXi6PiLTTcsZ7zteb1R6UXgUcHmmsrz09HjoOfZhd9g7ddrlm7XC5sqhUzUrPWYJW2RpLUrLL0PJgOB-liQ8DZiKshRILi4jnwPJmfBDMFWzygOe0t5wR08uYhWBqWBpAHzBmYouOfi9EfhMBBLkLEoVF8DPUsVTpRcHxKbIHb2lbWfUHx-6lWZhDRa_fPzx6ea2XS7-Sa8OQbmMK88RhBA1kWZAhJrI0Dd6Q29vw3btncPS6zax7LzTAw1rSc7vNbeW5EjQRWJY_2pJ5ktytCTWHczLRXvuXHcPLn0rsg1JsKl_Xi_crodK5XKvXr-6uqr9baYuVSa4rOdszutOw-pgTcMAYacNMCIQWMTAoAlxq4Ebbewg481dgAo-M0eEWrClY9TUGvqg09RPdJd0XWBBrQkx3tWOyDsbor572h_Dah5QEdA8DgNhqmooGfUFjQITVuOcMhml0iSwow2G4_02enWPZOK17nEwdieT1eT5BRcfzJDHCVdye5aJ7YSn29PojK9cGWfK_L_qqgxyygI6F9lFbiIINYh11IAtuItwNTJZLqts9ZDXGYVqhp0s-QUiQt_I&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FE7AF4114-34ED-43B0-AB64-8049747D4E36%3Fstore_ref%3DSB_A092438172MF82Y2PBGP-A01804451QBWC03KPZKT0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0F1MNTHD3%2CB0F1MNBVR9%2CB0F1MMTPVV%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300104237090534%26i%3Daps%26aref%3DRFShtf4Eom&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+            - generic [ref=f4e5533]:
+              - generic:
+                - generic:
+                  - link:
+                    - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMtu2kAUVZI-UvpQxCKVWEVIZRF1YDwejJ3KqjzGPAIxhEdeG2uwB7AA25kZIGHBvr_Qz-iiUr-gf1BV_Yt2l11F-pDaszrSuUfn3JPyd---f_jyKP3cQkrvuNPvu7hRPctuKYf7QxaFN16B4EnXTc6c0jS6WGnW0X7gtJfziN9OQsRO5CXlqw4Ml52nCGt5rOVVJQ-vtrtksGs5vZrTqXfTL1OPAyYmMk7Sz_pux7FbVbd-5ZQz77ZSuxvFG8hh-gmd0VUc5cMo82osKODMj2czFgVUhnEEBOOL0GdAMMr9MRjIYfYhi7y6e4hm86kMwYDTKAA-Z1SGCwZ-JwKf8kCAhIaRZBz4cSRZJNHeCbE9td1temWn2-i12tlSakvZ-_Ht6_u7zw8ye3_cmyJqIqbZFwhCpaQYGGsIGzraqbudox27bR-20m_KxLKTSh2UrDW5_oWRtSan3FvNNOtfrMloTU7XxLono8yePXJuqscL3wptTRBsok_bqY_bYykTcVQoLJfL_N9hCkLGnIlCQkesoBkqVos2ApjYFYBtFQMDajYoWshAlqLBsl55e2_wOBuaXeJZUIUlvQiRcWzVLkpto2n3W8CCWhFjHauqWu_Vu2XSQKSaSwKPB14yHQfclLmxoJ7PvTAwFYihZqiaDlFumnhUhJEwCSSo2eid48prAknnUsc1VNtQ1DypnNp4c3k9Z_zWHLPpjElxMIz5wYxFB4NwwjaqmMbS_H_0nAgSjwbeiMfzxEQQIr1UREYRa4aeC02aiBzdvGYtfLXrrs4j9ycmb-M2&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F693435C2-4BCF-4C34-906C-5A292A160D8F%3Fstore_ref%3DSB_A030785029JAHX7P9LCUO-A0654484333ITISDBK2BG%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D10406936802%26lp_asins%3DB0B2LKTW4F%2CB0BRY84H2H%2CB0B2LMFQC4%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D20028752954698%26i%3Daps%26aref%3DAvc3SNzWnN&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                  - generic:
+                    - link "Boldfit":
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMtu2kAUVZI-UvpQxCKVWEVIZRF1YDwejJ3KqjzGPAIxhEdeG2uwB7AA25kZIGHBvr_Qz-iiUr-gf1BV_Yt2l11F-pDaszrSuUfn3JPyd---f_jyKP3cQkrvuNPvu7hRPctuKYf7QxaFN16B4EnXTc6c0jS6WGnW0X7gtJfziN9OQsRO5CXlqw4Ml52nCGt5rOVVJQ-vtrtksGs5vZrTqXfTL1OPAyYmMk7Sz_pux7FbVbd-5ZQz77ZSuxvFG8hh-gmd0VUc5cMo82osKODMj2czFgVUhnEEBOOL0GdAMMr9MRjIYfYhi7y6e4hm86kMwYDTKAA-Z1SGCwZ-JwKf8kCAhIaRZBz4cSRZJNHeCbE9td1temWn2-i12tlSakvZ-_Ht6_u7zw8ye3_cmyJqIqbZFwhCpaQYGGsIGzraqbudox27bR-20m_KxLKTSh2UrDW5_oWRtSan3FvNNOtfrMloTU7XxLono8yePXJuqscL3wptTRBsok_bqY_bYykTcVQoLJfL_N9hCkLGnIlCQkesoBkqVos2ApjYFYBtFQMDajYoWshAlqLBsl55e2_wOBuaXeJZUIUlvQiRcWzVLkpto2n3W8CCWhFjHauqWu_Vu2XSQKSaSwKPB14yHQfclLmxoJ7PvTAwFYihZqiaDlFumnhUhJEwCSSo2eid48prAknnUsc1VNtQ1DypnNp4c3k9Z_zWHLPpjElxMIz5wYxFB4NwwjaqmMbS_H_0nAgSjwbeiMfzxEQQIr1UREYRa4aeC02aiBzdvGYtfLXrrs4j9ycmb-M2&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F693435C2-4BCF-4C34-906C-5A292A160D8F%3Fstore_ref%3DSB_A030785029JAHX7P9LCUO-A0654484333ITISDBK2BG%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D10406936802%26lp_asins%3DB0B2LKTW4F%2CB0BRY84H2H%2CB0B2LMFQC4%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D20028752954698%26i%3Daps%26aref%3DAvc3SNzWnN&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                      - img "Boldfit"
+                  - generic [ref=f4e5535]:
+                    - generic [ref=f4e5536]:
+                      - link [ref=f4e5537] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMtu2kAUVZI-UvpQxCKVWEVIZRF1YDwejJ3KqjzGPAIxhEdeG2uwB7AA25kZIGHBvr_Qz-iiUr-gf1BV_Yt2l11F-pDaszrSuUfn3JPyd---f_jyKP3cQkrvuNPvu7hRPctuKYf7QxaFN16B4EnXTc6c0jS6WGnW0X7gtJfziN9OQsRO5CXlqw4Ml52nCGt5rOVVJQ-vtrtksGs5vZrTqXfTL1OPAyYmMk7Sz_pux7FbVbd-5ZQz77ZSuxvFG8hh-gmd0VUc5cMo82osKODMj2czFgVUhnEEBOOL0GdAMMr9MRjIYfYhi7y6e4hm86kMwYDTKAA-Z1SGCwZ-JwKf8kCAhIaRZBz4cSRZJNHeCbE9td1temWn2-i12tlSakvZ-_Ht6_u7zw8ye3_cmyJqIqbZFwhCpaQYGGsIGzraqbudox27bR-20m_KxLKTSh2UrDW5_oWRtSan3FvNNOtfrMloTU7XxLono8yePXJuqscL3wptTRBsok_bqY_bYykTcVQoLJfL_N9hCkLGnIlCQkesoBkqVos2ApjYFYBtFQMDajYoWshAlqLBsl55e2_wOBuaXeJZUIUlvQiRcWzVLkpto2n3W8CCWhFjHauqWu_Vu2XSQKSaSwKPB14yHQfclLmxoJ7PvTAwFYihZqiaDlFumnhUhJEwCSSo2eid48prAknnUsc1VNtQ1DypnNp4c3k9Z_zWHLPpjElxMIz5wYxFB4NwwjaqmMbS_H_0nAgSjwbeiMfzxEQQIr1UREYRa4aeC02aiBzdvGYtfLXrrs4j9ycmb-M2&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F693435C2-4BCF-4C34-906C-5A292A160D8F%3Fstore_ref%3DSB_A030785029JAHX7P9LCUO-A0654484333ITISDBK2BG%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D10406936802%26lp_asins%3DB0B2LKTW4F%2CB0BRY84H2H%2CB0B2LMFQC4%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D20028752954698%26i%3Daps%26aref%3DAvc3SNzWnN&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                      - link "Boldfit":
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMtu2kAUVZI-UvpQxCKVWEVIZRF1YDwejJ3KqjzGPAIxhEdeG2uwB7AA25kZIGHBvr_Qz-iiUr-gf1BV_Yt2l11F-pDaszrSuUfn3JPyd---f_jyKP3cQkrvuNPvu7hRPctuKYf7QxaFN16B4EnXTc6c0jS6WGnW0X7gtJfziN9OQsRO5CXlqw4Ml52nCGt5rOVVJQ-vtrtksGs5vZrTqXfTL1OPAyYmMk7Sz_pux7FbVbd-5ZQz77ZSuxvFG8hh-gmd0VUc5cMo82osKODMj2czFgVUhnEEBOOL0GdAMMr9MRjIYfYhi7y6e4hm86kMwYDTKAA-Z1SGCwZ-JwKf8kCAhIaRZBz4cSRZJNHeCbE9td1temWn2-i12tlSakvZ-_Ht6_u7zw8ye3_cmyJqIqbZFwhCpaQYGGsIGzraqbudox27bR-20m_KxLKTSh2UrDW5_oWRtSan3FvNNOtfrMloTU7XxLono8yePXJuqscL3wptTRBsok_bqY_bYykTcVQoLJfL_N9hCkLGnIlCQkesoBkqVos2ApjYFYBtFQMDajYoWshAlqLBsl55e2_wOBuaXeJZUIUlvQiRcWzVLkpto2n3W8CCWhFjHauqWu_Vu2XSQKSaSwKPB14yHQfclLmxoJ7PvTAwFYihZqiaDlFumnhUhJEwCSSo2eid48prAknnUsc1VNtQ1DypnNp4c3k9Z_zWHLPpjElxMIz5wYxFB4NwwjaqmMbS_H_0nAgSjwbeiMfzxEQQIr1UREYRa4aeC02aiBzdvGYtfLXrrs4j9ycmb-M2&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F693435C2-4BCF-4C34-906C-5A292A160D8F%3Fstore_ref%3DSB_A030785029JAHX7P9LCUO-A0654484333ITISDBK2BG%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D10406936802%26lp_asins%3DB0B2LKTW4F%2CB0BRY84H2H%2CB0B2LMFQC4%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D20028752954698%26i%3Daps%26aref%3DAvc3SNzWnN&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                        - generic:
+                          - img "Boldfit"
+                    - generic [ref=f4e5538]:
+                      - link [ref=f4e5539] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMtu2kAUVZI-UvpQxCKVWEVIZRF1YDwejJ3KqjzGPAIxhEdeG2uwB7AA25kZIGHBvr_Qz-iiUr-gf1BV_Yt2l11F-pDaszrSuUfn3JPyd---f_jyKP3cQkrvuNPvu7hRPctuKYf7QxaFN16B4EnXTc6c0jS6WGnW0X7gtJfziN9OQsRO5CXlqw4Ml52nCGt5rOVVJQ-vtrtksGs5vZrTqXfTL1OPAyYmMk7Sz_pux7FbVbd-5ZQz77ZSuxvFG8hh-gmd0VUc5cMo82osKODMj2czFgVUhnEEBOOL0GdAMMr9MRjIYfYhi7y6e4hm86kMwYDTKAA-Z1SGCwZ-JwKf8kCAhIaRZBz4cSRZJNHeCbE9td1temWn2-i12tlSakvZ-_Ht6_u7zw8ye3_cmyJqIqbZFwhCpaQYGGsIGzraqbudox27bR-20m_KxLKTSh2UrDW5_oWRtSan3FvNNOtfrMloTU7XxLono8yePXJuqscL3wptTRBsok_bqY_bYykTcVQoLJfL_N9hCkLGnIlCQkesoBkqVos2ApjYFYBtFQMDajYoWshAlqLBsl55e2_wOBuaXeJZUIUlvQiRcWzVLkpto2n3W8CCWhFjHauqWu_Vu2XSQKSaSwKPB14yHQfclLmxoJ7PvTAwFYihZqiaDlFumnhUhJEwCSSo2eid48prAknnUsc1VNtQ1DypnNp4c3k9Z_zWHLPpjElxMIz5wYxFB4NwwjaqmMbS_H_0nAgSjwbeiMfzxEQQIr1UREYRa4aeC02aiBzdvGYtfLXrrs4j9ycmb-M2&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F693435C2-4BCF-4C34-906C-5A292A160D8F%3Fstore_ref%3DSB_A030785029JAHX7P9LCUO-A0654484333ITISDBK2BG%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D10406936802%26lp_asins%3DB0B2LKTW4F%2CB0BRY84H2H%2CB0B2LMFQC4%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D20028752954698%26i%3Daps%26aref%3DAvc3SNzWnN&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                      - link "Helmet Cap Made for Riders" [ref=f4e5540] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdUMtu2kAUVZI-UvpQxCKVWEVIZRF1YDwejJ3KqjzGPAIxhEdeG2uwB7AA25kZIGHBvr_Qz-iiUr-gf1BV_Yt2l11F-pDaszrSuUfn3JPyd---f_jyKP3cQkrvuNPvu7hRPctuKYf7QxaFN16B4EnXTc6c0jS6WGnW0X7gtJfziN9OQsRO5CXlqw4Ml52nCGt5rOVVJQ-vtrtksGs5vZrTqXfTL1OPAyYmMk7Sz_pux7FbVbd-5ZQz77ZSuxvFG8hh-gmd0VUc5cMo82osKODMj2czFgVUhnEEBOOL0GdAMMr9MRjIYfYhi7y6e4hm86kMwYDTKAA-Z1SGCwZ-JwKf8kCAhIaRZBz4cSRZJNHeCbE9td1temWn2-i12tlSakvZ-_Ht6_u7zw8ye3_cmyJqIqbZFwhCpaQYGGsIGzraqbudox27bR-20m_KxLKTSh2UrDW5_oWRtSan3FvNNOtfrMloTU7XxLono8yePXJuqscL3wptTRBsok_bqY_bYykTcVQoLJfL_N9hCkLGnIlCQkesoBkqVos2ApjYFYBtFQMDajYoWshAlqLBsl55e2_wOBuaXeJZUIUlvQiRcWzVLkpto2n3W8CCWhFjHauqWu_Vu2XSQKSaSwKPB14yHQfclLmxoJ7PvTAwFYihZqiaDlFumnhUhJEwCSSo2eid48prAknnUsc1VNtQ1DypnNp4c3k9Z_zWHLPpjElxMIz5wYxFB4NwwjaqmMbS_H_0nAgSjwbeiMfzxEQQIr1UREYRa4aeC02aiBzdvGYtfLXrrs4j9ycmb-M2&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2F693435C2-4BCF-4C34-906C-5A292A160D8F%3Fstore_ref%3DSB_A030785029JAHX7P9LCUO-A0654484333ITISDBK2BG%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D10406936802%26lp_asins%3DB0B2LKTW4F%2CB0BRY84H2H%2CB0B2LMFQC4%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D20028752954698%26i%3Daps%26aref%3DAvc3SNzWnN&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+            - generic [ref=f4e5545]:
+              - generic:
+                - generic:
+                  - link:
+                    - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1vEkEYxtMataJGwqEmnBoSOTQOzMx-UrMxO8tC6cdCWShNL5thd4BN2Y_ODKX2wN3_xcTEg179K_RfMN48ejO0aqLP6Zc875P3fZ9CuPXzx4cvD0pPbYwGB_3h0FMP26eVDbS7PWFpfB3UiXrhe_mpa8zTsxvd3ttGXtQcxdPFfjRI_PD69JCfe2zZf4xVvabqNQXV4PmmT8ZbtjvYd_sdv_S88DBi4kJmeenJ0Ou7Trftdc7dZvntRmFr7QRjOSk9ogm9ydJanJZfzAQFnIVZkrA0ojLOUiAYv4pDBgSjPJyBsZxU7rM06Hi7OFnMZQzGnKYRCDmjMr5i4PdGEFIeCZDTOJWMgzBLJUslLh4TJ1B6_lHQdP3DQbdXMQsbuPj56_dP3z42y8U_6fUhSi7mlWcYQqgZCGNVMU0V4Xsdr793z-k5u93SqyaxnbzVAYa9Ipd3mtorcsKDm0S3_9WKTFfkZEXsW5iWi87UvW4fXIV27OiCqBZ-v1l4tzmTMhd79fpyuaz9baYuZMaZqOd0yurE1HDL1RHARtMEagPZwCRQA0ZT1wiGpqYS4_VtIOBsYvkksKGGkGpg5Bw5DU85xif9AbBhQ9UQxrir9VTDN1t6qwereRTwKMjns4hbsjoTNAh5EEcWrM7zgIo4FRaB7ZaD9o8QeblGMsIjRbnDs_7xaXs9eblg_I01Y_OESbEzyfhOwtKdcXzB1q6YZ9L6v-qqiPKARsGUZ4vcUiBEmm4gA0KoKGo1tmguqnT90Gg8DKGKtIb_C1hM39Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FB852FE61-27D8-491A-8B05-7D65B20854B7%3Fstore_ref%3DSB_A05114721CLC9N3M2QRT-A09451222O5P47S8F6FP0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0GFC1HL1B%2CB0GFBW2W33%2CB0GFBXRMVG%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300156717000334%26i%3Daps%26aref%3DWbUc04159S&ref_=sbx_be_s_3psl_mbd_mb2_bkgd&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                  - generic:
+                    - link "FF":
+                      - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1vEkEYxtMataJGwqEmnBoSOTQOzMx-UrMxO8tC6cdCWShNL5thd4BN2Y_ODKX2wN3_xcTEg179K_RfMN48ejO0aqLP6Zc875P3fZ9CuPXzx4cvD0pPbYwGB_3h0FMP26eVDbS7PWFpfB3UiXrhe_mpa8zTsxvd3ttGXtQcxdPFfjRI_PD69JCfe2zZf4xVvabqNQXV4PmmT8ZbtjvYd_sdv_S88DBi4kJmeenJ0Ou7Trftdc7dZvntRmFr7QRjOSk9ogm9ydJanJZfzAQFnIVZkrA0ojLOUiAYv4pDBgSjPJyBsZxU7rM06Hi7OFnMZQzGnKYRCDmjMr5i4PdGEFIeCZDTOJWMgzBLJUslLh4TJ1B6_lHQdP3DQbdXMQsbuPj56_dP3z42y8U_6fUhSi7mlWcYQqgZCGNVMU0V4Xsdr793z-k5u93SqyaxnbzVAYa9Ipd3mtorcsKDm0S3_9WKTFfkZEXsW5iWi87UvW4fXIV27OiCqBZ-v1l4tzmTMhd79fpyuaz9baYuZMaZqOd0yurE1HDL1RHARtMEagPZwCRQA0ZT1wiGpqYS4_VtIOBsYvkksKGGkGpg5Bw5DU85xif9AbBhQ9UQxrir9VTDN1t6qwereRTwKMjns4hbsjoTNAh5EEcWrM7zgIo4FRaB7ZaD9o8QeblGMsIjRbnDs_7xaXs9eblg_I01Y_OESbEzyfhOwtKdcXzB1q6YZ9L6v-qqiPKARsGUZ4vcUiBEmm4gA0KoKGo1tmguqnT90Gg8DKGKtIb_C1hM39Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FB852FE61-27D8-491A-8B05-7D65B20854B7%3Fstore_ref%3DSB_A05114721CLC9N3M2QRT-A09451222O5P47S8F6FP0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0GFC1HL1B%2CB0GFBW2W33%2CB0GFBXRMVG%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300156717000334%26i%3Daps%26aref%3DWbUc04159S&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                      - img "FF"
+                  - generic [ref=f4e5547]:
+                    - generic [ref=f4e5548]:
+                      - link [ref=f4e5549] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1vEkEYxtMataJGwqEmnBoSOTQOzMx-UrMxO8tC6cdCWShNL5thd4BN2Y_ODKX2wN3_xcTEg179K_RfMN48ejO0aqLP6Zc875P3fZ9CuPXzx4cvD0pPbYwGB_3h0FMP26eVDbS7PWFpfB3UiXrhe_mpa8zTsxvd3ttGXtQcxdPFfjRI_PD69JCfe2zZf4xVvabqNQXV4PmmT8ZbtjvYd_sdv_S88DBi4kJmeenJ0Ou7Trftdc7dZvntRmFr7QRjOSk9ogm9ydJanJZfzAQFnIVZkrA0ojLOUiAYv4pDBgSjPJyBsZxU7rM06Hi7OFnMZQzGnKYRCDmjMr5i4PdGEFIeCZDTOJWMgzBLJUslLh4TJ1B6_lHQdP3DQbdXMQsbuPj56_dP3z42y8U_6fUhSi7mlWcYQqgZCGNVMU0V4Xsdr793z-k5u93SqyaxnbzVAYa9Ipd3mtorcsKDm0S3_9WKTFfkZEXsW5iWi87UvW4fXIV27OiCqBZ-v1l4tzmTMhd79fpyuaz9baYuZMaZqOd0yurE1HDL1RHARtMEagPZwCRQA0ZT1wiGpqYS4_VtIOBsYvkksKGGkGpg5Bw5DU85xif9AbBhQ9UQxrir9VTDN1t6qwereRTwKMjns4hbsjoTNAh5EEcWrM7zgIo4FRaB7ZaD9o8QeblGMsIjRbnDs_7xaXs9eblg_I01Y_OESbEzyfhOwtKdcXzB1q6YZ9L6v-qqiPKARsGUZ4vcUiBEmm4gA0KoKGo1tmguqnT90Gg8DKGKtIb_C1hM39Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FB852FE61-27D8-491A-8B05-7D65B20854B7%3Fstore_ref%3DSB_A05114721CLC9N3M2QRT-A09451222O5P47S8F6FP0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0GFC1HL1B%2CB0GFBW2W33%2CB0GFBXRMVG%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300156717000334%26i%3Daps%26aref%3DWbUc04159S&ref_=sbx_be_s_3psl_mbd_mb2_bkgd&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                      - link "FF":
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1vEkEYxtMataJGwqEmnBoSOTQOzMx-UrMxO8tC6cdCWShNL5thd4BN2Y_ODKX2wN3_xcTEg179K_RfMN48ejO0aqLP6Zc875P3fZ9CuPXzx4cvD0pPbYwGB_3h0FMP26eVDbS7PWFpfB3UiXrhe_mpa8zTsxvd3ttGXtQcxdPFfjRI_PD69JCfe2zZf4xVvabqNQXV4PmmT8ZbtjvYd_sdv_S88DBi4kJmeenJ0Ou7Trftdc7dZvntRmFr7QRjOSk9ogm9ydJanJZfzAQFnIVZkrA0ojLOUiAYv4pDBgSjPJyBsZxU7rM06Hi7OFnMZQzGnKYRCDmjMr5i4PdGEFIeCZDTOJWMgzBLJUslLh4TJ1B6_lHQdP3DQbdXMQsbuPj56_dP3z42y8U_6fUhSi7mlWcYQqgZCGNVMU0V4Xsdr793z-k5u93SqyaxnbzVAYa9Ipd3mtorcsKDm0S3_9WKTFfkZEXsW5iWi87UvW4fXIV27OiCqBZ-v1l4tzmTMhd79fpyuaz9baYuZMaZqOd0yurE1HDL1RHARtMEagPZwCRQA0ZT1wiGpqYS4_VtIOBsYvkksKGGkGpg5Bw5DU85xif9AbBhQ9UQxrir9VTDN1t6qwereRTwKMjns4hbsjoTNAh5EEcWrM7zgIo4FRaB7ZaD9o8QeblGMsIjRbnDs_7xaXs9eblg_I01Y_OESbEzyfhOwtKdcXzB1q6YZ9L6v-qqiPKARsGUZ4vcUiBEmm4gA0KoKGo1tmguqnT90Gg8DKGKtIb_C1hM39Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FB852FE61-27D8-491A-8B05-7D65B20854B7%3Fstore_ref%3DSB_A05114721CLC9N3M2QRT-A09451222O5P47S8F6FP0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0GFC1HL1B%2CB0GFBW2W33%2CB0GFBXRMVG%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300156717000334%26i%3Daps%26aref%3DWbUc04159S&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                        - generic:
+                          - img "FF"
+                    - generic [ref=f4e5550]:
+                      - link [ref=f4e5551] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1vEkEYxtMataJGwqEmnBoSOTQOzMx-UrMxO8tC6cdCWShNL5thd4BN2Y_ODKX2wN3_xcTEg179K_RfMN48ejO0aqLP6Zc875P3fZ9CuPXzx4cvD0pPbYwGB_3h0FMP26eVDbS7PWFpfB3UiXrhe_mpa8zTsxvd3ttGXtQcxdPFfjRI_PD69JCfe2zZf4xVvabqNQXV4PmmT8ZbtjvYd_sdv_S88DBi4kJmeenJ0Ou7Trftdc7dZvntRmFr7QRjOSk9ogm9ydJanJZfzAQFnIVZkrA0ojLOUiAYv4pDBgSjPJyBsZxU7rM06Hi7OFnMZQzGnKYRCDmjMr5i4PdGEFIeCZDTOJWMgzBLJUslLh4TJ1B6_lHQdP3DQbdXMQsbuPj56_dP3z42y8U_6fUhSi7mlWcYQqgZCGNVMU0V4Xsdr793z-k5u93SqyaxnbzVAYa9Ipd3mtorcsKDm0S3_9WKTFfkZEXsW5iWi87UvW4fXIV27OiCqBZ-v1l4tzmTMhd79fpyuaz9baYuZMaZqOd0yurE1HDL1RHARtMEagPZwCRQA0ZT1wiGpqYS4_VtIOBsYvkksKGGkGpg5Bw5DU85xif9AbBhQ9UQxrir9VTDN1t6qwereRTwKMjns4hbsjoTNAh5EEcWrM7zgIo4FRaB7ZaD9o8QeblGMsIjRbnDs_7xaXs9eblg_I01Y_OESbEzyfhOwtKdcXzB1q6YZ9L6v-qqiPKARsGUZ4vcUiBEmm4gA0KoKGo1tmguqnT90Gg8DKGKtIb_C1hM39Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FB852FE61-27D8-491A-8B05-7D65B20854B7%3Fstore_ref%3DSB_A05114721CLC9N3M2QRT-A09451222O5P47S8F6FP0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0GFC1HL1B%2CB0GFBW2W33%2CB0GFBXRMVG%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300156717000334%26i%3Daps%26aref%3DWbUc04159S&ref_=sbx_be_s_3psl_mbd_mb2_bkgd&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+                      - link "FF Cycling Full Face Balaclava Helmet Mask" [ref=f4e5552] [cursor=pointer]:
+                        - /url: https://sponsored-ads.amazon.in/clk/?_encoding=UTF8&p=eAFdkM1vEkEYxtMataJGwqEmnBoSOTQOzMx-UrMxO8tC6cdCWShNL5thd4BN2Y_ODKX2wN3_xcTEg179K_RfMN48ejO0aqLP6Zc875P3fZ9CuPXzx4cvD0pPbYwGB_3h0FMP26eVDbS7PWFpfB3UiXrhe_mpa8zTsxvd3ttGXtQcxdPFfjRI_PD69JCfe2zZf4xVvabqNQXV4PmmT8ZbtjvYd_sdv_S88DBi4kJmeenJ0Ou7Trftdc7dZvntRmFr7QRjOSk9ogm9ydJanJZfzAQFnIVZkrA0ojLOUiAYv4pDBgSjPJyBsZxU7rM06Hi7OFnMZQzGnKYRCDmjMr5i4PdGEFIeCZDTOJWMgzBLJUslLh4TJ1B6_lHQdP3DQbdXMQsbuPj56_dP3z42y8U_6fUhSi7mlWcYQqgZCGNVMU0V4Xsdr793z-k5u93SqyaxnbzVAYa9Ipd3mtorcsKDm0S3_9WKTFfkZEXsW5iWi87UvW4fXIV27OiCqBZ-v1l4tzmTMhd79fpyuaz9baYuZMaZqOd0yurE1HDL1RHARtMEagPZwCRQA0ZT1wiGpqYS4_VtIOBsYvkksKGGkGpg5Bw5DU85xif9AbBhQ9UQxrir9VTDN1t6qwereRTwKMjns4hbsjoTNAh5EEcWrM7zgIo4FRaB7ZaD9o8QeblGMsIjRbnDs_7xaXs9eblg_I01Y_OESbEzyfhOwtKdcXzB1q6YZ9L6v-qqiPKARsGUZ4vcUiBEmm4gA0KoKGo1tmguqnT90Gg8DKGKtIb_C1hM39Q&v=c1&r=https%3A%2F%2Fwww.amazon.in%2Fstores%2Fpage%2FB852FE61-27D8-491A-8B05-7D65B20854B7%3Fstore_ref%3DSB_A05114721CLC9N3M2QRT-A09451222O5P47S8F6FP0%26pd_rd_plhdr%3Dt%26hsa_cr_id%3D0%26lp_asins%3DB0GFC1HL1B%2CB0GFBW2W33%2CB0GFBXRMVG%26lp_query%3Dhelmets%20for%20men%20bike%26lp_slot%3Ddesktop-hsa-3psl%26sdp_ad_group%3D300156717000334%26i%3Daps%26aref%3DWbUc04159S&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=sGKCn&content-id=amzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892%3Aamzn1.sym.e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_p=e3b1209d-74b7-4fc9-bd01-2d594919a892&pf_rd_r=ZZQD4252EJXE1K2BT76N&pd_rd_wg=h8jGB&pd_rd_r=06d557df-8662-43b1-b1d6-c1c5ab8d1d6f
+      - generic [ref=f4e5561]:
+        - heading "Need help?" [level=2] [ref=f4e5564]
+        - generic [ref=f4e5565]:
+          - link "Visit the help section" [ref=f4e5566] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=201889520
+          - text: or
+          - link "contact us" [ref=f4e5567] [cursor=pointer]:
+            - /url: /gp/help/customer/contact-us
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | 
+  3  | 
+  4  | test("TC01 Select dropdown click on single element", async ({ page }) => {
+  5  | 
+  6  |     await page.goto('https://rahulshettyacademy.com/AutomationPractice');
+  7  |     const actualOption = await page.locator('#dropdown-class-example').selectOption('Option1');
+  8  |     await page.waitForTimeout(3000);
+  9  |     await expect(actualOption.toString()).toBe('option1');
+  10 | 
+  11 | })
+  12 | 
+  13 | test("TC02 Select dropdown getAllElement List", async ({ page }) => {
+  14 | 
+  15 |     await page.goto('https://rahulshettyacademy.com/AutomationPractice');
+  16 | 
+  17 |     const dropdownField = await page.locator('#dropdown-class-example');
+  18 |     const options = await dropdownField.allInnerTexts();
+  19 |     console.log(options);
+  20 | 
+  21 |     for (const option of options) {
+  22 | 
+  23 |         if (option.trim() === 'Option3') {
+  24 |             await dropdownField.selectOption({ label: option.trim() });
+  25 |             break;
+  26 |         }
+  27 |     }
+  28 | 
+  29 |     await page.waitForTimeout(3000);
+  30 | 
+  31 | })
+  32 | 
+  33 | 
+  34 | test("TC_03 Static Dropdown", async ({ page }) => {
+  35 | 
+  36 |     await page.goto('https://www.sreenidhirajakrishnan.com/practice#section-4');
+  37 |     const dropdown = await page.locator('#standard-select');
+  38 |     await dropdown.selectOption("green");
+  39 |     await page.waitForTimeout(3000);
+  40 | 
+  41 |     // expect(await dropdown).toContainText('green');  //Failed
+  42 |     // expect(await dropdown).toContainText('green');  //Failed
+  43 | 
+  44 |     expect(await dropdown).toHaveValue('green');
+  45 | 
+  46 | })
+  47 | 
+  48 | test("TC_04 AutoSuggestion dropdown", async ({ page }) => {
+  49 | 
+  50 |     await page.goto('https://www.amazon.in');
+  51 | 
+  52 |     const continueShoppingPage = await page.locator("//button[text()='Continue shopping']");
+  53 | 
+  54 |     // Handle "Continue shopping" page if it appears
+  55 |     const continueShopping = page.getByRole('button', { name: 'Continue shopping'});
+  56 | 
+  57 |     if (await continueShopping.count() > 0) {
+  58 |         continueShopping.click();
+  59 |     }
+  60 | 
+  61 |     const searchBox = await page.getByPlaceholder('Search Amazon.in');
+  62 |     await searchBox.fill("Helmet");
+  63 | 
+  64 |     const expetedProduct = "helmets for men bike";
+  65 | 
+  66 |     await page.waitForTimeout(3000);
+  67 |     const dropdownLocator = await page.locator("div[role='row']");
+  68 |     const count = await dropdownLocator.count();
+  69 |     console.log("Total matching result is :", count);
+  70 |     const dropdownValues = await page.locator("div[role='row']").allTextContents();
+  71 |     // for (const value of dropdownValues) {
+  72 |     //     console.log(value);
+  73 | 
+  74 |     //     if (value.includes(expetedProduct)) {
+  75 | 
+  76 |     //         break;
+  77 |     //     }
+  78 |     // }
+  79 | 
+  80 |     for (let i = 0; i < count; i++) {
+  81 |         if (dropdownValues.at(i).trim().toLowerCase()== expetedProduct.toLowerCase()){
+  82 |             console.log("I clicked on expeted dropdown value");
+  83 |             await dropdownLocator.nth(i).click();
+  84 |             break;
+  85 |         }
+  86 |         else {
+  87 |             console.log(await dropdownLocator.nth(i).textContent());
+  88 |         }
+  89 |     }
+  90 | 
+> 91 |     await page.waitForTimeout(3000);
+     |                ^ Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+  92 | 
+  93 |     expect(await searchBox.inputValue()).toBe(expetedProduct);
+  94 | })
+```
