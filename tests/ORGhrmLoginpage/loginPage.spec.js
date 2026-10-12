@@ -10,7 +10,7 @@ test("TC 01. login using POM with hard coaded values ", async({page})=>{
 
 })
 
-test.only("TC 02. login using POM using parameterization", async({page})=>{
+test("TC 02. login using POM using parameterization", async({page})=>{
 
     let login = new ORGhrmLoginPage(page);
     await login.openUrl();
