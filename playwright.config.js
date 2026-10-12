@@ -33,8 +33,7 @@ export default defineConfig({
     trace: 'on',
     screenshot:'on',
     headless:false,
-    args: ['--start-maximized'],
-    storageState:'tests/OrgHRMAuth.json'
+    args: ['--start-maximized']
   },
 
   /* Configure projects for major browsers */
