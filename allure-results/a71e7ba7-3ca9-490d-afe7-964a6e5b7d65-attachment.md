@@ -1,0 +1,754 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Dropdown.spec.js >> TC_03 Static Dropdown
+- Location: tests\Dropdown.spec.js:34:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "⚡ Sitewide 50% off on every kit · never before pricesShop now →" [ref=e2] [cursor=pointer]:
+    - /url: /products
+  - banner [ref=e9]:
+    - navigation [ref=e10]:
+      - link "Sreenidhi Rajakrishnan" [ref=e11] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e12]:
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link "🔥 Interview Success Kits" [ref=e15] [cursor=pointer]:
+              - /url: /products
+          - listitem [ref=e16]:
+            - button "Roadmaps" [ref=e17] [cursor=pointer]
+          - listitem [ref=e20]:
+            - button "Interview Prep" [ref=e21] [cursor=pointer]
+          - listitem [ref=e24]:
+            - button "AI for QA" [ref=e25] [cursor=pointer]
+          - listitem [ref=e28]:
+            - button "Upskill" [ref=e29] [cursor=pointer]
+          - listitem [ref=e32]:
+            - link "About" [ref=e33] [cursor=pointer]:
+              - /url: /about
+        - link "Access your purchase" [ref=e34] [cursor=pointer]:
+          - /url: /account?tab=purchases
+        - link "Your account" [ref=e36] [cursor=pointer]:
+          - /url: /account
+        - button "Open cart" [ref=e40] [cursor=pointer]
+  - main [ref=e45]:
+    - generic [ref=e47]:
+      - generic [ref=e49]:
+        - generic [ref=e50]: Free · Automation practice
+        - heading "Automation Practice Playground" [level=1] [ref=e52]
+        - paragraph [ref=e53]: "30 sections, every element you actually need to practise UI automation: forms, dynamic content, waits, tables, alerts, modals, iframes, shadow DOM, drag & drop, flaky elements and more. Point Selenium, Playwright, Cypress or Robot Framework at it and go."
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - strong [ref=e56]: "30"
+            - generic [ref=e57]: sections
+          - generic [ref=e58]:
+            - strong [ref=e59]: 120+
+            - generic [ref=e60]: elements
+          - generic [ref=e61]:
+            - strong [ref=e62]: "5"
+            - generic [ref=e63]: frameworks
+          - generic [ref=e64]:
+            - strong [ref=e65]: 100%
+            - generic [ref=e66]: free
+        - generic [ref=e67]:
+          - generic [ref=e68]: Built for
+          - generic [ref=e69]: Selenium
+          - generic [ref=e70]: Playwright
+          - generic [ref=e71]: Cypress
+          - generic [ref=e72]: Robot Framework
+        - generic [ref=e73]:
+          - link "Start practising ↓" [ref=e74] [cursor=pointer]:
+            - /url: "#section-1"
+          - link "See the interview Q&A →" [ref=e75] [cursor=pointer]:
+            - /url: /interview-questions
+        - paragraph [ref=e76]:
+          - text: Every element carries an
+          - code [ref=e77]: id
+          - text: ","
+          - code [ref=e78]: class
+          - text: ","
+          - code [ref=e79]: name
+          - text: ","
+          - code [ref=e80]: data-testid
+          - text: and
+          - code [ref=e81]: aria-label
+          - text: ", so you can practise every locator strategy on one page."
+      - generic [ref=e83]:
+        - paragraph [ref=e84]:
+          - strong [ref=e85]: Practising for interviews?
+          - text: This playground is where you build the muscle. My kits give you the
+          - emphasis [ref=e86]: answers
+          - text: ": 300+ Q&A with the interview-answer strategy for each, plus solved coding problems."
+        - generic [ref=e87]:
+          - link "Free Top-25 Q&A" [ref=e88] [cursor=pointer]:
+            - /url: /interview-questions
+          - link "Browse the kits →" [ref=e89] [cursor=pointer]:
+            - /url: /products
+      - generic [ref=e90]:
+        - navigation "Practice sections" [ref=e91]:
+          - heading "Sections" [level=2] [ref=e92]
+          - list [ref=e93]:
+            - listitem [ref=e94]:
+              - link "01 Basic Form Elements" [ref=e95] [cursor=pointer]:
+                - /url: "#section-1"
+                - generic [ref=e96]: "01"
+                - generic [ref=e97]: Basic Form Elements
+            - listitem [ref=e98]:
+              - link "02 Button Interactions" [ref=e99] [cursor=pointer]:
+                - /url: "#section-2"
+                - generic [ref=e100]: "02"
+                - generic [ref=e101]: Button Interactions
+            - listitem [ref=e102]:
+              - link "03 Checkboxes & Radio Buttons" [ref=e103] [cursor=pointer]:
+                - /url: "#section-3"
+                - generic [ref=e104]: "03"
+                - generic [ref=e105]: Checkboxes & Radio Buttons
+            - listitem [ref=e106]:
+              - link "04 Dropdowns" [ref=e107] [cursor=pointer]:
+                - /url: "#section-4"
+                - generic [ref=e108]: "04"
+                - generic [ref=e109]: Dropdowns
+            - listitem [ref=e110]:
+              - link "05 Locator Practice" [ref=e111] [cursor=pointer]:
+                - /url: "#section-5"
+                - generic [ref=e112]: "05"
+                - generic [ref=e113]: Locator Practice
+            - listitem [ref=e114]:
+              - link "06 Dynamic Content" [ref=e115] [cursor=pointer]:
+                - /url: "#section-6"
+                - generic [ref=e116]: "06"
+                - generic [ref=e117]: Dynamic Content
+            - listitem [ref=e118]:
+              - link "07 Waits & Synchronisation" [ref=e119] [cursor=pointer]:
+                - /url: "#section-7"
+                - generic [ref=e120]: "07"
+                - generic [ref=e121]: Waits & Synchronisation
+            - listitem [ref=e122]:
+              - link "08 Table Automation" [ref=e123] [cursor=pointer]:
+                - /url: "#section-8"
+                - generic [ref=e124]: "08"
+                - generic [ref=e125]: Table Automation
+            - listitem [ref=e126]:
+              - link "09 Alerts" [ref=e127] [cursor=pointer]:
+                - /url: "#section-9"
+                - generic [ref=e128]: "09"
+                - generic [ref=e129]: Alerts
+            - listitem [ref=e130]:
+              - link "10 Modals" [ref=e131] [cursor=pointer]:
+                - /url: "#section-10"
+                - generic [ref=e132]: "10"
+                - generic [ref=e133]: Modals
+            - listitem [ref=e134]:
+              - link "11 iFrame" [ref=e135] [cursor=pointer]:
+                - /url: "#section-11"
+                - generic [ref=e136]: "11"
+                - generic [ref=e137]: iFrame
+            - listitem [ref=e138]:
+              - link "12 Shadow DOM" [ref=e139] [cursor=pointer]:
+                - /url: "#section-12"
+                - generic [ref=e140]: "12"
+                - generic [ref=e141]: Shadow DOM
+            - listitem [ref=e142]:
+              - link "13 Drag & Drop" [ref=e143] [cursor=pointer]:
+                - /url: "#section-13"
+                - generic [ref=e144]: "13"
+                - generic [ref=e145]: Drag & Drop
+            - listitem [ref=e146]:
+              - link "14 Hover Menu" [ref=e147] [cursor=pointer]:
+                - /url: "#section-14"
+                - generic [ref=e148]: "14"
+                - generic [ref=e149]: Hover Menu
+            - listitem [ref=e150]:
+              - link "15 Tooltip" [ref=e151] [cursor=pointer]:
+                - /url: "#section-15"
+                - generic [ref=e152]: "15"
+                - generic [ref=e153]: Tooltip
+            - listitem [ref=e154]:
+              - link "16 File Upload" [ref=e155] [cursor=pointer]:
+                - /url: "#section-16"
+                - generic [ref=e156]: "16"
+                - generic [ref=e157]: File Upload
+            - listitem [ref=e158]:
+              - link "17 Download" [ref=e159] [cursor=pointer]:
+                - /url: "#section-17"
+                - generic [ref=e160]: "17"
+                - generic [ref=e161]: Download
+            - listitem [ref=e162]:
+              - link "18 Hidden Elements" [ref=e163] [cursor=pointer]:
+                - /url: "#section-18"
+                - generic [ref=e164]: "18"
+                - generic [ref=e165]: Hidden Elements
+            - listitem [ref=e166]:
+              - link "19 Scroll Testing" [ref=e167] [cursor=pointer]:
+                - /url: "#section-19"
+                - generic [ref=e168]: "19"
+                - generic [ref=e169]: Scroll Testing
+            - listitem [ref=e170]:
+              - link "20 Multiple Windows" [ref=e171] [cursor=pointer]:
+                - /url: "#section-20"
+                - generic [ref=e172]: "20"
+                - generic [ref=e173]: Multiple Windows
+            - listitem [ref=e174]:
+              - link "21 Authentication Simulation" [ref=e175] [cursor=pointer]:
+                - /url: "#section-21"
+                - generic [ref=e176]: "21"
+                - generic [ref=e177]: Authentication Simulation
+            - listitem [ref=e178]:
+              - link "22 Stale Element Simulation" [ref=e179] [cursor=pointer]:
+                - /url: "#section-22"
+                - generic [ref=e180]: "22"
+                - generic [ref=e181]: Stale Element Simulation
+            - listitem [ref=e182]:
+              - link "23 Dynamic List" [ref=e183] [cursor=pointer]:
+                - /url: "#section-23"
+                - generic [ref=e184]: "23"
+                - generic [ref=e185]: Dynamic List
+            - listitem [ref=e186]:
+              - link "24 Network Delay Simulation" [ref=e187] [cursor=pointer]:
+                - /url: "#section-24"
+                - generic [ref=e188]: "24"
+                - generic [ref=e189]: Network Delay Simulation
+            - listitem [ref=e190]:
+              - link "25 Random Fail (Flaky) Elements" [ref=e191] [cursor=pointer]:
+                - /url: "#section-25"
+                - generic [ref=e192]: "25"
+                - generic [ref=e193]: Random Fail (Flaky) Elements
+            - listitem [ref=e194]:
+              - link "26 Keyboard Actions" [ref=e195] [cursor=pointer]:
+                - /url: "#section-26"
+                - generic [ref=e196]: "26"
+                - generic [ref=e197]: Keyboard Actions
+            - listitem [ref=e198]:
+              - link "27 Slider" [ref=e199] [cursor=pointer]:
+                - /url: "#section-27"
+                - generic [ref=e200]: "27"
+                - generic [ref=e201]: Slider
+            - listitem [ref=e202]:
+              - link "28 Date Picker" [ref=e203] [cursor=pointer]:
+                - /url: "#section-28"
+                - generic [ref=e204]: "28"
+                - generic [ref=e205]: Date Picker
+            - listitem [ref=e206]:
+              - link "29 Resizable Element" [ref=e207] [cursor=pointer]:
+                - /url: "#section-29"
+                - generic [ref=e208]: "29"
+                - generic [ref=e209]: Resizable Element
+            - listitem [ref=e210]:
+              - link "30 Complex DOM Structure" [ref=e211] [cursor=pointer]:
+                - /url: "#section-30"
+                - generic [ref=e212]: "30"
+                - generic [ref=e213]: Complex DOM Structure
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - 'heading "Section 1: Basic Form Elements" [level=2] [ref=e217]'
+            - paragraph [ref=e218]: Practise filling text, password, email, phone inputs and a textarea, then submitting and resetting a real form.
+            - generic [ref=e219]:
+              - form "Basic practice form" [ref=e220]:
+                - textbox "Text input" [ref=e221]:
+                  - /placeholder: Enter your name
+                - textbox "Password input" [ref=e222]:
+                  - /placeholder: Enter password
+                - textbox "Email input" [ref=e223]:
+                  - /placeholder: Enter email
+                - textbox "Phone input" [ref=e224]:
+                  - /placeholder: Enter phone
+                - textbox "Bio textarea" [ref=e225]:
+                  - /placeholder: Tell us about yourself
+                - generic [ref=e226]:
+                  - button "Submit form" [ref=e227] [cursor=pointer]: Submit
+                  - button "Reset form" [ref=e228] [cursor=pointer]: Reset
+              - paragraph [ref=e229]: Not submitted
+          - generic [ref=e230]:
+            - 'heading "Section 2: Button Interactions" [level=2] [ref=e231]'
+            - paragraph [ref=e232]: Practise single click, double click, right click, disabled buttons, a button that enables after 3s, and a self-relabelling button.
+            - generic [ref=e233]:
+              - generic [ref=e234]:
+                - button "Single click button" [ref=e235] [cursor=pointer]: Single Click
+                - button "Double click button" [ref=e236] [cursor=pointer]: Double Click
+                - button "Right click button" [ref=e237] [cursor=pointer]: Right Click Me
+                - button "Disabled button" [disabled] [ref=e238]: Always Disabled
+              - paragraph [ref=e239]: No click yet
+              - paragraph [ref=e240]: Not double-clicked
+              - paragraph [ref=e241]: Not right-clicked
+              - generic [ref=e242]:
+                - button "Start delay" [ref=e243] [cursor=pointer]: Start 3s Timer
+                - button "Delayed enable button" [disabled] [ref=e244]: Enables in 3s
+              - button "Relabel button" [ref=e245] [cursor=pointer]: Original Label
+          - generic [ref=e246]:
+            - 'heading "Section 3: Checkboxes & Radio Buttons" [level=2] [ref=e247]'
+            - paragraph [ref=e248]: Practise toggling checkboxes, a select-all that controls them, radio groups, and a checkbox that reveals hidden text.
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - checkbox "Select all checkboxes" [ref=e251]
+                - text: Select All
+              - generic [ref=e252]:
+                - checkbox "Checkbox A" [ref=e253]
+                - text: Option A
+              - generic [ref=e254]:
+                - checkbox "Checkbox B" [ref=e255]
+                - text: Option B
+              - generic [ref=e256]:
+                - checkbox "Checkbox C" [ref=e257]
+                - text: Option C
+              - generic [ref=e258]:
+                - paragraph [ref=e259]: "Radio group:"
+                - generic [ref=e260]:
+                  - radio "Radio one" [ref=e261]
+                  - text: Choice One
+                - generic [ref=e262]:
+                  - radio "Radio two" [ref=e263]
+                  - text: Choice Two
+                - paragraph [ref=e264]: "Selected: none"
+              - generic [ref=e266]:
+                - checkbox "Reveal checkbox" [ref=e267]
+                - text: Check to reveal hidden text
+          - generic [ref=e268]:
+            - 'heading "Section 4: Dropdowns" [level=2] [ref=e269]'
+            - paragraph [ref=e270]: Practise standard select, multi-select, a custom div-based dropdown, and a select populated from state.
+            - generic [ref=e271]:
+              - generic [ref=e272]:
+                - paragraph [ref=e273]: "Standard select:"
+                - combobox "Standard select" [ref=e274]:
+                  - option "choose…"
+                  - option "Red"
+                  - option "Green" [selected]
+                  - option "Blue"
+                - paragraph [ref=e275]: "Selected: green"
+              - generic [ref=e276]:
+                - paragraph [ref=e277]: "Multi-select (Ctrl/Cmd + click):"
+                - listbox "Multi select" [ref=e278]:
+                  - option "Java" [ref=e279]
+                  - option "Python" [ref=e280]
+                  - option "JavaScript" [ref=e281]
+                  - option "C#" [ref=e282]
+                - paragraph [ref=e283]: "Selected: none"
+              - generic [ref=e284]:
+                - paragraph [ref=e285]: "Custom div dropdown:"
+                - button "Custom dropdown toggle" [ref=e287] [cursor=pointer]: Choose...
+                - paragraph [ref=e288]: "Selected: Choose..."
+              - generic [ref=e289]:
+                - paragraph [ref=e290]: "Select populated from state array:"
+                - combobox "Dynamic options select" [ref=e291]:
+                  - option "choose tool…" [selected]
+                  - option "Selenium"
+                  - option "Playwright"
+                  - option "Cypress"
+                  - option "Appium"
+                - paragraph [ref=e292]: "Selected: none"
+          - generic [ref=e293]:
+            - 'heading "Section 5: Locator Practice" [level=2] [ref=e294]'
+            - paragraph [ref=e295]: One element per common locator strategy plus a deeply nested tree for XPath axis practice.
+            - generic [ref=e296]:
+              - generic [ref=e297]:
+                - paragraph [ref=e298]: "By id (#locator-by-id):"
+                - text: Find me by id
+              - generic [ref=e299]:
+                - paragraph [ref=e300]: "By class (.locator-by-class):"
+                - text: Find me by class
+              - generic [ref=e301]:
+                - paragraph [ref=e302]: "By name ([name=\"locator-name\"]):"
+                - textbox "Locator by name" [ref=e303]:
+                  - /placeholder: find by name attribute
+              - generic [ref=e304]:
+                - paragraph [ref=e305]: "By data-testid:"
+                - text: Find me by data-testid
+              - generic [ref=e306]:
+                - paragraph [ref=e307]: "By aria-label:"
+                - text: Find me by aria-label
+              - generic [ref=e308]:
+                - paragraph [ref=e309]: "By placeholder:"
+                - textbox "Locator by placeholder" [ref=e310]:
+                  - /placeholder: locator-by-placeholder
+              - generic [ref=e311]:
+                - paragraph [ref=e312]: "By exact text:"
+                - text: ExactTextTarget
+              - generic [ref=e313]:
+                - paragraph [ref=e314]: "By partial text:"
+                - text: This contains PartialMatch inside it
+              - generic [ref=e315]:
+                - paragraph [ref=e316]: "CSS-only target (data-css attribute):"
+                - text: Reachable only via [data-css='css-only-target']
+              - generic [ref=e317]:
+                - paragraph [ref=e318]: "Deeply nested structure for XPath axes:"
+                - generic [ref=e319]:
+                  - text: grandparent
+                  - generic [ref=e320]:
+                    - text: parent
+                    - generic [ref=e321]: child 1 (sibling)
+                    - generic [ref=e322]: child 2leaf node
+          - generic [ref=e323]:
+            - 'heading "Section 6: Dynamic Content" [level=2] [ref=e324]'
+            - paragraph [ref=e325]: Practise waiting for elements to appear/disappear, text changes, a counter, and dynamically injected content.
+            - generic [ref=e326]:
+              - paragraph [ref=e327]: I appeared after 2 seconds
+              - button "Disappear button" [ref=e328] [cursor=pointer]: Click to make me disappear
+              - generic [ref=e329]:
+                - button "Change text button" [ref=e330] [cursor=pointer]: Change Text
+                - paragraph [ref=e331]: Original text
+              - generic [ref=e332]:
+                - button "Increment counter" [ref=e333] [cursor=pointer]: Increment
+                - paragraph [ref=e334]: "Counter: 0"
+              - generic [ref=e335]:
+                - button "Load content button" [ref=e336] [cursor=pointer]: Load Content
+                - list
+          - generic [ref=e337]:
+            - 'heading "Section 7: Waits & Synchronisation" [level=2] [ref=e338]'
+            - paragraph [ref=e339]: "Practise explicit waits: a spinner that becomes Loaded, delayed text, an animated progress bar, and a delayed AJAX response."
+            - generic [ref=e340]:
+              - paragraph [ref=e341]: Loaded
+              - paragraph [ref=e342]: Delayed text appeared
+              - generic [ref=e343]:
+                - generic "Progress bar" [ref=e344]
+                - paragraph [ref=e346]: 100%
+              - generic [ref=e347]:
+                - button "AJAX button" [ref=e348] [cursor=pointer]: Send AJAX
+                - paragraph [ref=e349]: No request sent
+          - generic [ref=e350]:
+            - 'heading "Section 8: Table Automation" [level=2] [ref=e351]'
+            - paragraph [ref=e352]: Practise reading rows, sorting by name, filtering with search, and paginating (page size 3).
+            - generic [ref=e353]:
+              - generic [ref=e354]:
+                - textbox "Table search" [ref=e355]:
+                  - /placeholder: Filter by name
+                - button "Sort by name" [ref=e356] [cursor=pointer]: Sort Name (asc)
+              - table [ref=e357]:
+                - rowgroup [ref=e358]:
+                  - row [ref=e359]:
+                    - columnheader "Name" [ref=e360]
+                    - columnheader "Department" [ref=e361]
+                    - columnheader "Role" [ref=e362]
+                    - columnheader "Salary" [ref=e363]
+                - rowgroup [ref=e364]:
+                  - row [ref=e365]:
+                    - cell "Anita" [ref=e366]
+                    - cell "QA" [ref=e367]
+                    - cell "SDET" [ref=e368]
+                    - cell "12,00,000" [ref=e369]
+                  - row [ref=e370]:
+                    - cell "Bharath" [ref=e371]
+                    - cell "Engineering" [ref=e372]
+                    - cell "Backend" [ref=e373]
+                    - cell "15,00,000" [ref=e374]
+                  - row [ref=e375]:
+                    - cell "Chitra" [ref=e376]
+                    - cell "QA" [ref=e377]
+                    - cell "Lead" [ref=e378]
+                    - cell "18,00,000" [ref=e379]
+              - generic [ref=e380]:
+                - button "Previous page" [disabled] [ref=e381]: Prev
+                - generic [ref=e382]: Page 1 of 3
+                - button "Next page" [ref=e383] [cursor=pointer]: Next
+          - generic [ref=e384]:
+            - 'heading "Section 9: Alerts" [level=2] [ref=e385]'
+            - paragraph [ref=e386]: "Practise handling native JS dialogs: alert, confirm and prompt."
+            - generic [ref=e387]:
+              - generic [ref=e388]:
+                - button "Show alert" [ref=e389] [cursor=pointer]: Show Alert
+                - button "Show confirm" [ref=e390] [cursor=pointer]: Show Confirm
+                - button "Show prompt" [ref=e391] [cursor=pointer]: Show Prompt
+              - paragraph [ref=e392]: No interaction yet
+          - generic [ref=e393]:
+            - 'heading "Section 10: Modals" [level=2] [ref=e394]'
+            - paragraph [ref=e395]: Practise opening a modal, closing via the X or close button, and closing by clicking the overlay.
+            - button "Open modal" [ref=e397] [cursor=pointer]: Open Modal
+          - generic [ref=e398]:
+            - 'heading "Section 11: iFrame" [level=2] [ref=e399]'
+            - paragraph [ref=e400]: Practise switching into an iframe context before interacting with the form inside it.
+            - iframe [ref=e402]:
+              - generic [ref=f1e1]:
+                - text: Inside iframe
+                - textbox "Inside iframe" [ref=f1e2]:
+                  - /placeholder: type in iframe
+                - button "Submit" [ref=f1e3]
+                - paragraph
+          - generic [ref=e403]:
+            - 'heading "Section 12: Shadow DOM" [level=2] [ref=e404]'
+            - paragraph [ref=e405]: "Practise piercing a shadow root: the input and button live inside a custom element's shadow DOM."
+            - generic [ref=e408]:
+              - generic [ref=e409]: Shadow DOM input
+              - textbox "Shadow DOM input" [ref=e410]:
+                - /placeholder: type inside shadow root
+              - button "Shadow Submit" [ref=e411] [cursor=pointer]
+              - paragraph
+          - generic [ref=e412]:
+            - 'heading "Section 13: Drag & Drop" [level=2] [ref=e413]'
+            - paragraph [ref=e414]: "Practise native HTML5 drag and drop: drag the source onto the drop zone."
+            - generic [ref=e415]:
+              - generic "Draggable item" [ref=e416]: Drag me
+              - generic "Drop zone" [ref=e417]: Drop here
+            - paragraph [ref=e418]: Nothing dropped
+          - generic [ref=e419]:
+            - 'heading "Section 14: Hover Menu" [level=2] [ref=e420]'
+            - paragraph [ref=e421]: Practise hovering a menu item to reveal a submenu (Actions class hover/move-to-element).
+            - button "Hover menu trigger" [ref=e424] [cursor=pointer]: Hover me
+          - generic [ref=e425]:
+            - 'heading "Section 15: Tooltip" [level=2] [ref=e426]'
+            - paragraph [ref=e427]: Practise triggering and reading a tooltip that appears on hover.
+            - generic [ref=e428]: Hover for tooltip
+          - generic [ref=e430]:
+            - 'heading "Section 16: File Upload" [level=2] [ref=e431]'
+            - paragraph [ref=e432]: Practise uploading a file and verifying the selected file name appears.
+            - generic [ref=e433]:
+              - button "File upload" [ref=e434]
+              - paragraph [ref=e435]: No file selected
+          - generic [ref=e436]:
+            - 'heading "Section 17: Download" [level=2] [ref=e437]'
+            - paragraph [ref=e438]: Practise triggering a file download (practice.txt) and asserting on the downloaded file.
+            - generic [ref=e439]:
+              - button "Download file" [ref=e440] [cursor=pointer]: Download practice.txt
+              - paragraph [ref=e441]: Not downloaded
+          - generic [ref=e442]:
+            - 'heading "Section 18: Hidden Elements" [level=2] [ref=e443]'
+            - paragraph [ref=e444]: Practise locating elements that are in the DOM but hidden via CSS, and revealing hidden content.
+            - generic [ref=e445]:
+              - paragraph [ref=e446]: (There is a button above hidden with display:none, present in the DOM.)
+              - button "Reveal hidden element" [ref=e447] [cursor=pointer]: Reveal Hidden Element
+          - generic [ref=e448]:
+            - 'heading "Section 19: Scroll Testing" [level=2] [ref=e449]'
+            - paragraph [ref=e450]: Practise scrolling a far-away element into view before asserting on it.
+            - generic [ref=e451]:
+              - generic [ref=e452]: Tall spacer. Scroll down to reach the target at the bottom.
+              - paragraph [ref=e453]: You scrolled to me
+          - generic [ref=e454]:
+            - 'heading "Section 20: Multiple Windows" [level=2] [ref=e455]'
+            - paragraph [ref=e456]: Practise switching between window/tab handles after opening a new one.
+            - generic [ref=e457]:
+              - button "Open new window" [ref=e458] [cursor=pointer]: Open New Tab
+              - paragraph [ref=e459]: No window opened
+          - generic [ref=e460]:
+            - 'heading "Section 21: Authentication Simulation" [level=2] [ref=e461]'
+            - paragraph [ref=e462]:
+              - text: "Practise a login flow. Demo credentials: username"
+              - strong [ref=e463]: admin
+              - text: ", password"
+              - strong [ref=e464]: admin123
+              - text: .
+            - form "Auth form" [ref=e466]:
+              - textbox "Auth username" [ref=e467]:
+                - /placeholder: Username
+              - textbox "Auth password" [ref=e468]:
+                - /placeholder: Password
+              - button "Login" [ref=e469] [cursor=pointer]
+          - generic [ref=e470]:
+            - 'heading "Section 22: Stale Element Simulation" [level=2] [ref=e471]'
+            - paragraph [ref=e472]: "Practise StaleElementReferenceException: the target node is replaced (new key), so a previously located reference is no longer attached."
+            - generic [ref=e473]:
+              - paragraph [ref=e474]: "Stale target instance #0"
+              - button "Refresh stale element" [ref=e475] [cursor=pointer]: Replace Element
+          - generic [ref=e476]:
+            - 'heading "Section 23: Dynamic List" [level=2] [ref=e477]'
+            - paragraph [ref=e478]: Practise adding and removing items and asserting on the changing list length.
+            - generic [ref=e479]:
+              - generic [ref=e480]:
+                - textbox "List item input" [ref=e481]:
+                  - /placeholder: New item
+                - button "Add list item" [ref=e482] [cursor=pointer]: Add
+              - list [ref=e483]:
+                - listitem [ref=e484]:
+                  - generic [ref=e485]: First item
+                  - button "Remove First item" [ref=e486] [cursor=pointer]: Remove
+                - listitem [ref=e487]:
+                  - generic [ref=e488]: Second item
+                  - button "Remove Second item" [ref=e489] [cursor=pointer]: Remove
+          - generic [ref=e490]:
+            - 'heading "Section 24: Network Delay Simulation" [level=2] [ref=e491]'
+            - paragraph [ref=e492]: Practise waiting through a simulated network delay before the response text appears.
+            - generic [ref=e493]:
+              - button "Trigger network call" [ref=e494] [cursor=pointer]: Fetch with Delay
+              - paragraph [ref=e495]: Idle
+          - generic [ref=e496]:
+            - 'heading "Section 25: Random Fail (Flaky) Elements" [level=2] [ref=e497]'
+            - paragraph [ref=e498]: "Practise handling flaky outcomes: this button passes or fails roughly 50/50 each run."
+            - generic [ref=e499]:
+              - button "Flaky button" [ref=e500] [cursor=pointer]: Run Flaky Action
+              - paragraph [ref=e501]: Not run yet
+          - generic [ref=e502]:
+            - 'heading "Section 26: Keyboard Actions" [level=2] [ref=e503]'
+            - paragraph [ref=e504]: "Practise sending keys: type here and watch the last key; Arrow Up/Down change the counter. Try Enter, Tab and arrows."
+            - generic [ref=e505]:
+              - textbox "Keyboard input" [ref=e506]:
+                - /placeholder: Press any key
+              - paragraph [ref=e507]: "Last key: None"
+              - paragraph [ref=e508]: "Arrow counter: 0"
+          - generic [ref=e509]:
+            - 'heading "Section 27: Slider" [level=2] [ref=e510]'
+            - paragraph [ref=e511]: Practise moving a range slider and reading its live value.
+            - generic [ref=e512]:
+              - slider "Slider" [ref=e513]: "50"
+              - paragraph [ref=e514]: "Value: 50"
+          - generic [ref=e515]:
+            - 'heading "Section 28: Date Picker" [level=2] [ref=e516]'
+            - paragraph [ref=e517]: Practise selecting a date and asserting the echoed value.
+            - generic [ref=e518]:
+              - textbox "Date picker" [ref=e519]
+              - paragraph [ref=e520]: "Chosen date: none"
+          - generic [ref=e521]:
+            - 'heading "Section 29: Resizable Element" [level=2] [ref=e522]'
+            - paragraph [ref=e523]: Practise resizing an element by dragging its bottom-right handle.
+            - generic "Resizable box" [ref=e525]: Drag my bottom-right corner to resize me.
+          - generic [ref=e526]:
+            - 'heading "Section 30: Complex DOM Structure" [level=2] [ref=e527]'
+            - paragraph [ref=e528]: Practise advanced XPath axes and CSS combinators on a deeply nested, multi-sibling tree.
+            - generic [ref=e530]:
+              - generic [ref=e531]: grandparent
+              - article [ref=e532]:
+                - generic [ref=e533]: parent 1
+                - generic [ref=e534]: child 1aleaf 1a
+                - generic [ref=e535]: child 1bleaf 1b
+              - article [ref=e536]:
+                - generic [ref=e537]: parent 2 (sibling)
+                - list [ref=e538]:
+                  - listitem [ref=e539]: list leaf 1
+                  - listitem [ref=e540]: list leaf 2
+                  - listitem [ref=e541]: list leaf 3
+      - generic [ref=e542]:
+        - heading "You can automate it. Can you ace the interview about it?" [level=2] [ref=e543]
+        - paragraph [ref=e544]: Every element here maps to a question you'll be asked. My kits give you the concept, the exact way to phrase the answer, quizzes and a final mock, for Selenium, Playwright, Python and more.
+        - generic [ref=e545]:
+          - link "Free interview Q&A" [ref=e546] [cursor=pointer]:
+            - /url: /interview-questions
+          - link "Get the kits →" [ref=e547] [cursor=pointer]:
+            - /url: /products
+          - link "Build a bundle & save" [ref=e548] [cursor=pointer]:
+            - /url: /build-your-bundle
+      - generic [ref=e549]:
+        - heading "Want my free interview resources too?" [level=2] [ref=e550]
+        - paragraph [ref=e551]: Roadmaps, the XPath/CSS cheat sheet, and new free Q&A drops, straight to your inbox.
+        - generic [ref=e553]:
+          - textbox "Your name" [ref=e554]
+          - textbox "Email address" [ref=e555]
+          - button "Send me free prep" [ref=e556] [cursor=pointer]
+  - contentinfo [ref=e557]:
+    - generic [ref=e560]:
+      - paragraph [ref=e561]: Free QA resources, straight to your inbox
+      - paragraph [ref=e562]: Cheat sheets, AI prompts, roadmaps & interview tips as they drop. Check all folders so nothing gets missed.
+      - generic [ref=e564]:
+        - textbox "Your name" [ref=e565]
+        - textbox "Email address" [ref=e566]
+        - button "Get free resources" [ref=e567] [cursor=pointer]
+    - generic [ref=e568]:
+      - generic [ref=e569]:
+        - generic [ref=e570]:
+          - paragraph [ref=e571]: Kits
+          - list [ref=e572]:
+            - listitem [ref=e573]:
+              - link "All kits" [ref=e574] [cursor=pointer]:
+                - /url: /products
+            - listitem [ref=e575]:
+              - link "Robot Framework kit" [ref=e576] [cursor=pointer]:
+                - /url: /robot-framework
+            - listitem [ref=e577]:
+              - link "Coding kits" [ref=e578] [cursor=pointer]:
+                - /url: /codingkits
+            - listitem [ref=e579]:
+              - link "Build a bundle" [ref=e580] [cursor=pointer]:
+                - /url: /build-your-bundle
+            - listitem [ref=e581]:
+              - link "QA Pro" [ref=e582] [cursor=pointer]:
+                - /url: /pro
+        - generic [ref=e583]:
+          - paragraph [ref=e584]: Practice
+          - list [ref=e585]:
+            - listitem [ref=e586]:
+              - link "Interview questions" [ref=e587] [cursor=pointer]:
+                - /url: /interview-questions
+            - listitem [ref=e588]:
+              - link "API testing practice" [ref=e589] [cursor=pointer]:
+                - /url: /api-testing-practice
+            - listitem [ref=e590]:
+              - link "Practice hub" [ref=e591] [cursor=pointer]:
+                - /url: /practice
+            - listitem [ref=e592]:
+              - link "Coding challenge" [ref=e593] [cursor=pointer]:
+                - /url: /challenge
+            - listitem [ref=e594]:
+              - link "Manual testing" [ref=e595] [cursor=pointer]:
+                - /url: /manual-testing
+        - generic [ref=e596]:
+          - paragraph [ref=e597]: Learn free
+          - list [ref=e598]:
+            - listitem [ref=e599]:
+              - link "Roadmaps" [ref=e600] [cursor=pointer]:
+                - /url: /roadmaps
+            - listitem [ref=e601]:
+              - link "AI for QA" [ref=e602] [cursor=pointer]:
+                - /url: /ai-for-qa
+            - listitem [ref=e603]:
+              - link "Free resources" [ref=e604] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e605]:
+              - link "AI prompts" [ref=e606] [cursor=pointer]:
+                - /url: /prompts
+            - listitem [ref=e607]:
+              - link "Upskilling calendar" [ref=e608] [cursor=pointer]:
+                - /url: /qa-upskilling-calendar
+        - generic [ref=e609]:
+          - paragraph [ref=e610]: Tools
+          - list [ref=e611]:
+            - listitem [ref=e612]:
+              - link "Profile optimizer" [ref=e613] [cursor=pointer]:
+                - /url: /optimizeprofile
+            - listitem [ref=e614]:
+              - link "LinkedIn review" [ref=e615] [cursor=pointer]:
+                - /url: /linkedin-review
+            - listitem [ref=e616]:
+              - link "Severity vs Priority" [ref=e617] [cursor=pointer]:
+                - /url: /severity-vs-priority
+            - listitem [ref=e618]:
+              - link "XPath / CSS cheatsheet" [ref=e619] [cursor=pointer]:
+                - /url: /xpath-css-cheatsheet
+        - generic [ref=e620]:
+          - paragraph [ref=e621]: More
+          - list [ref=e622]:
+            - listitem [ref=e623]:
+              - link "Access your purchase" [ref=e624] [cursor=pointer]:
+                - /url: /account?tab=purchases
+            - listitem [ref=e625]:
+              - link "Email me my links" [ref=e626] [cursor=pointer]:
+                - /url: /download
+            - listitem [ref=e627]:
+              - link "About" [ref=e628] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e629]:
+              - link "Community" [ref=e630] [cursor=pointer]:
+                - /url: /community
+            - listitem [ref=e631]:
+              - link "YouTube" [ref=e632] [cursor=pointer]:
+                - /url: /youtube
+            - listitem [ref=e633]:
+              - link "Instagram" [ref=e634] [cursor=pointer]:
+                - /url: https://instagram.com/sreenidhirajakrishnan
+      - paragraph [ref=e635]: Helping QA engineers crack interviews and build careers.
+    - generic [ref=e636]:
+      - generic [ref=e637]: © 2026 Sreenidhi Rajakrishnan. All rights reserved.
+      - generic [ref=e638]:
+        - link "Privacy" [ref=e639] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms" [ref=e640] [cursor=pointer]:
+          - /url: /terms
+  - alert [ref=e641]
+  - status:
+    - link "Shop the interview success kits":
+      - /url: /products
+      - generic: 🎉
+      - generic:
+        - paragraph: Reshma P. purchased Playwright JavaScript Coding Kit + 1 other kit
+        - paragraph: ✅ Verified purchase · 9 hours ago
+        - paragraph: Shop the kits →
+      - button "Dismiss"
+```

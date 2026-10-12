@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5340","TC02 Select dropdown getAllElement List","chromium","2026-10-13","passed","2026-10-13","","Dropdown.spec.js","",""
+"","57358","TC_04 AutoSuggestion dropdown","chromium","2026-10-12","broken","2026-10-12","","Dropdown.spec.js","",""
+"","3643","TC01 Select dropdown click on single element","chromium","2026-10-13","passed","2026-10-13","","Dropdown.spec.js","",""
+"","1302","TC_03 Static Dropdown","chromium","2026-10-13","passed","2026-10-13","","Dropdown.spec.js","",""
